@@ -7,10 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick=objToJson()>JSON</button>
+    <button onclick=objToJson()>LOG JSON</button>
+    <button onclick="download('map.json', 'text/plain')">Create file</button>
+    <a href="" id="a"></a>
     <script>
+        var a = document.getElementById("a");
         function objToJson(){
             console.log(JSON.stringify(nodes));
+        }
+
+        function download(name, type) {
+            var file = new Blob([JSON.stringify(nodes)], {type: type});
+            a.href = URL.createObjectURL(file);
+            a.download = name;
+            a.text = "DOWNLOAD";
         }
 
         let img;
@@ -59,6 +69,7 @@
                 posY: mouseY,
                 paths: []      
             };
+            a.text = "";
             //to do check xem thu con node nao khac khong
             if(nodeBegin==null){
                 for(let e of nodes){
