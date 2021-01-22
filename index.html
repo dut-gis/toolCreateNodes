@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="p5.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick=objToJson()>JSON</button>
+    <script>
+        function objToJson(){
+            console.log(JSON.stringify(nodes));
+        }
+
+        let img;
+        nodes = [];
+        nodeSize = 10;
+        nodeBegin = null;
+        nodeEnd = null;
+
+        function preload() {
+            img = loadImage('map.jpg');
+        }
+
+        
+
+        function setup() {
+            createCanvas(1000.5, 1000.5);
+        }
+
+        function draw() {
+            background(color(0));
+            image(img, 0,0,img.width/2, img.height/2);
+
+            stroke(color(255, 204, 0));
+            nodes.forEach((e,index) => {
+                e.paths.forEach(e2 => {
+                    line(e.posX,e.posY,nodes[e2].posX,nodes[e2].posY);
+                });
+            });
+            stroke(color(0));
+            nodes.forEach((e,index) => {
+                if(nodeBegin!=null&&e.id==nodeBegin){
+                    fill(color(255, 204, 0));
+                    ellipse(e.posX,e.posY,nodeSize,nodeSize);
+                    fill(color(255, 255, 255));
+                }else{
+                    ellipse(e.posX,e.posY,nodeSize,nodeSize);
+                }
+            });
+        }
+
+        function mousePressed() {
+            if(mouseX<0||mouseY<0) return ;
+            node = {
+                id: nodes.length,
+                posX: mouseX,
+                posY: mouseY,
+                paths: []      
+            };
+            //to do check xem thu con node nao khac khong
+            if(nodeBegin==null){
+                for(let e of nodes){
+                    if(getNodeDistance(e,node)<=nodeSize*2){
+                        print("Add Node Begin");
+                        nodeBegin = e.id;
+                        return 1;
+                    }
+                }
+            }else{
+                for(let e of nodes){
+                    if(getNodeDistance(e,node)<=nodeSize*2){
+                        if(e.id==nodeBegin){
+                            nodeBegin = null;
+                        }else{
+                            print("Add Node End");
+                            e.paths.push(nodeBegin);
+                            nodes[nodeBegin].paths.push(e.id);
+                        }
+                        return 1;
+                    }
+                }
+            }
+            console.log("Create node at: " + mouseX +", " +mouseY );
+            nodes.push(node);
+        }
+
+       function getNodeDistance(a,b){
+            distance = Math.sqrt(Math.abs(Math.pow(b.posX-a.posX,2)+Math.pow(b.posY-a.posY,2)));
+            return distance;
+       }
+
+    </script>
+</body>
+</html>
