@@ -4,14 +4,34 @@
     <meta charset="UTF-8">
     <script src="p5.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GIS Tool create nodes</title>
 </head>
 <body>
-    <button onclick=objToJson()>LOG JSON</button>
-    <button onclick="download('map.json', 'text/plain')">Create file</button>
-    <a href="" id="a"></a>
+    <div style="padding: 8px 8px;">
+        <b>Node size: </b>
+        <input type="range" min="4" max="15" value="10" id="nodeSize">
+        <b>Node color: </b>
+        <input type="color" id="nodeColor" value="#241ae8">
+        <b>Node click color: </b>
+        <input type="color" id="nodeAddPathColor" value="#ff003c">
+        <b>Line color: </b>
+        <input type="color" id="lineColor" value="#bcc418">
+    </div>
+    <div style="padding: 8px 8px;">
+        <button onclick=objToJson()>LOG JSON</button>
+        <button onclick="download('map.json', 'text/plain')">CREATE FILE</button>
+        <a href="" id="a"></a> 
+    </div>
     <script>
         var a = document.getElementById("a");
+        var rangeNodeSize = document.getElementById("nodeSize");
+        var nodeColor = document.getElementById("nodeColor");
+        var nodeAddPathColor = document.getElementById("nodeAddPathColor");
+        var lineColor = document.getElementById("lineColor");
+        let img;
+        nodes = [];
+        nodeBegin = null;
+
         function objToJson(){
             console.log(JSON.stringify(nodes));
         }
@@ -23,38 +43,40 @@
             a.text = "DOWNLOAD";
         }
 
-        let img;
-        nodes = [];
-        nodeSize = 10;
-        nodeBegin = null;
-        nodeEnd = null;
-
         function preload() {
             img = loadImage('map.jpg');
         }
-
-        
 
         function setup() {
             createCanvas(1000.5, 1000.5);
         }
 
         function draw() {
-            background(color(0));
+            nodeSize = rangeNodeSize.value;
             image(img, 0,0,img.width/2, img.height/2);
 
-            stroke(color(255, 204, 0));
+            stroke(lineColor.value);
+            fill(nodeColor.value);
+
+            //draw paths
             nodes.forEach((e,index) => {
                 e.paths.forEach(e2 => {
                     line(e.posX,e.posY,nodes[e2].posX,nodes[e2].posY);
                 });
             });
+
+            //draw line if function is add_path
+            if(nodeBegin!=null){
+                line(nodes[nodeBegin].posX,nodes[nodeBegin].posY,mouseX,mouseY);
+            }
+
+            //draw nodes
             stroke(color(0));
             nodes.forEach((e,index) => {
                 if(nodeBegin!=null&&e.id==nodeBegin){
-                    fill(color(255, 204, 0));
+                    fill(nodeAddPathColor.value);
                     ellipse(e.posX,e.posY,nodeSize,nodeSize);
-                    fill(color(255, 255, 255));
+                    fill(nodeColor.value);
                 }else{
                     ellipse(e.posX,e.posY,nodeSize,nodeSize);
                 }
@@ -62,7 +84,11 @@
         }
 
         function mousePressed() {
+            nodeSize = rangeNodeSize.value;
+            //Check node inside canvas
             if(mouseX<0||mouseY<0) return ;
+
+            //Init node
             node = {
                 id: nodes.length,
                 posX: mouseX,
@@ -70,11 +96,12 @@
                 paths: []      
             };
             a.text = "";
-            //to do check xem thu con node nao khac khong
+
+            //Check function is add path
             if(nodeBegin==null){
                 for(let e of nodes){
                     if(getNodeDistance(e,node)<=nodeSize*2){
-                        print("Add Node Begin");
+                        print("Switch to add path function");
                         nodeBegin = e.id;
                         return 1;
                     }
@@ -83,9 +110,9 @@
                 for(let e of nodes){
                     if(getNodeDistance(e,node)<=nodeSize*2){
                         if(e.id==nodeBegin){
+                            print("Switch to add node function");
                             nodeBegin = null;
                         }else{
-                            print("Add Node End");
                             e.paths.push(nodeBegin);
                             nodes[nodeBegin].paths.push(e.id);
                         }
