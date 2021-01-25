@@ -90,6 +90,15 @@
                     }
                     
                 }
+                // if (event.ctrlKey && event.key === 'x') {
+                //     if(nodeBegin!=null){
+                //         nodes[nodeBegin].paths.forEach(path => {
+                            
+                //         });
+                //         nodes.splice(nodeBegin,1);
+                //         nodeBegin=null;
+                //     }
+                // }
             });
         }
 
@@ -166,12 +175,23 @@
                             print("Switch to add node function");
                             nodeBegin = null;
                         }else{
-                            e.paths.push(nodeBegin);
-                            nodes[nodeBegin].paths.push(e.id);
-                            stackHistory.push({
-                                type: "PATH",
-                                nodeIds: [e.id,nodes[nodeBegin].id]
-                            })
+                            if(checkIsHasPath(e,nodeBegin)){
+                                print("remove path");
+                                e.paths = e.paths.filter(v =>{
+                                    return v!=nodeBegin;
+                                });
+                                nodes[nodeBegin].paths = nodes[nodeBegin].paths.filter(v=>{
+                                    return v!=e.id;
+                                });
+                            }else{
+                                print("Add path")
+                                e.paths.push(nodeBegin);
+                                nodes[nodeBegin].paths.push(e.id);
+                                stackHistory.push({
+                                    type: "PATH",
+                                    nodeIds: [e.id,nodes[nodeBegin].id]
+                                })
+                            }
                         }
                         return 1;
                     }
@@ -188,6 +208,10 @@
         function getNodeDistance(a,b){
                 distance = Math.sqrt(Math.abs(Math.pow(b.posX-a.posX,2)+Math.pow(b.posY-a.posY,2)));
                 return distance;
+        }
+
+        function checkIsHasPath(node, path){
+            return node.paths.includes(path);
         }
 
     </script>
