@@ -6,5 +6,7 @@ https://dut-gis.github.io/toolCreateNodes/
 4. Sau khi làm xong thì nhấn create file
 5. Nhấn Download
 TIPS: 
-    - Ctrl+z để xóa Node hoặc Path vừa vẽ
-    - Xóa 1 path bất kì bằng cách vẽ thêm 1 path lên
+    - Ctrl+z để quay lại
+    - Ctrl+x để xóa node đang được chọn
+    - Shift đê bỏ chọn node
+    - Xóa 1 path bất kì bằng cách vẽ đè 1 path lên

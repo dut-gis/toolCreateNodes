@@ -84,21 +84,23 @@
                         if(h.type=="PATH"){
                             nodes[h.nodeIds[0]].paths.pop();
                             nodes[h.nodeIds[1]].paths.pop();
+                        }else
+                        if(h.type=="DELETENODE"){
+                            unDeleteNode(h.node);
                         }
                     }else{
                         alert("STUPID");
                     }
                     
                 }
-                // if (event.ctrlKey && event.key === 'x') {
-                //     if(nodeBegin!=null){
-                //         nodes[nodeBegin].paths.forEach(path => {
-                            
-                //         });
-                //         nodes.splice(nodeBegin,1);
-                //         nodeBegin=null;
-                //     }
-                // }
+                if (event.shiftKey) {
+                    nodeBegin = null;
+                }
+                if (event.ctrlKey && event.key === 'x') {
+                    id = nodeBegin;
+                    nodeBegin = null;
+                    deleteNode(nodes[id]);
+                }
             });
         }
 
@@ -111,11 +113,14 @@
             fill(nodeColor.value);
 
             //draw paths
-            nodes.forEach((e,index) => {
-                e.paths.forEach(e2 => {
-                    line(e.posX,e.posY,nodes[e2].posX,nodes[e2].posY);
+            try{
+                nodes.forEach((e,index) => {
+                    e.paths.forEach(e2 => {
+                        line(e.posX,e.posY,nodes[e2].posX,nodes[e2].posY);
+                    });
                 });
-            });
+            }catch(e){
+            }
 
             //draw line if function is add_path
             if(nodeBegin!=null){
@@ -141,7 +146,7 @@
             rect(2, 2, img.width/2-5, img.height/2-5);
         }
 
-        function mousePressed() {
+        function mouseClicked() {
             nodeSize = rangeNodeSize.value;
             //Check node inside canvas
             if(mouseX<0||mouseY<0||mouseX>width||mouseY>height) return ;
@@ -153,6 +158,7 @@
                 posY: mouseY,
                 paths: []      
             };
+
             a.text = "";
 
             //Check function is add path
@@ -212,6 +218,48 @@
 
         function checkIsHasPath(node, path){
             return node.paths.includes(path);
+        }
+
+        function deleteNode(node){
+            stackHistory.push({
+                type: "DELETENODE",
+                node: node
+            })
+            //Delete node and path relative to that node
+            node.paths.forEach(e => {
+                nodes[e].paths = nodes[e].paths.filter(v =>{
+                    return v!=node.id;
+                });
+            });
+            //Update path
+            for(i=0;i<nodes.length;i++){
+                if(nodes[i].id>node.id) nodes[i].id-=1;
+                if(i!=node.id){
+                    for(j=0;j<nodes[i].paths.length;j++){
+                        if(nodes[i].paths[j]>node.id) nodes[i].paths[j]-=1;
+                    }
+                }
+            }
+           
+            nodes.splice(node.id,1);
+
+        }
+
+        function unDeleteNode(node){
+            nodes.splice(node.id,0,node);
+
+            node.paths.forEach(e => {
+                nodes[e].paths.push(node.id);
+            });
+
+            for(i=node.id+1;i<nodes.length;i++){
+                if(i>node.id) nodes[i].id+=1;
+                if(i!=node.id){
+                    for(j=0;j<nodes[i].paths.length;j++){
+                        if(nodes[i].paths[j]>=node.id) nodes[i].paths[j]+=1;
+                    }
+                }
+            }
         }
 
     </script>
