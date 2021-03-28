@@ -171,7 +171,7 @@
             //Check function is add path
             if(nodeBegin==null){
                 for(let e of nodes){
-                    if(getNodeDistance(e,node)<=nodeSize*2){
+                    if(getNodeDistance(e,node)<=nodeSize*1){
                         print("Switch to add path function");
                         nodeBegin = e.id;
                         stackHistory.push({
