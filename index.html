@@ -55,11 +55,13 @@
         nodeBegin = null;
 
         function objToJson(){
-            console.log(JSON.stringify(nodes));
+            convertMapNode();
+            // console.log(JSON.stringify(nodes));
         }
 
         function download(name, type) {
-            var file = new Blob([JSON.stringify(nodes)], {type: type});
+            // var file = new Blob([JSON.stringify(nodes)], {type: type});
+            var file = new Blob([JSON.stringify(convertMapNode())], {type: type});
             a.href = URL.createObjectURL(file);
             a.download = name;
             a.text = "DOWNLOAD";
@@ -84,8 +86,8 @@
                             nodeBegin=null;
                         }else
                         if(h.type=="PATH"){
-                            nodes[h.nodeIds[0]].paths.pop();
-                            nodes[h.nodeIds[1]].paths.pop();
+                            nodes[h.nodeIds[0]].nearNodes.pop();
+                            nodes[h.nodeIds[1]].nearNodes.pop();
                         }else
                         if(h.type=="DELETENODE"){
                             unDeleteNode(h.node);
@@ -114,11 +116,11 @@
             stroke(lineColor.value);
             fill(nodeColor.value);
 
-            //draw paths
+            //draw nearNodes
             try{
                 nodes.forEach((e,index) => {
-                    e.paths.forEach(e2 => {
-                        line(e.posX,e.posY,nodes[e2].posX,nodes[e2].posY);
+                    e.nearNodes.forEach(e2 => {
+                        line(e.x,e.y,nodes[e2].x,nodes[e2].y);
                     });
                 });
             }catch(e){
@@ -126,7 +128,7 @@
 
             //draw line if function is add_path
             if(nodeBegin!=null){
-                line(nodes[nodeBegin].posX,nodes[nodeBegin].posY,mouseX,mouseY);
+                line(nodes[nodeBegin].x,nodes[nodeBegin].y,mouseX,mouseY);
             }
 
             //draw nodes
@@ -134,13 +136,13 @@
             nodes.forEach((e,index) => {
                 if(nodeBegin!=null&&e.id==nodeBegin){
                     fill(nodeAddPathColor.value);
-                    ellipse(e.posX,e.posY,nodeSize,nodeSize);
+                    ellipse(e.x,e.y,nodeSize,nodeSize);
                     fill(nodeColor.value);
                 }else{
                     fill(nodeColor.value);
-                    ellipse(e.posX,e.posY,nodeSize,nodeSize);
+                    ellipse(e.x,e.y,nodeSize,nodeSize);
                     fill(255, 26, 26);
-                    text(e.id, e.posX,e.posY);
+                    text(e.id, e.x,e.y);
                 }
             });
             fill(nodeColor.value);
@@ -159,9 +161,9 @@
             //Init node
             node = {
                 id: nodes.length,
-                posX: mouseX,
-                posY: mouseY,
-                paths: []      
+                x: mouseX,
+                y: mouseY,
+                nearNodes:[]
             };
 
             a.text = "";
@@ -188,16 +190,16 @@
                         }else{
                             if(checkIsHasPath(e,nodeBegin)){
                                 print("remove path");
-                                e.paths = e.paths.filter(v =>{
+                                e.nearNodes = e.nearNodes.filter(v =>{
                                     return v!=nodeBegin;
                                 });
-                                nodes[nodeBegin].paths = nodes[nodeBegin].paths.filter(v=>{
+                                nodes[nodeBegin].nearNodes = nodes[nodeBegin].nearNodes.filter(v=>{
                                     return v!=e.id;
                                 });
                             }else{
                                 print("Add path")
-                                e.paths.push(nodeBegin);
-                                nodes[nodeBegin].paths.push(e.id);
+                                e.nearNodes.push(nodeBegin);
+                                nodes[nodeBegin].nearNodes.push(e.id);
                                 stackHistory.push({
                                     type: "PATH",
                                     nodeIds: [e.id,nodes[nodeBegin].id]
@@ -217,12 +219,12 @@
         }
 
         function getNodeDistance(a,b){
-                distance = Math.sqrt(Math.abs(Math.pow(b.posX-a.posX,2)+Math.pow(b.posY-a.posY,2)));
+                distance = Math.sqrt(Math.abs(Math.pow(b.x-a.x,2)+Math.pow(b.y-a.y,2)));
                 return distance;
         }
 
         function checkIsHasPath(node, path){
-            return node.paths.includes(path);
+            return node.nearNodes.includes(path);
         }
 
         function deleteNode(node){
@@ -231,8 +233,8 @@
                 node: node
             })
             //Delete node and path relative to that node
-            node.paths.forEach(e => {
-                nodes[e].paths = nodes[e].paths.filter(v =>{
+            node.nearNodes.forEach(e => {
+                nodes[e].nearNodes = nodes[e].nearNodes.filter(v =>{
                     return v!=node.id;
                 });
             });
@@ -240,8 +242,8 @@
             for(i=0;i<nodes.length;i++){
                 if(nodes[i].id>node.id) nodes[i].id-=1;
                 if(i!=node.id){
-                    for(j=0;j<nodes[i].paths.length;j++){
-                        if(nodes[i].paths[j]>node.id) nodes[i].paths[j]-=1;
+                    for(j=0;j<nodes[i].nearNodes.length;j++){
+                        if(nodes[i].nearNodes[j]>node.id) nodes[i].nearNodes[j]-=1;
                     }
                 }
             }
@@ -253,18 +255,39 @@
         function unDeleteNode(node){
             nodes.splice(node.id,0,node);
 
-            node.paths.forEach(e => {
-                nodes[e].paths.push(node.id);
+            node.nearNodes.forEach(e => {
+                nodes[e].nearNodes.push(node.id);
             });
 
             for(i=node.id+1;i<nodes.length;i++){
                 if(i>node.id) nodes[i].id+=1;
                 if(i!=node.id){
-                    for(j=0;j<nodes[i].paths.length;j++){
-                        if(nodes[i].paths[j]>=node.id) nodes[i].paths[j]+=1;
+                    for(j=0;j<nodes[i].nearNodes.length;j++){
+                        if(nodes[i].nearNodes[j]>=node.id) nodes[i].nearNodes[j]+=1;
                     }
                 }
             }
+        }
+
+        function convertMapNode(){
+            mapNodes = [];
+            nodes.forEach((node)=>{
+                mapNode = {};
+                mapNode.id = node.id+1;
+                mapNode.x = node.x/width;
+                mapNode.y = node.y/width;
+                mapNode.nearNodes = [];
+                node.nearNodes.forEach((near)=>{
+                    nearNode = {
+                    'id': near - 1,
+                    'distance': getNodeDistance(nodes[node.id], nodes[near])/width
+                    };
+                    mapNode.nearNodes.push(nearNode);
+                });
+                mapNodes.push(mapNode);
+            });
+            console.log(JSON.stringify(mapNodes));
+            return mapNodes;
         }
 
     </script>
