@@ -43,8 +43,14 @@
         <button onclick="download('map.json', 'text/plain')">CREATE FILE</button>
         <a href="" id="a"></a> 
     </div>
+    </div>
+    <div style="padding: 8px 8px;">
+        <input type="text" value="url" id="input">
+        <button type="button" onclick=loadImageURL()>LOAD</button>
+    </div>
     <script>
         var a = document.getElementById("a");
+        var input = document.getElementById("input");
         var rangeNodeSize = document.getElementById("nodeSize");
         var nodeColor = document.getElementById("nodeColor");
         var nodeAddPathColor = document.getElementById("nodeAddPathColor");
@@ -53,6 +59,14 @@
         nodes = [];
         stackHistory = [];
         nodeBegin = null;
+
+        function loadImageURL(){
+            console.log("loadImageURL");
+            img =  loadImage(input.value, result => {
+                print("oke");
+                resizeCanvas(img.width, img.height);
+            });
+        }
 
         function objToJson(){
             convertMapNode();
@@ -68,7 +82,8 @@
         }
 
         function preload() {
-            img = loadImage('hoa.jpg');
+            // img = loadImage('hoa.jpg');
+            img = loadImage('logo.jpg');
         }
 
         function setup() {
