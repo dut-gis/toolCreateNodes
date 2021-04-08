@@ -103,7 +103,7 @@
 
         //#region ALGORITHM
         function preload() {
-            img = loadImage('logo.jpg');
+            img = loadImage('map.png');
         }
         function setup() {
             createCanvas(img.width, img.height);
@@ -305,12 +305,19 @@
         }
 
         function convertMapNode(){
+            // LatLng(16.078686888467125, 108.14973592758179), LatLng(16.07297038367645, 108.15529346466064)
+            var topStartLat = 16.078686888467125;
+            var topStartlng = 108.14973592758179;
+            var bottomEndLat = 16.07297038367645;
+            var bottomEndLng = 108.15529346466064;
+            var latDistance = topStartLat - bottomEndLat;
+            var lngDistance = bottomEndLng - topStartlng;
             mapNodes = [];
             nodes.forEach((node)=>{
                 mapNode = {};
                 mapNode.id = node.id+1;
-                mapNode.x = node.x/width;
-                mapNode.y = node.y/width;
+                mapNode.x = node.x/width*lngDistance+topStartlng;
+                mapNode.y = node.y/height*latDistance+bottomEndLat;
                 mapNode.nearNodes = [];
                 node.nearNodes.forEach((near)=>{
                     nearNode = {
