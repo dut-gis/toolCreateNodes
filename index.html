@@ -312,12 +312,14 @@
             var bottomEndLng = 108.15529346466064;
             var latDistance = topStartLat - bottomEndLat;
             var lngDistance = bottomEndLng - topStartlng;
+            console.log(latDistance);
+            console.log(lngDistance);
             mapNodes = [];
             nodes.forEach((node)=>{
                 mapNode = {};
                 mapNode.id = node.id+1;
                 mapNode.lng = node.x/width*lngDistance+topStartlng;
-                mapNode.lat = node.y/height*latDistance+bottomEndLat;
+                mapNode.lat = (height-node.y)/height*latDistance+bottomEndLat;
                 mapNode.nearNodes = [];
                 node.nearNodes.forEach((near)=>{
                     nearNode = {
