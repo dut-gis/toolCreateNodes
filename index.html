@@ -290,11 +290,7 @@
         function unDeleteNode(node){
             nodes.splice(node.id,0,node);
 
-            node.nearNodes.forEach(e => {
-                nodes[e].nearNodes.push(node.id);
-            });
-
-            for(i=node.id+1;i<nodes.length;i++){
+            for(i=0;i<nodes.length;i++){
                 if(i>node.id) nodes[i].id+=1;
                 if(i!=node.id){
                     for(j=0;j<nodes[i].nearNodes.length;j++){
@@ -302,6 +298,10 @@
                     }
                 }
             }
+
+            node.nearNodes.forEach(e => {
+                nodes[e].nearNodes.push(node.id);
+            });
         }
 
         function convertMapNode(){
@@ -316,8 +316,8 @@
             nodes.forEach((node)=>{
                 mapNode = {};
                 mapNode.id = node.id+1;
-                mapNode.x = node.x/width*lngDistance+topStartlng;
-                mapNode.y = node.y/height*latDistance+bottomEndLat;
+                mapNode.lng = node.x/width*lngDistance+topStartlng;
+                mapNode.lat = node.y/height*latDistance+bottomEndLat;
                 mapNode.nearNodes = [];
                 node.nearNodes.forEach((near)=>{
                     nearNode = {
