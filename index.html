@@ -323,7 +323,7 @@
                 mapNode.nearNodes = [];
                 node.nearNodes.forEach((near)=>{
                     nearNode = {
-                    'id': near - 1,
+                    'id': near + 1,
                     'distance': getNodeDistance(nodes[node.id], nodes[near])/width
                     };
                     mapNode.nearNodes.push(nearNode);
