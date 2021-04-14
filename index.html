@@ -256,6 +256,7 @@
                 }
             }
             console.log("Create node at: " + mouseX + ", " + mouseY);
+            printLatLng(node);
             nodes.push(node);
             stackHistory.push({
                 type: "NODE",
@@ -312,6 +313,18 @@
             node.nearNodes.forEach(e => {
                 nodes[e].nearNodes.push(node.id);
             });
+        }
+
+        function printLatLng(node){
+            var topStartLat = 16.078686888467125;
+            var topStartlng = 108.14973592758179;
+            var bottomEndLat = 16.07297038367645;
+            var bottomEndLng = 108.15529346466064;
+            var latDistance = topStartLat - bottomEndLat;
+            var lngDistance = bottomEndLng - topStartlng;
+            var lng = node.x / width * lngDistance + topStartlng;
+            var lat = (height - node.y) / height * latDistance + bottomEndLat;
+            console.log(lng+", "+lat);
         }
 
         function convertMapNode() {
