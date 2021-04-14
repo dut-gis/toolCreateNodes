@@ -33,10 +33,10 @@
 </head>
 
 <body>
-    <div style="position: fixed;top: 10px;left:0; display : block;">
+    <div style="display : block;">
         <div style="padding: 8px 8px;">
             <b>Node size: </b>
-            <input type="range" min="4" max="15" value="10" id="nodeSize">
+            <input type="range" min="4" max="15" value="6" id="nodeSize">
             <b>Node color: </b>
             <input type="color" id="nodeColor" value="#241ae8">
             <b>Node click color: </b>
@@ -44,13 +44,13 @@
             <b>Line color: </b>
             <input type="color" id="lineColor" value="#bcc418">
         </div>
-        <div style="padding: 8px 8px;width: fit-content;">
+        <div style="padding: 8px 8px;">
             <b>NEW NODE</b>
             <button onclick=logJson()>LOG JSON</button>
             <button onclick="download('map.json', 'text/plain')">CREATE FILE</button>
             <a href="" id="a_new"></a>
         </div>
-        <div style="padding: 8px 8px;width: fit-content;">
+        <div style="padding: 8px 8px;">
             <b>OLD NODE</b>
             <button onclick=logJson2()>LOG JSON</button>
             <button onclick="download2('map.json', 'text/plain')">CREATE FILE</button>
