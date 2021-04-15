@@ -341,8 +341,9 @@
             nodes.forEach((node) => {
                 mapNode = {};
                 mapNode.id = node.id + 1;
-                mapNode.lng = node.x / width * lngDistance + topStartlng;
-                mapNode.lat = (height - node.y) / height * latDistance + bottomEndLat;
+                mapNode.longitude = node.x / width * lngDistance + topStartlng;
+                mapNode.latitude = (height - node.y) / height * latDistance + bottomEndLat;
+                mapNode.schoolId = 1;
                 mapNode.nearNodes = [];
                 node.nearNodes.forEach((near) => {
                     nearNode = {
