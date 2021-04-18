@@ -10,3 +10,8 @@ TIPS:
     - Ctrl+x để xóa node đang được chọn
     - Shift đê bỏ chọn node
     - Xóa 1 path bất kì bằng cách vẽ đè 1 path lên
+MERGE_NODE
+Ví dụ: Có node khu H và khu E
+    - Mở console tạo biến khuH, khuE lưu hai mảng node
+    - gõ combineNodes([khuH,khuE])
+    - OKE
