@@ -44,12 +44,12 @@
             <b>Line color: </b>
             <input type="color" id="lineColor" value="#bcc418">
         </div>
-        <div style="padding: 8px 8px;">
+        <!-- <div style="padding: 8px 8px;">
             <b>NEW NODE</b>
             <button onclick=logJson()>LOG JSON</button>
             <button onclick="download('map.json', 'text/plain')">CREATE FILE</button>
             <a href="" id="a_new"></a>
-        </div>
+        </div> -->
         <div style="padding: 8px 8px;">
             <b>OLD NODE</b>
             <button onclick=logJson2()>LOG JSON</button>
@@ -63,7 +63,7 @@
     </div>
     <script>
         //#region UI
-        var a_new = document.getElementById("a_new");
+        // var a_new = document.getElementById("a_new");
         var a_old = document.getElementById("a_old");
         var input = document.getElementById("input");
         var rangeNodeSize = document.getElementById("nodeSize");
@@ -210,7 +210,7 @@
                 nearNodes: []
             };
 
-            a_new.text = "";
+            // a_new.text = "";
             a_old.text = "";
 
             //Check function is add path
