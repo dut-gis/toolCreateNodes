@@ -1,0 +1,60 @@
+108.15377069950104,
+16.074708201132815
+sketch.js: 36 [
+    {
+        "id": 0,
+        "x": 398,
+        "y": 243,
+        "mode": "normal",
+        "buildingId": null,
+        "category": null,
+        "placeName": null,
+        "classId": null,
+        "stairId": null,
+        "floor": null,
+        "isMainEntrance": null,
+        "nearNodes": []
+    },
+    {
+        "id": 1,
+        "x": 388,
+        "y": 336,
+        "mode": "normal",
+        "buildingId": null,
+        "category": null,
+        "placeName": null,
+        "classId": null,
+        "stairId": null,
+        "floor": null,
+        "isMainEntrance": null,
+        "nearNodes": []
+    },
+    {
+        "id": 2,
+        "x": 314,
+        "y": 287,
+        "mode": "place",
+        "buildingId": null,
+        "category": "1",
+        "placeName": "hheeh",
+        "classId": null,
+        "stairId": null,
+        "floor": null,
+        "isMainEntrance": null,
+        "nearNodes": []
+    },
+    {
+        "id": 3,
+        "x": 363,
+        "y": 348,
+        "mode": "place",
+        "buildingId": null,
+        "category": "1",
+        "placeName": "hheeh",
+        "classId": null,
+        "stairId": null,
+        "floor": null,
+        "isMainEntrance": null,
+        "nearNodes": []
+    }
+]
