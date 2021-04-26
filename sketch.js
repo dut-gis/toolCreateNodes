@@ -1,9 +1,17 @@
 //#region UI
 // var a_new = document.getElementById("a_new");
+
+//color for mode
+var normalColor = document.getElementById("normal");
+var placeColor = document.getElementById("place");
+var enterColor = document.getElementById("enter");
+var buildingColor = document.getElementById("building");
+var classroomColor = document.getElementById("classroom");
+var stairColor = document.getElementById("stair");
+
 var a_old = document.getElementById("a_old");
 var input = document.getElementById("input");
 var rangeNodeSize = document.getElementById("nodeSize");
-var nodeColor = document.getElementById("nodeColor");
 var nodeAddPathColor = document.getElementById("nodeAddPathColor");
 var lineColor = document.getElementById("lineColor");
 let img;
@@ -37,7 +45,6 @@ function logJson2() {
 }
 
 function download(name, type) {
-    // var file = new Blob([JSON.stringify(nodes)], {type: type});
     var file = new Blob([JSON.stringify(convertMapNode())], {
         type: type
     });
@@ -105,7 +112,6 @@ function draw() {
 
     strokeWeight(1);
     stroke(lineColor.value);
-    fill(nodeColor.value);
 
     //draw nearNodes
     try {
@@ -127,15 +133,14 @@ function draw() {
         if (nodeBegin != null && e.id == nodeBegin) {
             fill(nodeAddPathColor.value);
             ellipse(e.x, e.y, nodeSize, nodeSize);
-            fill(nodeColor.value);
         } else {
-            fill(nodeColor.value);
+            var nodeColor = getModeColor(e.mode);
+            fill(nodeColor);
             ellipse(e.x, e.y, nodeSize, nodeSize);
             fill(255, 26, 26);
             text(e.id, e.x, e.y);
         }
     });
-    fill(nodeColor.value);
     ellipse(mouseX, mouseY, nodeSize, nodeSize);
 
     noFill();
@@ -143,46 +148,51 @@ function draw() {
     rect(2, 2, width - 5, height - 5);
 }
 
-// function updateNode(){
-//     nodeLast = nodes[nodes.length-1];
-//     nodes[nodes.length-1] = {
-//         id: nodeLast.length,
-//         x: nodeLast.mouseX,
-//         y: nodeLast.mouseY,
-//         "mode": nodeMode.value,
-//         "buildingId": select_buildingId==null?null:select_buildingId.value,
-//         "category": select_placeCategory==null?null:select_placeCategory.value,
-//         "placeName": placeName==null?null:placeName.value,
-//         "classId": select_classId==null?null:select_classId.value,
-//         "stairId": select_stairId==null?null:select_stairId.value,
-//         "floor": select_floor==null?null:select_floor.value,
-//         "isMainEntrance":checkbox_isEntrance==null?null:checkbox_isEntrance.checked,
-//         nearNodes: nodeLast.nearNodes
-//     };
-// }
-
-function mouseClicked() {
-    if(nodeMode.value!=null&&nodeMode.value=="place"){
-        if(placeName.value==""){
-            return;
+function getModeColor(mode){
+    switch(mode){
+        case "normal": {
+            return normalColor.value;
+        }
+        case "place": {
+            return placeColor.value;
+        }
+        case "entranceBuilding": {
+            return enterColor.value;
+        }
+        case "building": {
+            return buildingColor.value;
+        }
+        case "classroom": {
+            return classroomColor.value;
+        }
+        case "stair": {
+            return stairColor.value;
+        }
+        default: {
+            return normalColor.value;
         }
     }
+}
+
+function mouseClicked() {
+    if (!isModeNode) return;
+    
     nodeSize = rangeNodeSize.value;
     //Check node inside canvas
     if (mouseX < 0 || mouseY < 0 || mouseX > width || mouseY > height) return;
-    if (!isModeNode) return;
     //Init node
     node = {
         id: nodes.length,
         x: mouseX,
         y: mouseY,
         "mode": nodeMode.value,
-        "buildingId": select_buildingId==null?null:select_buildingId.value,
+        "id_building": select_buildingId==null?null:select_buildingId.value,
         "category": select_placeCategory==null?null:select_placeCategory.value,
         "placeName": placeName==null?null:placeName.value,
-        "classId": select_classId==null?null:select_classId.value,
-        "stairId": select_stairId==null?null:select_stairId.value,
-        "floor": select_floor==null?null:select_floor.value,
+        "id_class": select_classId==null?null:select_classId.value,
+        "id_stair": select_stairId==null?null:select_stairId.value,
+        "stair_sequence": select_stair_sequence==null?null:select_stair_sequence.value,
+        "floor_number": floorNumber==null?null:floorNumber,
         "isMainEntrance":checkbox_isEntrance==null?null:checkbox_isEntrance.checked,
         nearNodes: []
     };
@@ -192,6 +202,12 @@ function mouseClicked() {
 
     //Check function is add path
     if (nodeBegin == null) {
+        if(nodeMode.value!=null&&nodeMode.value=="place"){
+            if(placeName.value==""){
+                alert("Chưa điền placeName kìa bitch");
+                return;
+            }
+        }
         for (let e of nodes) {
             if (getNodeDistance(e, node) <= nodeSize * 1) {
                 print("Switch to add path function");
@@ -240,6 +256,61 @@ function mouseClicked() {
         nodeIds: [node.id]
     })
     return;
+}
+
+function generateFloor(){
+    //get floor1
+    floor1 = [];
+    nodes.forEach(node => {
+        if(node.floor_number!=null&&node.floor_number==1||node.id_stair!=null){
+            floor1.push(node);
+        }
+    });
+    console.log(floor1);
+    floor2 = JSON.parse(JSON.stringify(floor1));
+    formatFloor(floor2);
+    //format floor
+    //merge floor1 to nodes
+}
+
+
+
+function formatFloor(floor){
+    mapNode = {};
+    startID=0;
+    floor.forEach(floorNode => {
+        mapNode[floorNode.id] = startID;
+        floorNode.id = startID;
+        startID+=1;
+    });
+    floor.forEach(floorNode => {
+        nearNodes=[];
+        floorNode.nearNodes.forEach(nearNode => {
+            if(mapNode[nearNode]){
+                nearNodes.push(mapNode[nearNode]);
+            }
+        })
+        floorNode.nearNodes=nearNodes;
+    });
+}
+
+function mergeFloor(floors){
+    mapNodes = nodes;
+    startID = mapNodes.length;
+    floors.forEach((floor) => {
+        floor.forEach((floorNode) => {
+            floorNode.id+=startID;
+            nearNodes=[];
+            floorNode.nearNodes.forEach(nearNode => {
+                nearNodes.push(nearNode+startID);
+            })
+            floorNode.nearNodes=nearNodes;
+            mapNodes.push(node);
+        });
+        startID = mapNodes.length + 1;
+    });
+    console.log(mapNodes);
+    nodes = mapNodes;
 }
 
 function getNodeDistance(a, b) {
@@ -351,7 +422,7 @@ function combineNodes(dataMapNodes) {
             });
             mapNodes.push(mapNode);
         });
-        startID = dataMapNode.length + 1;
+        startID = dataMapNode.length;
     });
     console.log(mapNodes);
     nodes = mapNodes;
