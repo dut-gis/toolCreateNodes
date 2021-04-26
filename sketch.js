@@ -39,7 +39,7 @@ initData();
 
 window.on
 
-function initData(){
+function initData() {
     //init nodesFloor
     buildings.forEach((building) => {
         floors = [];
@@ -52,72 +52,72 @@ function initData(){
         nodesFloor.push({
             "id": building.id,
             "maxFloor": building.floors.length,
-            "floors":floors
+            "floors": floors
         })
     });
 
     // listener
-    checkbox_mode_floor.onchange=()=>{
-        if(!checkbox_mode_floor.checked){
+    checkbox_mode_floor.onchange = () => {
+        if (!checkbox_mode_floor.checked) {
             nodes = temporaryNode;
             return;
-        }else{
+        } else {
             alert("Dữ liệu lịch sử thay đổi của bạn sẽ bị mất.\nBạn đã chắc chắn chưa");
             stackHistory = [];
             temporaryNode = nodes;
-            nodes = getListNodeFloor(create_floor_buildingId.value,create_floor_floorId.value);
+            nodes = getListNodeFloor(create_floor_buildingId.value, create_floor_floorId.value);
         }
     }
-    create_floor_buildingId.onchange = ()=>{
-        if(checkbox_mode_floor.checked){
+    create_floor_buildingId.onchange = () => {
+        if (checkbox_mode_floor.checked) {
             options = [];
-            for(i=2;i<=getMaxFloor(create_floor_buildingId.value);i++){
+            for (i = 2; i <= getMaxFloor(create_floor_buildingId.value); i++) {
                 options.push({
                     "id": i,
                     "option": i
                 });
             }
-            addSelectOption(create_floor_floorId,options);
+            addSelectOption(create_floor_floorId, options);
             alert("Dữ liệu lịch sử thay đổi của bạn sẽ bị mất.\nBạn đã chắc chắn chưa");
             stackHistory = [];
-            nodes = getListNodeFloor(create_floor_buildingId.value,create_floor_floorId.value);
+            nodes = getListNodeFloor(create_floor_buildingId.value, create_floor_floorId.value);
         }
     }
-    create_floor_floorId.onchange = ()=>{
-        if(checkbox_mode_floor.checked){
+    create_floor_floorId.onchange = () => {
+        if (checkbox_mode_floor.checked) {
             alert("Dữ liệu lịch sử thay đổi của bạn sẽ bị mất.\nBạn đã chắc chắn chưa");
             stackHistory = [];
-            nodes = getListNodeFloor(create_floor_buildingId.value,create_floor_floorId.value);
+            nodes = getListNodeFloor(create_floor_buildingId.value, create_floor_floorId.value);
         }
     }
-    select_generate_floor_building.onchange = ()=>{
+    select_generate_floor_building.onchange = () => {
         options = [];
-        for(i=2;i<=getMaxFloor(select_generate_floor_building.value);i++){
+        for (i = 2; i <= getMaxFloor(select_generate_floor_building.value); i++) {
             options.push({
                 "id": i,
                 "option": i
             });
         }
-        addSelectOption(generate_floor_floorId,options);
+        addSelectOption(generate_floor_floorId, options);
     }
     // init select create_floor_floorId
     options = [];
-    for(i=2;i<=getMaxFloor(create_floor_buildingId.value);i++){
+    for (i = 2; i <= getMaxFloor(create_floor_buildingId.value); i++) {
         options.push({
             "id": i,
             "option": i
         });
     }
-    addSelectOption(create_floor_floorId,options);
-    addSelectOption(generate_floor_floorId,options);
+    addSelectOption(create_floor_floorId, options);
+    addSelectOption(generate_floor_floorId, options);
 }
 
-function getListNodeFloor(buildingId, floorNumber){
-    listNode;
+function getListNodeFloor(buildingId, floorNumber) {
+    listNode = [];
     nodesFloor.forEach(building => {
-        if(building.id == buildingId){
+        if (building.id == buildingId) {
             building.floors.forEach(floor => {
-                if(floor.number==floorNumber){
+                if (floor.number == floorNumber) {
                     listNode = floor.nodes;
                 }
             })
@@ -126,23 +126,23 @@ function getListNodeFloor(buildingId, floorNumber){
     return listNode;
 }
 
-function setListNodeFloor(buildingId, floorNumber, listNode){
+function setListNodeFloor(buildingId, floorNumber, listNode) {
     nodesFloor.forEach(building => {
-        if(building.id == buildingId){
+        if (building.id == buildingId) {
             building.floors.forEach(floor => {
-                if(floor.number==floorNumber){
-                    floor.nodes=listNode;
+                if (floor.number == floorNumber) {
+                    floor.nodes = listNode;
                 }
             })
         }
     });
 }
 
-function getMaxFloor(buildingId){
+function getMaxFloor(buildingId) {
     var max;
     nodesFloor.forEach(building => {
-        if(building.id == buildingId){
-           max = building.maxFloor;
+        if (building.id == buildingId) {
+            max = building.maxFloor;
         }
     });
     return max;
@@ -268,8 +268,8 @@ function draw() {
     rect(2, 2, width - 5, height - 5);
 }
 
-function getModeColor(mode){
-    switch(mode){
+function getModeColor(mode) {
+    switch (mode) {
         case "normal": {
             return normalColor.value;
         }
@@ -296,11 +296,17 @@ function getModeColor(mode){
 
 function mouseClicked() {
     if (!isModeNode) return;
-    if (nodeMode.value=="stair"){
-        stair_sequence.value+=1;
-        stair_sequence.innerHTML =  stair_sequence.value;
+    if (checkbox_mode_floor.checked) {
+        if(nodeMode.value == "normal"){
+            alert("Chấm theo từng thì méo có mode normal NHÉ !!!!\nĐọc kĩ hướng đẫn trước khi dùng");
+            return;
+        }
+        if(nodeMode.value == "place"){
+            alert("Chấm theo từng thì méo có mode place NHÉ !!!!\nĐọc kĩ hướng đẫn trước khi dùng");
+            return;
+        }
     }
-    
+
     nodeSize = rangeNodeSize.value;
     //Check node inside canvas
     if (mouseX < 0 || mouseY < 0 || mouseX > width || mouseY > height) return;
@@ -310,24 +316,29 @@ function mouseClicked() {
         x: mouseX,
         y: mouseY,
         "mode": nodeMode.value,
-        "id_building": select_buildingId==null?null:select_buildingId.value,
-        "category": select_placeCategory==null?null:select_placeCategory.value,
-        "placeName": placeName==null?null:placeName.value,
-        "id_class": select_classId==null?null:select_classId.value,
-        "id_stair": select_stairId==null?null:select_stairId.value,
-        "stair_sequence": stair_sequence==null?null:stair_sequence.value,
-        "floor_number": floorNumber==null?null:floorNumber,
-        "isMainEntrance":checkbox_isEntrance==null?null:checkbox_isEntrance.checked,
+        "id_building": select_buildingId == null ? null : select_buildingId.value,
+        "category": select_placeCategory == null ? null : select_placeCategory.value,
+        "placeName": placeName == null ? null : placeName.value,
+        "id_class": select_classId == null ? null : select_classId.value,
+        "id_stair": select_stairId == null ? null : select_stairId.value,
+        "stair_sequence": stair_sequence == null ? null : stair_sequence.value,
+        "floor_number": floorNumber == null ? null : floorNumber,
+        "isMainEntrance": checkbox_isEntrance == null ? null : checkbox_isEntrance.checked,
         nearNodes: []
     };
+
+    if (nodeMode.value == "stair") {
+        stair_sequence.value += 1;
+        stair_sequence.innerHTML = stair_sequence.value;
+    }
 
     // a_new.text = "";
     a_old.text = "";
 
     //Check function is add path
     if (nodeBegin == null) {
-        if(nodeMode.value!=null&&nodeMode.value=="place"){
-            if(placeName.value==""){
+        if (nodeMode.value != null && nodeMode.value == "place") {
+            if (placeName.value == "") {
                 alert("Chưa điền placeName kìa bitch");
                 return;
             }
@@ -382,50 +393,81 @@ function mouseClicked() {
     return;
 }
 
-function generateFloor(){
+function generateFloor() {
     //get floor1
     floor1 = [];
     nodes.forEach(node => {
-        if(node.floor_number!=null&&node.floor_number==1||node.id_stair!=null){
+        if (node.floor_number != null 
+            && node.floor_number == 1 
+            || (node.id_stair != null&&(node.stair_sequence==0||node.stair_sequence==1))) {
             floor1.push(node);
         }
     });
     console.log(floor1);
     maxFloor = generate_floor_floorId.value;
     minFloor = 2;
-    for(i=2;i<=maxFloor;i++){
+    for (i = 2; i <= maxFloor; i++) {
         floorGenerate = JSON.parse(JSON.stringify(floor1));
         formatFloor(floorGenerate);
-        setListNodeFloor(select_generate_floor_building.value,generate_floor_floorId.value,floorGenerate);
+        setListNodeFloor(select_generate_floor_building.value, generate_floor_floorId.value, floorGenerate);
     }
 }
 
-function formatFloor(floor){
+function formatFloor(floor) {
     mapNode = {};
-    startID=0;
+    startID = 0;
     floor.forEach(floorNode => {
         mapNode[floorNode.id] = startID;
         floorNode.id = startID;
-        startID+=1;
+        startID += 1;
     });
     floor.forEach(floorNode => {
-        nearNodes=[];
+        nearNodes = [];
         floorNode.nearNodes.forEach(nearNode => {
-            if(mapNode[nearNode]){
+            if (mapNode[nearNode]) {
                 nearNodes.push(mapNode[nearNode]);
             }
         })
-        floorNode.nearNodes=nearNodes;
+        floorNode.nearNodes = nearNodes;
     });
+    // format floor 
+    // floor.forEach(floorNode => {
+    //     if(floorNode.stair_sequence==1){
+    //         floorNode.nearNodes.forEach(node =>{
+    //             if(node.stair_sequence==0){
+
+    //             }
+    //         })
+    //     }
+    //     mapNode[floorNode.id] = startID;
+    //     floorNode.id = startID;
+    //     startID += 1;
+    // });
 }
 
-function mergeAllFloor(){
+function mergeAllFloor() {
     nodesFloor.forEach(building => {
-        building.floors.forEach(floor=>{
-            if(checkbox_mode_floor){
-            // merge floor.nodes to temporaryNodes
-            }else{
-            // merge floor.nodes to node
+        building.floors.forEach(floor => {
+            if (checkbox_mode_floor) {
+                // merge floor.nodes to temporaryNodes
+                mapNodes = temporaryNodes;
+                startID = mapNodes.length;
+                floors.forEach((floor) => {
+                    floor.forEach((floorNode) => {
+                        floorNode.id+=startID;
+                        nearNodes=[];
+                        floorNode.nearNodes.forEach(nearNode => {
+                            nearNodes.push(nearNode+startID);
+                        })
+                        floorNode.nearNodes=nearNodes;
+                        mapNodes.push(node);
+                    });
+                    startID = mapNodes.length + 1;
+                });
+                console.log(mapNodes);
+                nodes = mapNodes;
+            } else {
+                // merge floor.nodes to node
             }
         })
     })

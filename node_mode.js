@@ -55,8 +55,8 @@ buildings.forEach((building) => {
     })
 });
 
-addSelectOption(select_generate_floor_building,buildingOption);
-addSelectOption(select_create_floor_building,buildingOption);
+addSelectOption(select_generate_floor_building, buildingOption);
+addSelectOption(select_create_floor_building, buildingOption);
 
 function resetValue() {
     select_buildingId = null;
@@ -67,6 +67,18 @@ function resetValue() {
     floorNumber = null;
     placeName = null;
     classOptions = null;
+}
+
+function readSingleFile() {
+    var txt = '';
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function(){
+      if(xmlhttp.status == 200 && xmlhttp.readyState == 4){
+        txt = xmlhttp.responseText;
+      }
+    };
+    xmlhttp.open("GET","abc.txt",true);
+    xmlhttp.send();
 }
 
 nodeMode.onchange = () => {
@@ -135,11 +147,11 @@ nodeMode.onchange = () => {
             stairSequence.innerHTML = 0;
             stairSequence.value = 0;
             select_buildingId = document.getElementById("buildingId");
-            select_buildingId.onchange = ()=>{
+            select_buildingId.onchange = () => {
                 stairSequence.innerHTML = 0;
                 stairSequence.value = 0;
             }
-            select_stairId.onchange = ()=> {
+            select_stairId.onchange = () => {
                 stairSequence.innerHTML = 0;
                 stairSequence.value = 0;
             }

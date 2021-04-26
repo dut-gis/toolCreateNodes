@@ -113,21 +113,38 @@
 <body>
     <div id="myMap" style="z-index: -10"></div>
     <div onmouseover="hoverNavBar()" onmouseleave="leaveNavBar()" id="navBar">
-        <div style="padding: 12px 0px 12px 0px;border-width: 1px;border-style: solid;">
-            <b>Node</b><input type="range" min="4" max="15" value="10" id="nodeSize">
-            <b>Line</b><input type="range" min="4" max="15" value="6" id="nodeSize">
-            <div style="padding-left: 12px;">
+        <div
+            style="padding: 12px 0px 12px 0px;border-width: 1px;border-style: solid;padding-left: 12px;padding-right: 12px;">
+            Node<input type="range" min="2" max="15" value="2" id="nodeSize">
+            <!-- Line<input type="range" min="4" max="15" value="6" id="nodeSize"> -->
+            <div>
                 <label>Select node</Select></label><input type="color" id="nodeAddPathColor" value="#ff003c">
                 <label>Line</label><input type="color" id="lineColor" value="#bcc418">
                 <label>Node</label><input type="color" id="nodeColor" value="#241ae8">
             </div>
-            <div style="padding-left: 12px;">
+            <div>
                 <label>Normal</label><input type="color" id="normal" value="#1D2F6F">
                 <label>Place</label><input type="color" id="place" value="#8390FA">
                 <label>Enter</label><input type="color" id="enter" value="#FAC748"><br>
                 <label>Building</label><input type="color" id="building" value="#F9E9EC">
                 <label>Classroom</label><input type="color" id="classroom" value="#F88DAD">
                 <label>Stair</label><input type="color" id="stair" value="#72147e">
+            </div>
+            <div>
+                <input type="file" id="file-selector" multiple>
+                <script>
+                    const fileSelector = document.getElementById('file-selector');
+                    fileSelector.addEventListener('change', (event) => {
+                        const fileList = event.target.files;
+                        let fileContent = "";
+                        const fr = new FileReader();
+                        fr.onload = () => {
+                            fileContent = fr.result;
+                            nodes = JSON.parse(fileContent);
+                        }
+                        fr.readAsBinaryString(fileList[0]);
+                    });
+                </script>
             </div>
             <div style="width:100%; text-align: center;">
                 <button onclick=logJson2()>LOG JSON</button>
@@ -140,8 +157,8 @@
             <select id="nodeMode">
                 <option value="normal">normal</option>
                 <option value="place">place</option>
-                <option value="entranceBuilding">nodeEnterBuilding</option>
-                <option value="building">nodeBuilding</option>
+                <option value="entranceBuilding">entranceBuilding</option>
+                <option value="building">building</option>
                 <option value="classroom">classroom</option>
                 <option value="stair">stair</option>
             </select>
@@ -196,10 +213,32 @@
             <label>Sellect floor</label>
             <select id="create_floorId">
             </select>
+            <!-- <div class="header_function" style="margin-top: 12px;">
+                <button style="width:120px" onclick="readSingleFile()">Merge All Node</button>
+            </div> -->
         </div>
     </div>
     <script src="node_mode_ui.js"></script>
     <script src="node_mode.js"></script>
     <script src="sketch.js"></script>
 </body>
+
 </html>
+
+
+<!-- 
+<input type="file" id="file-selector" multiple>
+<script>
+    const fileSelector = document.getElementById('file-selector');
+    fileSelector.addEventListener('change', (event) => {
+        const fileList = event.target.files;
+        let fileContent = "";
+
+        const fr = new FileReader();
+        fr.onload = () => {
+            fileContent = fr.result;
+            nodes = fileContent;
+        }
+        fr.readAsText(fileList[0]);
+    });
+</script> -->
