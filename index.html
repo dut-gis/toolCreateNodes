@@ -94,6 +94,12 @@
             background-color: #0B66BF;
         } */
 
+        /* #file-selector{
+            padding-top: 8px;
+            border-top: crimson solid 1px;
+            background-color: #0B66BF;
+        } */
+
         select {
             border: none;
             height: 28px;
@@ -113,6 +119,22 @@
 <body>
     <div id="myMap" style="z-index: -10"></div>
     <div onmouseover="hoverNavBar()" onmouseleave="leaveNavBar()" id="navBar">
+        <div style="padding-top: 8px; border-top: solid 1px black;border-left: solid 1px black;border-right: solid 1px black;">
+            <input type="file" id="file-selector" multiple>
+            <script>
+                const fileSelector = document.getElementById('file-selector');
+                fileSelector.addEventListener('change', (event) => {
+                    const fileList = event.target.files;
+                    let fileContent = "";
+                    const fr = new FileReader();
+                    fr.onload = () => {
+                        fileContent = fr.result;
+                        nodes = JSON.parse(fileContent);
+                    }
+                    fr.readAsBinaryString(fileList[0]);
+                });
+            </script>
+        </div>
         <div
             style="padding: 12px 0px 12px 0px;border-width: 1px;border-style: solid;padding-left: 12px;padding-right: 12px;">
             Node<input type="range" min="2" max="15" value="2" id="nodeSize">
@@ -129,22 +151,6 @@
                 <label>Building</label><input type="color" id="building" value="#F9E9EC">
                 <label>Classroom</label><input type="color" id="classroom" value="#F88DAD">
                 <label>Stair</label><input type="color" id="stair" value="#72147e">
-            </div>
-            <div>
-                <input type="file" id="file-selector" multiple>
-                <script>
-                    const fileSelector = document.getElementById('file-selector');
-                    fileSelector.addEventListener('change', (event) => {
-                        const fileList = event.target.files;
-                        let fileContent = "";
-                        const fr = new FileReader();
-                        fr.onload = () => {
-                            fileContent = fr.result;
-                            nodes = JSON.parse(fileContent);
-                        }
-                        fr.readAsBinaryString(fileList[0]);
-                    });
-                </script>
             </div>
             <div style="width:100%; text-align: center;">
                 <button onclick=logJson2()>LOG JSON</button>
@@ -184,7 +190,7 @@
                 </tr>
             </table>
         </div>
-        <div style="width: 100%; text-align: center;">
+        <div style="width: 100%; text-align: center;padding-bottom: 200px;">
             <div class="header_function">
                 <label>AUTO GENERATE FLOOR NODE</label>
             </div>
@@ -202,7 +208,7 @@
             </select>
             <button onclick="generateFloor()" style="width:80px">Generate</button>
         </div>
-        <div style="width: 100%; text-align: center;padding-bottom: 200px;">
+        <!-- <div style="width: 100%; text-align: center;padding-bottom: 200px;">
             <div class="header_function">
                 <label for="checkbox_mode_floor">CREATE NODE FOR FLOOR</label>
                 <input type="checkbox" id="checkbox_mode_floor">
@@ -216,7 +222,7 @@
             <!-- <div class="header_function" style="margin-top: 12px;">
                 <button style="width:120px" onclick="readSingleFile()">Merge All Node</button>
             </div> -->
-        </div>
+        </div> -->
     </div>
     <script src="node_mode_ui.js"></script>
     <script src="node_mode.js"></script>

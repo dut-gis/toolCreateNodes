@@ -10,9 +10,9 @@ var classroomColor = document.getElementById("classroom");
 var stairColor = document.getElementById("stair");
 
 // floor
-var checkbox_mode_floor = document.getElementById("checkbox_mode_floor");
-var create_floor_buildingId = document.getElementById("create_buildingId");
-var create_floor_floorId = document.getElementById("create_floorId");
+// var checkbox_mode_floor = document.getElementById("checkbox_mode_floor");
+// var create_floor_buildingId = document.getElementById("create_buildingId");
+// var create_floor_floorId = document.getElementById("create_floorId");
 var generate_floor_floorId = document.getElementById("generate_toId");
 
 var a_old = document.getElementById("a_old");
@@ -22,7 +22,7 @@ var nodeAddPathColor = document.getElementById("nodeAddPathColor");
 var lineColor = document.getElementById("lineColor");
 let img;
 nodes = [];
-temporaryNode = [];
+temporaryNode = null;
 nodesFloor = []; // {"id":4,"floors":[{"floorNumber":2,"nodes":[listNode]}]} lưu floor2 tro đi
 stackHistory = [];
 nodeBegin = null;
@@ -44,10 +44,12 @@ function initData() {
     buildings.forEach((building) => {
         floors = [];
         building.floors.forEach(floor => {
-            floors.push({
-                "number": floor.name,
-                "nodes": []
-            })
+            if(floor.name!=1){
+                floors.push({
+                    "number": floor.name,
+                    "nodes": []
+                })
+            }
         });
         nodesFloor.push({
             "id": building.id,
@@ -55,41 +57,6 @@ function initData() {
             "floors": floors
         })
     });
-
-    // listener
-    checkbox_mode_floor.onchange = () => {
-        if (!checkbox_mode_floor.checked) {
-            nodes = temporaryNode;
-            return;
-        } else {
-            alert("Dữ liệu lịch sử thay đổi của bạn sẽ bị mất.\nBạn đã chắc chắn chưa");
-            stackHistory = [];
-            temporaryNode = nodes;
-            nodes = getListNodeFloor(create_floor_buildingId.value, create_floor_floorId.value);
-        }
-    }
-    create_floor_buildingId.onchange = () => {
-        if (checkbox_mode_floor.checked) {
-            options = [];
-            for (i = 2; i <= getMaxFloor(create_floor_buildingId.value); i++) {
-                options.push({
-                    "id": i,
-                    "option": i
-                });
-            }
-            addSelectOption(create_floor_floorId, options);
-            alert("Dữ liệu lịch sử thay đổi của bạn sẽ bị mất.\nBạn đã chắc chắn chưa");
-            stackHistory = [];
-            nodes = getListNodeFloor(create_floor_buildingId.value, create_floor_floorId.value);
-        }
-    }
-    create_floor_floorId.onchange = () => {
-        if (checkbox_mode_floor.checked) {
-            alert("Dữ liệu lịch sử thay đổi của bạn sẽ bị mất.\nBạn đã chắc chắn chưa");
-            stackHistory = [];
-            nodes = getListNodeFloor(create_floor_buildingId.value, create_floor_floorId.value);
-        }
-    }
     select_generate_floor_building.onchange = () => {
         options = [];
         for (i = 2; i <= getMaxFloor(select_generate_floor_building.value); i++) {
@@ -102,13 +69,13 @@ function initData() {
     }
     // init select create_floor_floorId
     options = [];
-    for (i = 2; i <= getMaxFloor(create_floor_buildingId.value); i++) {
+    for (i = 2; i <= getMaxFloor(select_generate_floor_building.value); i++) {
         options.push({
             "id": i,
             "option": i
         });
     }
-    addSelectOption(create_floor_floorId, options);
+    // addSelectOption(create_floor_floorId, options);
     addSelectOption(generate_floor_floorId, options);
 }
 
@@ -296,12 +263,12 @@ function getModeColor(mode) {
 
 function mouseClicked() {
     if (!isModeNode) return;
-    if (checkbox_mode_floor.checked) {
-        if(nodeMode.value == "normal"){
+    if (select_floor!=null&&select_floor.value!=1) {
+        if (nodeMode.value == "normal") {
             alert("Chấm theo từng thì méo có mode normal NHÉ !!!!\nĐọc kĩ hướng đẫn trước khi dùng");
             return;
         }
-        if(nodeMode.value == "place"){
+        if (nodeMode.value == "place") {
             alert("Chấm theo từng thì méo có mode place NHÉ !!!!\nĐọc kĩ hướng đẫn trước khi dùng");
             return;
         }
@@ -322,14 +289,13 @@ function mouseClicked() {
         "id_class": select_classId == null ? null : select_classId.value,
         "id_stair": select_stairId == null ? null : select_stairId.value,
         "stair_sequence": stair_sequence == null ? null : stair_sequence.value,
-        "floor_number": floorNumber == null ? null : floorNumber,
+        "floor_number": select_floor == null ? null : select_floor.value,
         "isMainEntrance": checkbox_isEntrance == null ? null : checkbox_isEntrance.checked,
         nearNodes: []
     };
 
     if (nodeMode.value == "stair") {
-        stair_sequence.value += 1;
-        stair_sequence.innerHTML = stair_sequence.value;
+        stair_sequence.value = 1+eval(stair_sequence.value);
     }
 
     // a_new.text = "";
@@ -394,12 +360,14 @@ function mouseClicked() {
 }
 
 function generateFloor() {
+
     //get floor1
     floor1 = [];
     nodes.forEach(node => {
-        if (node.floor_number != null 
-            && node.floor_number == 1 
-            || (node.id_stair != null&&(node.stair_sequence==0||node.stair_sequence==1))) {
+        if (node.floor_number != null
+            && node.id_building == select_generate_floor_building.value
+            && node.floor_number == 1
+            || (node.id_stair != null && node.id_building == select_generate_floor_building.value && (node.stair_sequence == 0 || node.stair_sequence == 1))) {
             floor1.push(node);
         }
     });
@@ -408,17 +376,18 @@ function generateFloor() {
     minFloor = 2;
     for (i = 2; i <= maxFloor; i++) {
         floorGenerate = JSON.parse(JSON.stringify(floor1));
-        formatFloor(floorGenerate);
+        formatFloor(floorGenerate, i);
         setListNodeFloor(select_generate_floor_building.value, generate_floor_floorId.value, floorGenerate);
     }
 }
 
-function formatFloor(floor) {
+function formatFloor(floor, floorNumber) {
     mapNode = {};
     startID = 0;
     floor.forEach(floorNode => {
         mapNode[floorNode.id] = startID;
         floorNode.id = startID;
+        floorNode.floor_number = floorNumber;
         startID += 1;
     });
     floor.forEach(floorNode => {
@@ -430,63 +399,39 @@ function formatFloor(floor) {
         })
         floorNode.nearNodes = nearNodes;
     });
-    // format floor 
-    // floor.forEach(floorNode => {
-    //     if(floorNode.stair_sequence==1){
-    //         floorNode.nearNodes.forEach(node =>{
-    //             if(node.stair_sequence==0){
+}
 
-    //             }
-    //         })
-    //     }
-    //     mapNode[floorNode.id] = startID;
-    //     floorNode.id = startID;
-    //     startID += 1;
-    // });
+function extracData(){
+
 }
 
 function mergeAllFloor() {
+    mapNodes = [];
+    if (floorNumber.value==1) {
+        // merge floor.nodes to temporaryNodes
+        mapNodes = JSON.parse(JSON.stringify(temporaryNode));
+    } else {
+        // merge floor.nodes to node
+        mapNodes = JSON.parse(JSON.stringify(nodes));
+    }
+    startID = mapNodes.length;
     nodesFloor.forEach(building => {
         building.floors.forEach(floor => {
-            if (checkbox_mode_floor) {
-                // merge floor.nodes to temporaryNodes
-                mapNodes = temporaryNodes;
-                startID = mapNodes.length;
-                floors.forEach((floor) => {
-                    floor.forEach((floorNode) => {
-                        floorNode.id+=startID;
-                        nearNodes=[];
-                        floorNode.nearNodes.forEach(nearNode => {
-                            nearNodes.push(nearNode+startID);
-                        })
-                        floorNode.nearNodes=nearNodes;
-                        mapNodes.push(node);
-                    });
-                    startID = mapNodes.length + 1;
-                });
-                console.log(mapNodes);
-                nodes = mapNodes;
-            } else {
-                // merge floor.nodes to node
-            }
+            floor.nodes.forEach((floorNode) => {
+                node = JSON.parse(JSON.stringify(floorNode));
+                node.id += startID;
+                nearNodes = [];
+                node.nearNodes.forEach(nearNode => {
+                    nearNodes.push(nearNode + startID);
+                })
+                node.nearNodes = nearNodes;
+                mapNodes.push(node);
+            });
+            startID = mapNodes.length;
         })
-    })
-    // mapNodes = nodes;
-    // startID = mapNodes.length;
-    // floors.forEach((floor) => {
-    //     floor.forEach((floorNode) => {
-    //         floorNode.id+=startID;
-    //         nearNodes=[];
-    //         floorNode.nearNodes.forEach(nearNode => {
-    //             nearNodes.push(nearNode+startID);
-    //         })
-    //         floorNode.nearNodes=nearNodes;
-    //         mapNodes.push(node);
-    //     });
-    //     startID = mapNodes.length + 1;
-    // });
-    // console.log(mapNodes);
-    // nodes = mapNodes;
+    });
+    console.log(mapNodes);
+    return mapNodes;
 }
 
 function getNodeDistance(a, b) {
