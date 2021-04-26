@@ -23,7 +23,7 @@ nodeEnterBuilding =
     + '  </tr><tr><td>nearNodes</td><td>[]</td></tr>'
     + '   </tr><tr><td>buildingId</td><td>'
     + '  <select id="buildingId"></select></td></tr>'
-    + '<tr><td>floorId</td><td id="floorId">1</td></tr>'
+    + '<tr><td>floorNumber</td><td id="floorId">1</td></tr>'
     + ' </table>';
 nodeBuilding =
     '<table >'
@@ -33,7 +33,7 @@ nodeBuilding =
     + '  </tr><tr><td>nearNodes</td><td>[]</td></tr>'
     + '  </tr><tr><td>buildingId</td><td>'
     + '  <select id="buildingId"></select></td></tr>'
-    + '<tr><td>floorId</td><td id="floorId">1</td></tr>'
+    + '<tr><td>floorNumber</td><td id="floorId">1</td></tr>'
     + '  </table>';
 nodeClassroom =
     '       <table >'
@@ -43,7 +43,7 @@ nodeClassroom =
     + '  </tr><tr><td>nearNodes</td><td>[]</td></tr>'
     + '  </tr><tr><td>buildingId</td><td>'
     + '  <select id="buildingId"></select></td></tr>'
-    + '<tr><td>floorId</td><td id="floorId">1</td></tr>'
+    + '<tr><td>floorNumber</td><td id="floorId">1</td></tr>'
     + '<tr><td>classId</td><td> <select id="classId"></select></td></tr>'
     + '  <tr><td> <label for="entrance">isMainEntrance</label></td>'
     + ' <td><input type="checkbox" id="entrance"></td></tr>'
@@ -54,15 +54,16 @@ nodeStair =
     + '   </tr><tr><td>Mode</td><td>nodeStair</td>'
     + '   </tr><tr><td>nodeID</td><td></td>'
     + ' </tr><tr><td>nearNodes</td><td>[]</td></tr>'
-    + '   </tr><tr><td>buildingName</td><td>'
-    + ' <select id="buildingName"> <option>A</option><option>B</option><option>C</option><option>D</option></select>'
+    + '   </tr><tr><td>buildingId</td><td>'
+    + ' <select id="buildingId"></select>'
     + '</td>'
     + '</tr><tr><td>stairID</td><td>'
     + '    <select id="stairID"> <option>1</option><option>2</option><option>3</option><option>4</option></select>'
     + '          </td>'
-    + '  </tr><tr><td>stairSequence</td><td>'
-    + '        <select id="stairSequence"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option></select>'
-    + ' </td>'
+    + '<tr><td>stairSequence</td><td id="stairSequence"></td></tr>'
+    // + '  </tr><tr><td>stairSequence</td><td>'
+    // + '        <select id="stairSequence"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option></select>'
+    // + ' </td>'
     + '  </table>';
 
 

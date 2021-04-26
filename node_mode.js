@@ -1,7 +1,7 @@
 table = document.getElementById("table");
 nodeMode = document.getElementById("nodeMode");
-
-
+select_generate_floor_building = document.getElementById("generate_buildingId");
+select_create_floor_building = document.getElementById("create_buildingId");
 // todo: them floor vo mode class , building enter, building
 
 // mode place
@@ -42,7 +42,7 @@ var select_placeCategory;
 var select_buildingId;
 var select_classId;
 var select_stairId;
-var select_stair_sequence;
+var stair_sequence;
 var checkbox_isEntrance;
 var floorNumber;
 var placeName;
@@ -55,11 +55,14 @@ buildings.forEach((building) => {
     })
 });
 
+addSelectOption(select_generate_floor_building,buildingOption);
+addSelectOption(select_create_floor_building,buildingOption);
+
 function resetValue() {
     select_buildingId = null;
     select_classId = null;
     select_stairId = null;
-    select_stair_sequence = null;
+    stair_sequence = null;
     checkbox_isEntrance = null;
     floorNumber = null;
     placeName = null;
@@ -128,7 +131,19 @@ nodeMode.onchange = () => {
             resetValue();
             floorNumber = null;
             select_stairId = document.getElementById("stairID");
-            select_stair_sequence = document.getElementById("stairSequence");
+            stair_sequence = document.getElementById("stairSequence");
+            stairSequence.innerHTML = 0;
+            stairSequence.value = 0;
+            select_buildingId = document.getElementById("buildingId");
+            select_buildingId.onchange = ()=>{
+                stairSequence.innerHTML = 0;
+                stairSequence.value = 0;
+            }
+            select_stairId.onchange = ()=> {
+                stairSequence.innerHTML = 0;
+                stairSequence.value = 0;
+            }
+            addSelectOption(select_buildingId, buildingOption);
             break;
         }
         default: {

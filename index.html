@@ -46,7 +46,7 @@
             background-color: #0B66BF;
         }
 
-        input[type=color]{
+        input[type=color] {
             width: 20px;
             padding: 0px 0px 0px 0px;
             border-radius: 8px;
@@ -59,8 +59,30 @@
             background-color: white;
         }
 
-        #nodeMode select{
-            display: none; 
+        #nodeMode select {
+            display: none;
+        }
+
+        .header_function {
+            width: 100%;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            text-decoration: underline;
+            font-weight: bold;
+            border-top: 1px solid black;
+        }
+
+        #navBar {
+            position: fixed;
+            overflow: scroll;
+            top: 0px;
+            left: 0px;
+            display: block;
+            height: 100%;
+            width: 400px;
+            border-width: 1px;
+            border-style: solid;
+            background-color: white;
         }
 
         /* #nodeMode{
@@ -72,7 +94,7 @@
             background-color: #0B66BF;
         } */
 
-        select{
+        select {
             border: none;
             height: 28px;
             padding: 0px 6px 0px 6px;
@@ -90,8 +112,7 @@
 
 <body>
     <div id="myMap" style="z-index: -10"></div>
-    <div onmouseover=hover() onmouseleave=leave()
-        style="position: fixed;top: 0px;left:0px; display : block;height: 100%;width: 400px;border-width: 1px;border-style: solid;background-color: white;">
+    <div onmouseover="hoverNavBar()" onmouseleave="leaveNavBar()" id="navBar">
         <div style="padding: 12px 0px 12px 0px;border-width: 1px;border-style: solid;">
             <b>Node</b><input type="range" min="4" max="15" value="10" id="nodeSize">
             <b>Line</b><input type="range" min="4" max="15" value="6" id="nodeSize">
@@ -146,16 +167,15 @@
                 </tr>
             </table>
         </div>
-        <div >
-            <div style="text-align: center;width: 100%;">
-                <b>Create node for floor</b>
+        <div style="width: 100%; text-align: center;">
+            <div class="header_function">
+                <label>AUTO GENERATE FLOOR NODE</label>
             </div>
-            <label>Generate floor of building</label>
-            <select id="floor_buildingId">
-                <option value="1">A</option>
+            <label>Building</label>
+            <select id="generate_buildingId">
             </select>
             <label>from floor 2</label>
-            <label>to </label><select id="floor_toId">
+            <label>to </label><select id="generate_toId">
                 <option value="3">3</option>
                 <option value="4">4</option>
                 <option value="5">5</option>
@@ -163,14 +183,23 @@
                 <option value="7">7</option>
                 <option value="8">8</option>
             </select>
-            <div>
-            <button onclick="generateFloor()">Generate floor</button>
+            <button onclick="generateFloor()" style="width:80px">Generate</button>
+        </div>
+        <div style="width: 100%; text-align: center;padding-bottom: 200px;">
+            <div class="header_function">
+                <label for="checkbox_mode_floor">CREATE NODE FOR FLOOR</label>
+                <input type="checkbox" id="checkbox_mode_floor">
             </div>
+            <label>Sellect building</label>
+            <select id="create_buildingId">
+            </select>
+            <label>Sellect floor</label>
+            <select id="create_floorId">
+            </select>
         </div>
     </div>
-    <script src="sketch.js"></script>
     <script src="node_mode_ui.js"></script>
     <script src="node_mode.js"></script>
+    <script src="sketch.js"></script>
 </body>
-
 </html>
