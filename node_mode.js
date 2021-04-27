@@ -1,9 +1,9 @@
-table = document.getElementById("table");
-nodeMode = document.getElementById("nodeMode");
-select_generate_floor_building = document.getElementById("generate_buildingId");
-// select_create_floor_building = document.getElementById("create_buildingId");
-// todo: them floor vo mode class , building enter, building
 
+var table = document.getElementById("table");
+var nodeMode = document.getElementById("nodeMode");
+// generate Mode
+var select_generate_floor_building = document.getElementById("generate_buildingId");
+var generate_floor_floorId = document.getElementById("generate_toId");
 // mode place
 placeOption = [
     {
@@ -45,19 +45,55 @@ var select_stairId;
 var select_floor;
 var stair_sequence;
 var checkbox_isEntrance;
-var floorNumber = 1;
 var placeName;
 var classOptions;
-var buildingOption = [];
-buildings.forEach((building) => {
-    buildingOption.push({
-        "option": building.name,
-        "id": building.id
-    })
-});
 
-addSelectOption(select_generate_floor_building, buildingOption);
-// addSelectOption(select_create_floor_building, buildingOption);
+// storing state
+var floorNumber = 1;
+var buildingId = 4;
+
+var buildingOption = [];
+var nodesFloor = [];
+
+
+initAllData();
+function initAllData() {
+    // init building options
+    buildings.forEach((building) => {
+        buildingOption.push({
+            "option": building.name,
+            "id": building.id
+        })
+    });
+    // init nodesFloor: lưu trữ node của mỗi tầng trong mỗi khu
+    buildings.forEach((building) => {
+        floors = [];
+        building.floors.forEach(floor => {
+            if (floor.name != 1) {
+                floors.push({
+                    "number": floor.name,
+                    "nodes": []
+                })
+            }
+        });
+        nodesFloor.push({
+            "id": building.id,
+            "maxFloor": building.floors.length,
+            "floors": floors
+        })
+    });
+    // init buildingOption for generate floor feature
+    addSelectOption(select_generate_floor_building, buildingOption);
+    select_generate_floor_building.onchange = () => {
+        options = createFloorOption(getMaxFloor(select_generate_floor_building.value), 2)
+        addSelectOption(generate_floor_floorId, options);
+    }
+
+    options = createFloorOption(getMaxFloor(select_generate_floor_building.value), 2)
+
+    // addSelectOption(create_floor_floorId, options);
+    addSelectOption(generate_floor_floorId, options);
+}
 
 function resetValue() {
     select_buildingId = null;
@@ -68,18 +104,6 @@ function resetValue() {
     checkbox_isEntrance = null;
     placeName = null;
     classOptions = null;
-}
-
-function readSingleFile() {
-    var txt = '';
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function () {
-        if (xmlhttp.status == 200 && xmlhttp.readyState == 4) {
-            txt = xmlhttp.responseText;
-        }
-    };
-    xmlhttp.open("GET", "abc.txt", true);
-    xmlhttp.send();
 }
 
 nodeMode.onchange = () => {
@@ -101,72 +125,68 @@ nodeMode.onchange = () => {
         case "entranceBuilding": {
             table.innerHTML = nodeEnterBuilding;
             resetValue();
-            select_buildingId = document.getElementById("buildingId");
-            addSelectOption(select_buildingId, buildingOption);
-
-            initFloor();
+            initBuilding();
+            initNodeFloor();
             break;
         }
         case "building": {
             table.innerHTML = nodeBuilding;
             resetValue();
-            select_buildingId = document.getElementById("buildingId");
-            addSelectOption(select_buildingId, buildingOption);
-
-            initFloor();
+            initBuilding();
+            initNodeFloor();
             break;
         }
         case "classroom": {
             table.innerHTML = nodeClassroom;
             resetValue();
-            select_buildingId = document.getElementById("buildingId");
-            checkbox_isEntrance = document.querySelector("#entrance");
-            addSelectOption(select_buildingId, buildingOption);
-            select_classId = document.getElementById("classId");
+            initBuilding();
+            initNodeFloor();
 
+            checkbox_isEntrance = document.querySelector("#entrance");
+
+            select_classId = document.getElementById("classId");
             classOptions = getListClassOptions(select_buildingId.value, floorNumber);
             addSelectOption(select_classId, classOptions);
-            // select_buildingId.onchange = () => {
-            //     classOptions = getListClassOptions(select_buildingId.value, floorNumber);
-            //     addSelectOption(select_classId, classOptions);
-            // }
-            initFloor();
             break;
         }
         case "stair": {
             table.innerHTML = nodeStair;
             resetValue();
-            floorNumber = null;
-            select_stairId = document.getElementById("stairID");
             stair_sequence = document.getElementById("stairSequence");
-            stairSequence.value = 0;
-            select_buildingId = document.getElementById("buildingId");
-            select_buildingId.onchange = () => {
-                stairSequence.value = 0;
-            }
+            stair_sequence.value = 0;
+            select_stairId = document.getElementById("stairID");
             select_stairId.onchange = () => {
-                stairSequence.value = 0;
+                stair_sequence.value = 0;
             }
-            addSelectOption(select_buildingId, buildingOption);
-            initFloor()
+            initBuilding();
+            initNodeFloor()
             break;
         }
         default: {
-            floorNumber = null;
-            resetValue();
-            table.innerHTML = nodeNormal;
+            console.log("BUG BUG");
         }
     }
 };
 
-function initFloor() {
+function initBuilding() {
+    select_buildingId = document.getElementById("buildingId");
+    addSelectOption(select_buildingId, buildingOption);
+    select_buildingId.value = buildingId;
+}
+
+function initNodeFloor() {
+    // Tìm kiếm và updata lại floor theo state của nó
     select_floor = document.getElementById("floorId");
     addSelectOption(select_floor, createFloorOption(getMaxFloor(select_buildingId.value)));
     select_floor.value = floorNumber;
+    // Thêm sự kiện khi building thay đổi
     select_buildingId.onchange = () => {
         if (select_classId != null) {
             classOptions = getListClassOptions(select_buildingId.value, floorNumber);
             addSelectOption(select_classId, classOptions);
+        }
+        if (stair_sequence != null) {
+            stair_sequence.value = 0;
         }
         addSelectOption(select_floor, createFloorOption(getMaxFloor(select_buildingId.value)));
         select_floor.value = floorNumber;
@@ -177,24 +197,37 @@ function initFloor() {
 
 function onFloorNumberChange() {
     print("change");
-    floorNumber = select_floor.value;
-    if (select_classId != null) {
-        classOptions = getListClassOptions(select_buildingId.value, floorNumber);
-        addSelectOption(select_classId, classOptions);
-    }
     if (select_floor.value == 1) {
+        // floor==1 => chấm node ơ phần dưới
+        // => if temporaryNode!=null tức là chuyển từ floor!=1 xuống floor=1 nên cần vẽ lại nodes
         if (temporaryNode != null) {
-            alert("Dữ liệu lịch sử thay đổi của bạn sẽ bị mất.\nBạn đã chắc chắn chưa");
-            stackHistory = [];
-            nodes = temporaryNode;
+            if (confirm('Dữ liệu lịch sử thay đổi của bạn sẽ bị mất.\nBạn đã chắc chắn chưa?')) {
+                stackHistory = [];
+                nodes = temporaryNode;
+            } else {
+                select_floor.value = floorNumber;
+                return;
+            }
         }
         temporaryNode = null;
     } else {
-        if (temporaryNode == null) temporaryNode = nodes;
-        alert("Dữ liệu lịch sử thay đổi của bạn sẽ bị mất.\nBạn đã chắc chắn chưa");
-        stackHistory = [];
-        data = getListNodeFloor(select_buildingId.value, select_floor.value);
-        if (data != null) nodes = data;
+        // if temporaryNode==null tức là từ floor 1 chuyển lên floor!= thì ta cần backup dữ liệu của node
+        if (confirm('Dữ liệu lịch sử thay đổi của bạn sẽ bị mất.\nBạn đã oke chưa?')) {
+            if (temporaryNode == null) temporaryNode = nodes;
+            stackHistory = [];
+            data = getListNodeFloor(select_buildingId.value, select_floor.value);
+            if (data != null) nodes = data;
+        } else {
+            select_floor.value = floorNumber;
+            return;
+        }
+    }
+    floorNumber = select_floor.value;
+
+    // Dùng trong các mode có buildingId để lắng nghe sự thay đổi của buildingID và thay đổi class
+    if (select_classId != null) {
+        classOptions = getListClassOptions(select_buildingId.value, floorNumber);
+        addSelectOption(select_classId, classOptions);
     }
 }
 
@@ -205,9 +238,20 @@ function testing() {
     console.log(rooms);
 }
 
-function createFloorOption(maxFloor) {
+function getMaxFloor(buildingId) {
+    var max;
+    nodesFloor.forEach(building => {
+        if (building.id == buildingId) {
+            max = building.maxFloor;
+        }
+    });
+    return max;
+}
+
+function createFloorOption(maxFloor, minFloor) {
     options = [];
-    for (i = 1; i <= maxFloor; i++) {
+    if (!minFloor) minFloor = 1;
+    for (i = minFloor; i <= maxFloor; i++) {
         options.push({
             "id": i,
             "option": i

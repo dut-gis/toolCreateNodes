@@ -1,19 +1,10 @@
-//#region UI
-// var a_new = document.getElementById("a_new");
-//todo: load decription for class
-//color for mode
+
 var normalColor = document.getElementById("normal");
 var placeColor = document.getElementById("place");
 var enterColor = document.getElementById("enter");
 var buildingColor = document.getElementById("building");
 var classroomColor = document.getElementById("classroom");
 var stairColor = document.getElementById("stair");
-
-// floor
-// var checkbox_mode_floor = document.getElementById("checkbox_mode_floor");
-// var create_floor_buildingId = document.getElementById("create_buildingId");
-// var create_floor_floorId = document.getElementById("create_floorId");
-var generate_floor_floorId = document.getElementById("generate_toId");
 
 var a_old = document.getElementById("a_old");
 var input = document.getElementById("input");
@@ -23,7 +14,6 @@ var lineColor = document.getElementById("lineColor");
 let img;
 nodes = [];
 temporaryNode = null;
-nodesFloor = []; // {"id":4,"floors":[{"floorNumber":2,"nodes":[listNode]}]} lưu floor2 tro đi
 stackHistory = [];
 nodeBegin = null;
 
@@ -34,49 +24,6 @@ function hoverNavBar() {
 }
 function leaveNavBar() {
     isModeNode = true;
-}
-initData();
-
-window.on
-
-function initData() {
-    //init nodesFloor
-    buildings.forEach((building) => {
-        floors = [];
-        building.floors.forEach(floor => {
-            if(floor.name!=1){
-                floors.push({
-                    "number": floor.name,
-                    "nodes": []
-                })
-            }
-        });
-        nodesFloor.push({
-            "id": building.id,
-            "maxFloor": building.floors.length,
-            "floors": floors
-        })
-    });
-    select_generate_floor_building.onchange = () => {
-        options = [];
-        for (i = 2; i <= getMaxFloor(select_generate_floor_building.value); i++) {
-            options.push({
-                "id": i,
-                "option": i
-            });
-        }
-        addSelectOption(generate_floor_floorId, options);
-    }
-    // init select create_floor_floorId
-    options = [];
-    for (i = 2; i <= getMaxFloor(select_generate_floor_building.value); i++) {
-        options.push({
-            "id": i,
-            "option": i
-        });
-    }
-    // addSelectOption(create_floor_floorId, options);
-    addSelectOption(generate_floor_floorId, options);
 }
 
 function getListNodeFloor(buildingId, floorNumber) {
@@ -105,15 +52,6 @@ function setListNodeFloor(buildingId, floorNumber, listNode) {
     });
 }
 
-function getMaxFloor(buildingId) {
-    var max;
-    nodesFloor.forEach(building => {
-        if (building.id == buildingId) {
-            max = building.maxFloor;
-        }
-    });
-    return max;
-}
 
 function loadImageURL() {
     console.log("loadImageURL");
@@ -263,7 +201,7 @@ function getModeColor(mode) {
 
 function mouseClicked() {
     if (!isModeNode) return;
-    if (select_floor!=null&&select_floor.value!=1) {
+    if (floorNumber != 1) {
         if (nodeMode.value == "normal") {
             alert("Chấm theo từng thì méo có mode normal NHÉ !!!!\nĐọc kĩ hướng đẫn trước khi dùng");
             return;
@@ -289,13 +227,13 @@ function mouseClicked() {
         "id_class": select_classId == null ? null : select_classId.value,
         "id_stair": select_stairId == null ? null : select_stairId.value,
         "stair_sequence": stair_sequence == null ? null : stair_sequence.value,
-        "floor_number": select_floor == null ? null : select_floor.value,
+        "floor_number": floorNumber,
         "isMainEntrance": checkbox_isEntrance == null ? null : checkbox_isEntrance.checked,
         nearNodes: []
     };
 
     if (nodeMode.value == "stair") {
-        stair_sequence.value = 1+eval(stair_sequence.value);
+        stair_sequence.value = 1 + eval(stair_sequence.value);
     }
 
     // a_new.text = "";
@@ -349,7 +287,7 @@ function mouseClicked() {
             }
         }
     }
-    console.log("Create node at: " + mouseX + ", " + mouseY);
+    console.log(node);
     printLatLng(node);
     nodes.push(node);
     stackHistory.push({
@@ -360,8 +298,6 @@ function mouseClicked() {
 }
 
 function generateFloor() {
-
-    //get floor1
     floor1 = [];
     nodes.forEach(node => {
         if (node.floor_number != null
@@ -374,23 +310,37 @@ function generateFloor() {
     console.log(floor1);
     maxFloor = generate_floor_floorId.value;
     minFloor = 2;
-    for (i = 2; i <= maxFloor; i++) {
+    console.log("format");
+    for (let i = 2; i <= maxFloor; i++) {
         floorGenerate = JSON.parse(JSON.stringify(floor1));
         formatFloor(floorGenerate, i);
-        setListNodeFloor(select_generate_floor_building.value, generate_floor_floorId.value, floorGenerate);
+        console.log(floorGenerate);
+        setListNodeFloor(select_generate_floor_building.value, i, floorGenerate);
     }
 }
 
-function formatFloor(floor, floorNumber) {
+function pushNodeToFloor(buildingId, floorNumber, node) {
+    nodesFloor.forEach(building => {
+        if (building.id == buildingId) {
+            building.floors.forEach(floor => {
+                if (floor.number == floorNumber) {
+                    floor.nodes.push(node);
+                }
+            })
+        }
+    });
+}
+
+function formatFloor(listNode, floorNumber) {
     mapNode = {};
     startID = 0;
-    floor.forEach(floorNode => {
+    listNode.forEach(floorNode => {
         mapNode[floorNode.id] = startID;
         floorNode.id = startID;
         floorNode.floor_number = floorNumber;
         startID += 1;
     });
-    floor.forEach(floorNode => {
+    listNode.forEach(floorNode => {
         nearNodes = [];
         floorNode.nearNodes.forEach(nearNode => {
             if (mapNode[nearNode]) {
@@ -401,13 +351,27 @@ function formatFloor(floor, floorNumber) {
     });
 }
 
-function extracData(){
-
+function extracData(listNode) {
+    nodedata = [];
+    listNode.forEach(node => {
+        if (node.floor_number == 1) {
+            nodedata.push(node);
+        } else {
+            pushNodeToFloor(node.id_building, node.floor_number, node);
+        }
+    });
+    nodesFloor.forEach(building => {
+        building.floors.forEach(floor => {
+            formatFloor(floor.nodes, floor.number);
+        })
+    });
+    console.log(nodedata);
+    this.nodes = nodedata;
 }
 
 function mergeAllFloor() {
     mapNodes = [];
-    if (floorNumber.value==1) {
+    if (floorNumber.value == 1) {
         // merge floor.nodes to temporaryNodes
         mapNodes = JSON.parse(JSON.stringify(temporaryNode));
     } else {
@@ -463,9 +427,7 @@ function deleteNode(node) {
             }
         }
     }
-
     nodes.splice(node.id, 1);
-
 }
 
 function unDeleteNode(node) {
