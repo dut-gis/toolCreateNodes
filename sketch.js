@@ -96,8 +96,14 @@ function download2(name, type) {
 
 //#region ALGORITHM
 function preload() {
-    img = loadImage('logo.jpg');
+    // img = loadImage('logo.jpg');
+    loadMap(1);
     // img = loadImage('map.png');
+}
+
+function loadMap(floorNumber){
+    path = "map/floor"+floorNumber+".jpg";
+    img = loadImage(path);
 }
 
 function setup() {
@@ -318,7 +324,17 @@ function mouseClicked() {
 
 function generateFloor() {
     floor1 = [];
-    nodes.forEach(node => {
+
+    mapNodes = [];
+    if (floorNumber != 1) {
+        // merge floor.nodes to temporaryNodes
+        mapNodes = temporaryNode;
+    } else {
+        // merge floor.nodes to node
+        mapNodes = nodes;
+    }
+
+    mapNodes.forEach(node => {
         if (node.floor_number != null
             && node.id_building == select_generate_floor_building.value
             && node.floor_number == 1

@@ -344,7 +344,7 @@ buildings = [
           ]
         },
         {
-          "name": 3,
+          "name": 2,
           "rooms": [
             { "id": 177, "name": "C201", "nameTag": "Phòng máy tính" },
             { "id": 178, "name": "C202", "nameTag": "Phòng máy tính" },

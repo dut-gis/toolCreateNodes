@@ -148,7 +148,12 @@ function initBuilding() {
 function initNodeFloor() {
     // Tìm kiếm và updata lại floor theo state của nó
     select_floor = document.getElementById("floorId");
-    addSelectOption(select_floor, createFloorOption(getMaxFloor(select_buildingId.value)));
+    floor_options = createFloorOption(getMaxFloor(select_buildingId.value));
+    addSelectOption(select_floor, floor_options);
+    if(floor_options.length<floorNumber){
+        floorNumber = floor_options.length;
+    }
+    loadMap(floorNumber);
     select_floor.value = floorNumber;
     // Thêm sự kiện khi building thay đổi
     select_buildingId.onchange = () => {
@@ -161,6 +166,10 @@ function initNodeFloor() {
             stair_sequence.value = 0;
         }
         addSelectOption(select_floor, createFloorOption(getMaxFloor(select_buildingId.value)));
+        if(floor_options.length<floorNumber){
+            floorNumber = floor_options.length;
+        }
+        loadMap(floorNumber);
         select_floor.value = floorNumber;
         onFloorNumberChange();
     }
@@ -194,7 +203,11 @@ function onFloorNumberChange() {
             return;
         }
     }
-    floorNumber = select_floor.value==""?floorNumber:select_floor.value;
+    if(select_floor.value!=""){
+        floorNumber = select_floor.value;
+        loadMap(floorNumber);
+    }
+    // floorNumber = select_floor.value==""?floorNumber:select_floor.value;
 
     // Dùng trong các mode có buildingId để lắng nghe sự thay đổi của buildingID và thay đổi class
     if (select_classId != null) {

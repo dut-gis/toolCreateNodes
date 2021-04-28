@@ -29,7 +29,7 @@ function formatFloor(listNode, floorNumber) {
     listNode.forEach(floorNode => {
         nearNodes = [];
         floorNode.nearNodes.forEach(nearNode => {
-            if (mapNode[nearNode.id]) {
+            if (mapNode[nearNode.id]!=null) {
                 nearNodes.push({
                     "id": mapNode[nearNode.id],
                     "distance": 0
