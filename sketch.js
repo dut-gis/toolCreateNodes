@@ -1,4 +1,9 @@
-
+var topStartLat = 16.078686888467125;
+var topStartlng = 108.14973592758179;
+var bottomEndLat = 16.07297038367645;
+var bottomEndLng = 108.15529346466064;
+var latDistance = topStartLat - bottomEndLat;
+var lngDistance = bottomEndLng - topStartlng;
 var normalColor = document.getElementById("normal");
 var placeColor = document.getElementById("place");
 var enterColor = document.getElementById("enter");
@@ -7,6 +12,7 @@ var classroomColor = document.getElementById("classroom");
 var stairColor = document.getElementById("stair");
 
 var a_old = document.getElementById("a_old");
+var a_latlng = document.getElementById("a_latlng");
 var input = document.getElementById("input");
 var rangeNodeSize = document.getElementById("nodeSize");
 var nodeAddPathColor = document.getElementById("nodeAddPathColor");
@@ -62,24 +68,24 @@ function loadImageURL() {
 }
 
 function logJson() {
-    convertMapNode();
+    convertToLatLng(nodes);
 }
 
 function logJson2() {
     console.log(JSON.stringify(nodes));
 }
 
-function download(name, type) {
-    var file = new Blob([JSON.stringify(convertMapNode())], {
+function downloadNodeLatLng(name, type) {
+    var file = new Blob([JSON.stringify(convertToLatLng(mergeAllFloor()))], {
         type: type
     });
-    a_new.href = URL.createObjectURL(file);
-    a_new.download = name;
-    a_new.text = "DOWNLOAD";
+    a_latlng.href = URL.createObjectURL(file);
+    a_latlng.download = name;
+    a_latlng.text = "DOWNLOAD";
 }
 
 function download2(name, type) {
-    var file = new Blob([JSON.stringify(nodes)], {
+    var file = new Blob([JSON.stringify(mergeAllFloor())], {
         type: type
     });
     a_old.href = URL.createObjectURL(file);
@@ -91,6 +97,7 @@ function download2(name, type) {
 //#region ALGORITHM
 function preload() {
     img = loadImage('logo.jpg');
+    // img = loadImage('map.png');
 }
 
 function setup() {
@@ -142,14 +149,14 @@ function draw() {
     try {
         nodes.forEach((e, index) => {
             e.nearNodes.forEach(e2 => {
-                line(e.x, e.y, nodes[e2].x, nodes[e2].y);
+                line(e.longitude, e.latitude, nodes[e2.id].longitude, nodes[e2.id].latitude);
             });
         });
     } catch (e) { }
 
     //draw line if function is add_path
     if (nodeBegin != null) {
-        line(nodes[nodeBegin].x, nodes[nodeBegin].y, mouseX, mouseY);
+        line(nodes[nodeBegin].longitude, nodes[nodeBegin].latitude, mouseX, mouseY);
     }
 
     //draw nodes
@@ -157,13 +164,15 @@ function draw() {
     nodes.forEach((e, index) => {
         if (nodeBegin != null && e.id == nodeBegin) {
             fill(nodeAddPathColor.value);
-            ellipse(e.x, e.y, nodeSize, nodeSize);
+            // ellipse(e.longitude, e.latitude, nodeSize, nodeSize);
+            ellipse(e.longitude,e.latitude, nodeSize, nodeSize);
         } else {
             var nodeColor = getModeColor(e.mode);
             fill(nodeColor);
-            ellipse(e.x, e.y, nodeSize, nodeSize);
+            // ellipse(e.longitude, e.latitude, nodeSize, nodeSize);
+            ellipse(e.longitude,e.latitude, nodeSize, nodeSize);
             fill(255, 26, 26);
-            text(e.id, e.x, e.y);
+            text(e.id, e.longitude, e.latitude);
         }
     });
     ellipse(mouseX, mouseY, nodeSize, nodeSize);
@@ -218,8 +227,8 @@ function mouseClicked() {
     //Init node
     node = {
         id: nodes.length,
-        x: mouseX,
-        y: mouseY,
+        longitude: mouseX,
+        latitude: mouseY,
         "mode": nodeMode.value,
         "id_building": select_buildingId == null ? null : select_buildingId.value,
         "category": select_placeCategory == null ? null : select_placeCategory.value,
@@ -268,15 +277,25 @@ function mouseClicked() {
                     if (checkIsHasPath(e, nodeBegin)) {
                         print("remove path");
                         e.nearNodes = e.nearNodes.filter(v => {
-                            return v != nodeBegin;
+                            return v.id != nodeBegin;
                         });
                         nodes[nodeBegin].nearNodes = nodes[nodeBegin].nearNodes.filter(v => {
-                            return v != e.id;
+                            return v.id != e.id;
                         });
                     } else {
                         print("Add path")
-                        e.nearNodes.push(nodeBegin);
-                        nodes[nodeBegin].nearNodes.push(e.id);
+                        // e.nearNodes.push(nodeBegin);
+                        // nodes[nodeBegin].nearNodes.push(e.id);
+                        e.nearNodes.push({
+                            "id":nodeBegin,
+                            "distance": 0
+                            // "distance":getNodeDistance(e,nodes[nodeBegin])
+                        });
+                        nodes[nodeBegin].nearNodes.push({
+                            "id":e.id,
+                            "distance": 0
+                            // "distance":getNodeDistance(e,nodes[nodeBegin])
+                        });
                         stackHistory.push({
                             type: "PATH",
                             nodeIds: [e.id, nodes[nodeBegin].id]
@@ -303,6 +322,7 @@ function generateFloor() {
         if (node.floor_number != null
             && node.id_building == select_generate_floor_building.value
             && node.floor_number == 1
+            && node.id_stair == null
             || (node.id_stair != null && node.id_building == select_generate_floor_building.value && (node.stair_sequence == 0 || node.stair_sequence == 1))) {
             floor1.push(node);
         }
@@ -317,6 +337,7 @@ function generateFloor() {
         console.log(floorGenerate);
         setListNodeFloor(select_generate_floor_building.value, i, floorGenerate);
     }
+    alert("Generate successful!!!");
 }
 
 function pushNodeToFloor(buildingId, floorNumber, node) {
@@ -331,47 +352,11 @@ function pushNodeToFloor(buildingId, floorNumber, node) {
     });
 }
 
-function formatFloor(listNode, floorNumber) {
-    mapNode = {};
-    startID = 0;
-    listNode.forEach(floorNode => {
-        mapNode[floorNode.id] = startID;
-        floorNode.id = startID;
-        floorNode.floor_number = floorNumber;
-        startID += 1;
-    });
-    listNode.forEach(floorNode => {
-        nearNodes = [];
-        floorNode.nearNodes.forEach(nearNode => {
-            if (mapNode[nearNode]) {
-                nearNodes.push(mapNode[nearNode]);
-            }
-        })
-        floorNode.nearNodes = nearNodes;
-    });
-}
 
-function extracData(listNode) {
-    nodedata = [];
-    listNode.forEach(node => {
-        if (node.floor_number == 1) {
-            nodedata.push(node);
-        } else {
-            pushNodeToFloor(node.id_building, node.floor_number, node);
-        }
-    });
-    nodesFloor.forEach(building => {
-        building.floors.forEach(floor => {
-            formatFloor(floor.nodes, floor.number);
-        })
-    });
-    console.log(nodedata);
-    this.nodes = nodedata;
-}
 
 function mergeAllFloor() {
     mapNodes = [];
-    if (floorNumber.value == 1) {
+    if (floorNumber != 1) {
         // merge floor.nodes to temporaryNodes
         mapNodes = JSON.parse(JSON.stringify(temporaryNode));
     } else {
@@ -386,7 +371,11 @@ function mergeAllFloor() {
                 node.id += startID;
                 nearNodes = [];
                 node.nearNodes.forEach(nearNode => {
-                    nearNodes.push(nearNode + startID);
+                    // nearNodes.push(nearNode + startID);
+                    nearNodes.push({
+                        "id": nearNode.id + startID,
+                        "distance": 0
+                    });
                 })
                 node.nearNodes = nearNodes;
                 mapNodes.push(node);
@@ -399,12 +388,19 @@ function mergeAllFloor() {
 }
 
 function getNodeDistance(a, b) {
-    distance = Math.sqrt(Math.abs(Math.pow(b.x - a.x, 2) + Math.pow(b.y - a.y, 2)));
+    distance = Math.sqrt(Math.abs(Math.pow(b.longitude - a.longitude, 2) + Math.pow(b.latitude - a.latitude, 2)));
     return distance;
 }
 
-function checkIsHasPath(node, path) {
-    return node.nearNodes.includes(path);
+function checkIsHasPath(nodeA, nodeB_ID) {
+    // return nodeA.nearNodes.includes(nodeB_ID);
+    isHasPath = false;
+    return nodeA.nearNodes.forEach( near=>{
+        if(near.id==nodeB_ID){
+            isHasPath = true;
+        }
+    });
+    return isHasPath;
 }
 
 function deleteNode(node) {
@@ -414,16 +410,23 @@ function deleteNode(node) {
     })
     //Delete node and path relative to that node
     node.nearNodes.forEach(e => {
-        nodes[e].nearNodes = nodes[e].nearNodes.filter(v => {
-            return v != node.id;
+        // nodes[e].nearNodes = nodes[e].nearNodes.filter(v => {
+        //     return v != node.id;
+        // });
+        nears=[];
+        nodes[e.id].nearNodes.forEach(near => {
+            if(near.id!=node.id){
+            nears.push(near);
+            }
         });
+        nodes[e.id].nearNodes = nears;
     });
     //Update path
     for (i = 0; i < nodes.length; i++) {
         if (nodes[i].id > node.id) nodes[i].id -= 1;
         if (i != node.id) {
             for (j = 0; j < nodes[i].nearNodes.length; j++) {
-                if (nodes[i].nearNodes[j] > node.id) nodes[i].nearNodes[j] -= 1;
+                if (nodes[i].nearNodes[j].id > node.id) nodes[i].nearNodes[j].id -= 1;
             }
         }
     }
@@ -437,13 +440,17 @@ function unDeleteNode(node) {
         if (i > node.id) nodes[i].id += 1;
         if (i != node.id) {
             for (j = 0; j < nodes[i].nearNodes.length; j++) {
-                if (nodes[i].nearNodes[j] >= node.id) nodes[i].nearNodes[j] += 1;
+                if (nodes[i].nearNodes[j].id >= node.id) nodes[i].nearNodes[j].id += 1;
             }
         }
     }
 
     node.nearNodes.forEach(e => {
-        nodes[e].nearNodes.push(node.id);
+        // nodes[e.id].nearNodes.push(node.id);
+        nodes[e.id].nearNodes.push({
+            "id":node.id,
+            "distance":e.distance
+        });
     });
 }
 
@@ -454,60 +461,9 @@ function printLatLng(node) {
     var bottomEndLng = 108.15529346466064;
     var latDistance = topStartLat - bottomEndLat;
     var lngDistance = bottomEndLng - topStartlng;
-    var lng = node.x / width * lngDistance + topStartlng;
-    var lat = (height - node.y) / height * latDistance + bottomEndLat;
+    var lng = node.longitude / width * lngDistance + topStartlng;
+    var lat = (height - node.latitude) / height * latDistance + bottomEndLat;
     console.log(lng + ", " + lat);
 }
 
-function convertMapNode() {
-    // LatLng(16.078686888467125, 108.14973592758179), LatLng(16.07297038367645, 108.15529346466064)
-    var topStartLat = 16.078686888467125;
-    var topStartlng = 108.14973592758179;
-    var bottomEndLat = 16.07297038367645;
-    var bottomEndLng = 108.15529346466064;
-    var latDistance = topStartLat - bottomEndLat;
-    var lngDistance = bottomEndLng - topStartlng;
-    console.log(latDistance);
-    console.log(lngDistance);
-    mapNodes = [];
-    nodes.forEach((node) => {
-        mapNode = {};
-        mapNode.id = node.id + 1;
-        mapNode.longitude = node.x / width * lngDistance + topStartlng + 0.00004;
-        mapNode.latitude = (height - node.y) / height * latDistance + bottomEndLat + 0.000002;
-        mapNode.schoolId = 1;
-        mapNode.nearNodes = [];
-        node.nearNodes.forEach((near) => {
-            nearNode = {
-                'id': near + 1,
-                'distance': getNodeDistance(nodes[node.id], nodes[near]) / width
-            };
-            mapNode.nearNodes.push(nearNode);
-        });
-        mapNodes.push(mapNode);
-    });
-    console.log(JSON.stringify(mapNodes));
-    return mapNodes;
-}
-
-function mergeListNodes(dataMapNodes) {
-    mapNodes = [];
-    startID = 0;
-    dataMapNodes.forEach((dataMapNode) => {
-        dataMapNode.forEach((node) => {
-            mapNode = {};
-            mapNode.id = startID + node.id;
-            mapNode.x = node.x;
-            mapNode.y = node.y;
-            mapNode.nearNodes = [];
-            node.nearNodes.forEach((near) => {
-                mapNode.nearNodes.push(near + startID);
-            });
-            mapNodes.push(mapNode);
-        });
-        startID = dataMapNode.length;
-    });
-    console.log(mapNodes);
-    nodes = mapNodes;
-}
 //#endregion

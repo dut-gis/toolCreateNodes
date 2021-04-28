@@ -5,36 +5,7 @@ var nodeMode = document.getElementById("nodeMode");
 var select_generate_floor_building = document.getElementById("generate_buildingId");
 var generate_floor_floorId = document.getElementById("generate_toId");
 // mode place
-placeOption = [
-    {
-        "option": "building",
-        "id": 1
-    },
-    {
-        "option": "FunctionalDepartments",
-        "id": 2
-    },
-    {
-        "option": "FacultyAndResearchCentres",
-        "id": 3
-    },
-    {
-        "option": "selfStudy",
-        "id": 4
-    },
-    {
-        "option": "parkingLot",
-        "id": 5
-    },
-    {
-        "option": "cafeteria",
-        "id": 6
-    },
-    {
-        "option": "Others",
-        "id": 7
-    }
-]
+
 
 var select_placeCategory;
 
@@ -181,6 +152,7 @@ function initNodeFloor() {
     select_floor.value = floorNumber;
     // Thêm sự kiện khi building thay đổi
     select_buildingId.onchange = () => {
+        buildingId = select_buildingId.value;
         if (select_classId != null) {
             classOptions = getListClassOptions(select_buildingId.value, floorNumber);
             addSelectOption(select_classId, classOptions);
@@ -222,7 +194,7 @@ function onFloorNumberChange() {
             return;
         }
     }
-    floorNumber = select_floor.value;
+    floorNumber = select_floor.value==""?floorNumber:select_floor.value;
 
     // Dùng trong các mode có buildingId để lắng nghe sự thay đổi của buildingID và thay đổi class
     if (select_classId != null) {

@@ -12,7 +12,7 @@ nodePlace =
     + '  </tr><tr><td>nodeID</td><td></td>'
     + ' </tr><tr><td>nearNodes</td><td>[]</td></tr>'
     + ' </tr><tr><td>category</td><td><select id="category"></select></td></tr>'
-    + '<tr><td>floorId</td><td id="floorId">1</td></tr>'
+    // + '<tr><td>floorId</td><td id="floorId">1</td></tr>'
     + ' <tr><td>name</td><td><input type="text" id="placeName"></td></tr>'
     + '    </table>';
 nodeEnterBuilding =

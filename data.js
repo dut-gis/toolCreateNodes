@@ -1,3 +1,35 @@
+placeOption = [
+  {
+      "option": "building",
+      "id": 1
+  },
+  {
+      "option": "FunctionalDepartments",
+      "id": 2
+  },
+  {
+      "option": "FacultyAndResearchCentres",
+      "id": 3
+  },
+  {
+      "option": "selfStudy",
+      "id": 4
+  },
+  {
+      "option": "parkingLot",
+      "id": 5
+  },
+  {
+      "option": "cafeteria",
+      "id": 6
+  },
+  {
+      "option": "Others",
+      "id": 7
+  }
+]
+
+
 buildings = [
     {
       "id": 4,
