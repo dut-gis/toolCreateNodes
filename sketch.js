@@ -96,14 +96,15 @@ function download2(name, type) {
 
 //#region ALGORITHM
 function preload() {
-    // img = loadImage('logo.jpg');
-    loadMap(1);
-    // img = loadImage('map.png');
+    // img = loadImage('map/floor1.jpg');
+    // loadMap(1);
+    img = loadImage('map.jpg');
 }
 
-function loadMap(floorNumber){
-    path = "map/floor"+floorNumber+".jpg";
-    img = loadImage(path);
+function loadMap(floorNumber) {
+    // img = loadImage('map.jpg');
+    // path = "map/floor" + floorNumber + ".jpg";
+    // img = loadImage(path);
 }
 
 function setup() {
@@ -141,6 +142,32 @@ function setup() {
             nodeBegin = null;
             deleteNode(nodes[id]);
         }
+        // quick log
+        if (event.key == 'l') {
+            //if (nodeMode.value == "classroom") {
+            console.log(nodes[nodeBegin]);
+            // }
+        }
+        // shortcut key for classroom
+        // arrow up
+        if (event.key == 'w') {
+            if (nodeMode.value == "classroom") {
+                console.log("key up");
+                select_classId.selectedIndex += 1;
+            }
+        }
+        // arrow down
+        if (event.key == 's') {
+            if (nodeMode.value == "classroom") {
+                console.log("key down");
+                select_classId.selectedIndex -= 1;
+            }
+        }
+        if (event.key === 'c') {
+            if (nodeMode.value == "classroom") {
+                checkbox_isEntrance.checked = !checkbox_isEntrance.checked;
+            }
+        }
     });
 }
 
@@ -171,12 +198,12 @@ function draw() {
         if (nodeBegin != null && e.id == nodeBegin) {
             fill(nodeAddPathColor.value);
             // ellipse(e.longitude, e.latitude, nodeSize, nodeSize);
-            ellipse(e.longitude,e.latitude, nodeSize, nodeSize);
+            ellipse(e.longitude, e.latitude, nodeSize, nodeSize);
         } else {
             var nodeColor = getModeColor(e.mode);
             fill(nodeColor);
             // ellipse(e.longitude, e.latitude, nodeSize, nodeSize);
-            ellipse(e.longitude,e.latitude, nodeSize, nodeSize);
+            ellipse(e.longitude, e.latitude, nodeSize, nodeSize);
             fill(255, 26, 26);
             text(e.id, e.longitude, e.latitude);
         }
@@ -214,8 +241,43 @@ function getModeColor(mode) {
     }
 }
 
-function mouseClicked() {
+nodeDrag = null;
+isCanDrag = null;
+
+function mouseDragged() {
     if (!isModeNode) return;
+
+    if (nodeDrag == null && nodeDrag == null) {
+        nodeBegin = null;
+        for (let e of nodes) {
+            node = {
+                longitude: mouseX,
+                latitude: mouseY,
+            };
+            if (getNodeDistance(e, node) <= nodeSize * 1) {
+                console.log(e);
+                nodeDrag = e;
+                isCanDrag = true;
+            }
+        }
+        if (isCanDrag == null) isCanDrag = false;
+    }
+    if (isCanDrag == true) {
+        nodeDrag.longitude = mouseX;
+        nodeDrag.latitude = mouseY;
+    }
+
+    print("mouse drag");
+}
+function mouseClicked() {
+    print("mouse clicked");
+    if (!isModeNode) return;
+
+    if (nodeDrag != null || isCanDrag == false) {
+        nodeDrag = null;
+        isCanDrag = null;
+        return;
+    }
     if (floorNumber != 1) {
         if (nodeMode.value == "normal") {
             alert("Chấm theo từng thì méo có mode normal NHÉ !!!!\nĐọc kĩ hướng đẫn trước khi dùng");
@@ -293,12 +355,12 @@ function mouseClicked() {
                         // e.nearNodes.push(nodeBegin);
                         // nodes[nodeBegin].nearNodes.push(e.id);
                         e.nearNodes.push({
-                            "id":nodeBegin,
+                            "id": nodeBegin,
                             "distance": 0
                             // "distance":getNodeDistance(e,nodes[nodeBegin])
                         });
                         nodes[nodeBegin].nearNodes.push({
-                            "id":e.id,
+                            "id": e.id,
                             "distance": 0
                             // "distance":getNodeDistance(e,nodes[nodeBegin])
                         });
@@ -410,9 +472,9 @@ function getNodeDistance(a, b) {
 
 function checkIsHasPath(nodeA, nodeB_ID) {
     // return nodeA.nearNodes.includes(nodeB_ID);
-    isHasPath = false;
-    return nodeA.nearNodes.forEach( near=>{
-        if(near.id==nodeB_ID){
+    var isHasPath = false;
+    nodeA.nearNodes.forEach(near => {
+        if (near.id == nodeB_ID) {
             isHasPath = true;
         }
     });
@@ -429,10 +491,10 @@ function deleteNode(node) {
         // nodes[e].nearNodes = nodes[e].nearNodes.filter(v => {
         //     return v != node.id;
         // });
-        nears=[];
+        nears = [];
         nodes[e.id].nearNodes.forEach(near => {
-            if(near.id!=node.id){
-            nears.push(near);
+            if (near.id != node.id) {
+                nears.push(near);
             }
         });
         nodes[e.id].nearNodes = nears;
@@ -464,8 +526,8 @@ function unDeleteNode(node) {
     node.nearNodes.forEach(e => {
         // nodes[e.id].nearNodes.push(node.id);
         nodes[e.id].nearNodes.push({
-            "id":node.id,
-            "distance":e.distance
+            "id": node.id,
+            "distance": e.distance
         });
     });
 }

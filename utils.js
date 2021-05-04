@@ -29,7 +29,7 @@ function formatFloor(listNode, floorNumber) {
     listNode.forEach(floorNode => {
         nearNodes = [];
         floorNode.nearNodes.forEach(nearNode => {
-            if (mapNode[nearNode.id]!=null) {
+            if (mapNode[nearNode.id] != null) {
                 nearNodes.push({
                     "id": mapNode[nearNode.id],
                     "distance": 0
@@ -48,29 +48,30 @@ function convertToLatLng(data) {
     var bottomEndLng = 108.15529346466064;
     var latDistance = topStartLat - bottomEndLat;
     var lngDistance = bottomEndLng - topStartlng;
-    console.log(latDistance);
-    console.log(lngDistance);
-    mapNodes = [];
+    // mapNodes = [];
     let nodes = [];
+    stairID = 1;
     nodes = JSON.parse(JSON.stringify(data));
     nodes.forEach((node) => {
-        mapNode = node;
-        mapNode.id = node.id + 1;
-        mapNode.longitude = node.longitude / width * lngDistance + topStartlng + 0.00004;
-        mapNode.latitude = (height - node.latitude) / height * latDistance + bottomEndLat + 0.000002;
-        mapNode.schoolId = 1;
-        mapNode.nearNodes = [];
-        node.nearNodes.forEach((near) => {
-            nearNode = {
-                'id': near.id + 1,
-                'distance': getNodeDistance(nodes[node.id], nodes[near.id]) / width
-            };
-            mapNode.nearNodes.push(nearNode);
+        node.id = node.id + 1;
+        if(node.id_stair!=null){
+            node.id_stair = stairID;
+            stairID+=1;
+        }
+        node.longitude = node.longitude / width * lngDistance + topStartlng + 0.00004;
+        node.latitude = (height - node.latitude) / height * latDistance + bottomEndLat + 0.000002;
+        node.schoolId = 1;
+        node.nearNodes.forEach((nearNode) => {
+            nearNode.id += 1;
         });
-        mapNodes.push(mapNode);
     });
-    console.log(JSON.stringify(mapNodes));
-    return mapNodes;
+    nodes.forEach((node) => {
+        node.nearNodes.forEach((nearNode) => {
+            nearNode.distance = getNodeDistance(nodes[node.id - 1], nodes[nearNode.id - 1]) / width
+        });
+    })
+    console.log(JSON.stringify(nodes));
+    return nodes;
 }
 
 function mergeListNodes(dataMapNodes) {
