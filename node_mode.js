@@ -6,7 +6,6 @@ var select_generate_floor_building = document.getElementById("generate_buildingI
 var generate_floor_floorId = document.getElementById("generate_toId");
 // mode place
 
-
 var select_placeCategory;
 
 // mode entranceBuilding
@@ -16,8 +15,9 @@ var select_stairId;
 var select_floor;
 var stair_sequence;
 var checkbox_isEntrance;
-var placeName;
+var select_placeNameTag;
 var classOptions;
+var stairID = 0;
 
 // storing state
 var floorNumber = 1;
@@ -72,8 +72,9 @@ function resetValue() {
     select_stairId = null;
     stair_sequence = null;
     select_floor = null;
+    select_placeCategory = null;
     checkbox_isEntrance = null;
-    placeName = null;
+    select_placeNameTag = null;
     classOptions = null;
 }
 
@@ -90,7 +91,11 @@ nodeMode.onchange = () => {
             resetValue();
             select_placeCategory = document.getElementById("category");
             addSelectOption(select_placeCategory, placeOption);
-            placeName = document.getElementById("placeName");
+            select_placeNameTag = document.getElementById("placeName");
+            addSelectOption(select_placeNameTag, getListOption(select_placeCategory.value));
+            select_placeCategory.onchange = ()=>{
+                addSelectOption(select_placeNameTag, getListOption(select_placeCategory.value));
+            }
             break;
         }
         case "entranceBuilding": {
@@ -126,9 +131,23 @@ nodeMode.onchange = () => {
             stair_sequence = document.getElementById("stairSequence");
             stair_sequence.value = 0;
             select_stairId = document.getElementById("stairID");
-            select_stairId.onchange = () => {
-                stair_sequence.value = 0;
-            }
+            stairID+=1;
+            console.log("mother fucker ah yes");
+            select_stairId.innerHTML = stairIDChecking.length+1;
+            stairIDChecking[stairIDChecking.length]=1;
+            // stairID+=1;
+            // console.log("mother fucker ah yes");
+            // select_stairId.innerHTML = stairID;
+            stair_sequence.onchange = ()=>{
+                if(stair_sequence.value==0){
+                    stairID+=1;
+                    console.log("mother fucker");
+                    select_stairId.innerHTML = stairID;
+                }
+            };
+            // select_stairId.onchange = () => {
+            //     stair_sequence.value = 0;
+            // }
             initBuilding();
             initNodeFloor()
             break;

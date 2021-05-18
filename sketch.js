@@ -96,14 +96,14 @@ function download2(name, type) {
 
 //#region ALGORITHM
 function preload() {
-    // img = loadImage('map/floor1.jpg');
+    img = loadImage('map/floor1.jpg');
     // loadMap(1);
-    img = loadImage('map.jpg');
+    // img = loadImage('map.jpg');
 }
 
 function loadMap(floorNumber) {
     // img = loadImage('map.jpg');
-    // path = "map/floor" + floorNumber + ".jpg";
+    path = "map/floor" + floorNumber + ".jpg";
     // img = loadImage(path);
 }
 
@@ -197,18 +197,25 @@ function draw() {
     nodes.forEach((e, index) => {
         if (nodeBegin != null && e.id == nodeBegin) {
             fill(nodeAddPathColor.value);
-            // ellipse(e.longitude, e.latitude, nodeSize, nodeSize);
             ellipse(e.longitude, e.latitude, nodeSize, nodeSize);
         } else {
             var nodeColor = getModeColor(e.mode);
             fill(nodeColor);
-            // ellipse(e.longitude, e.latitude, nodeSize, nodeSize);
             ellipse(e.longitude, e.latitude, nodeSize, nodeSize);
             fill(255, 26, 26);
-            text(e.id, e.longitude, e.latitude);
+            text(e.id, e.longitude, e.latitude+12);
         }
     });
     ellipse(mouseX, mouseY, nodeSize, nodeSize);
+
+    if (select_floor != null && parseInt(select_floor.value) > 1) {
+        nodes.forEach((node) => {
+            if(node.id_class!=null){
+                fill(255, 26, 26);
+                text(node.className, node.longitude, node.latitude);
+            }
+        });
+    }
 
     noFill();
     strokeWeight(4);
@@ -269,6 +276,7 @@ function mouseDragged() {
 
     print("mouse drag");
 }
+
 function mouseClicked() {
     print("mouse clicked");
     if (!isModeNode) return;
@@ -300,30 +308,27 @@ function mouseClicked() {
         "mode": nodeMode.value,
         "id_building": select_buildingId == null ? null : select_buildingId.value,
         "category": select_placeCategory == null ? null : select_placeCategory.value,
-        "placeName": placeName == null ? null : placeName.value,
+        "id_place": select_placeNameTag == null ? null : select_placeNameTag.value,
         "id_class": select_classId == null ? null : select_classId.value,
-        "id_stair": select_stairId == null ? null : select_stairId.value,
+        "className": select_classId == null ? null : select_classId.options[select_classId.selectedIndex].text,
+        "id_stair": stair_sequence == null ? null : stairID,
         "stair_sequence": stair_sequence == null ? null : stair_sequence.value,
         "floor_number": floorNumber,
         "isMainEntrance": checkbox_isEntrance == null ? null : checkbox_isEntrance.checked,
         nearNodes: []
     };
 
-    if (nodeMode.value == "stair") {
-        stair_sequence.value = 1 + eval(stair_sequence.value);
-    }
-
     // a_new.text = "";
     a_old.text = "";
 
     //Check function is add path
     if (nodeBegin == null) {
-        if (nodeMode.value != null && nodeMode.value == "place") {
-            if (placeName.value == "") {
-                alert("Chưa điền placeName kìa bitch");
-                return;
-            }
-        }
+        // if (nodeMode.value != null && nodeMode.value == "place") {
+        //     if (select_placeNameTag.value == "") {
+        //         alert("Chưa điền placeName kìa bitch");
+        //         return;
+        //     }
+        // }
         for (let e of nodes) {
             if (getNodeDistance(e, node) <= nodeSize * 1) {
                 print("Switch to add path function");
@@ -377,6 +382,9 @@ function mouseClicked() {
     console.log(node);
     printLatLng(node);
     nodes.push(node);
+    if (nodeMode.value == "stair") {
+        stair_sequence.value = 1 + eval(stair_sequence.value);
+    }
     stackHistory.push({
         type: "NODE",
         nodeIds: [node.id]
@@ -386,6 +394,8 @@ function mouseClicked() {
 
 function generateFloor() {
     floor1 = [];
+    numberOfStair = 0;
+    stairCheck = {};
 
     mapNodes = [];
     if (floorNumber != 1) {
@@ -400,18 +410,40 @@ function generateFloor() {
         if (node.floor_number != null
             && node.id_building == select_generate_floor_building.value
             && node.floor_number == 1
-            && node.id_stair == null
-            || (node.id_stair != null && node.id_building == select_generate_floor_building.value && (node.stair_sequence == 0 || node.stair_sequence == 1))) {
+            && node.id_stair == null) {
+            // node thuộc tầng 1 của building được chọn để generate
             floor1.push(node);
+        } else {
+            if (node.id_stair != null && node.id_building == select_generate_floor_building.value) {
+                // node là cầu thang
+                floor1.push(node);
+                if (stairCheck[node.id_stair] == null) {
+                    numberOfStair += 1;
+                    stairCheck[node.id_stair] = 1;
+                }
+            }
         }
     });
-    console.log(floor1);
+    //console.log(floor1);
+    console.log(numberOfStair);
     maxFloor = generate_floor_floorId.value;
     minFloor = 2;
     console.log("format");
     for (let i = 2; i <= maxFloor; i++) {
         floorGenerate = JSON.parse(JSON.stringify(floor1));
-        formatFloor(floorGenerate, i);
+        // format 
+        formatFloor(floorGenerate, i, stairID);
+        // generate class
+        classIds = getListClassOptions(select_generate_floor_building.value, i);
+        classIndex = 0;
+        for (let i = 0; i < floorGenerate.length; i++) {
+            if (floorGenerate[i].id_class != null && classIds.length > i) {
+                floorGenerate[i].id_class = classIds[classIndex].id;
+                classIndex += 1;
+            }
+        }
+        // generate stair
+        stairID += numberOfStair;
         console.log(floorGenerate);
         setListNodeFloor(select_generate_floor_building.value, i, floorGenerate);
     }
@@ -429,8 +461,6 @@ function pushNodeToFloor(buildingId, floorNumber, node) {
         }
     });
 }
-
-
 
 function mergeAllFloor() {
     mapNodes = [];

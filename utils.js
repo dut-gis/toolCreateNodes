@@ -1,3 +1,9 @@
+stairIDChecking = [];
+stairIDChecking[0]=1;
+
+function getStairID(){
+    
+}
 
 function extracData(listNode) {
     nodedata = [];
@@ -13,11 +19,24 @@ function extracData(listNode) {
             formatFloor(floor.nodes, floor.number);
         })
     });
+    stairCheck = {};
+    numberOfStair = 0;
+    listNode.forEach(node => {
+        if(node.id_stair!=null){
+            if(stairCheck[node.id_stair]==null){
+                numberOfStair += 1;
+                stairIDChecking[id_stair] = 1;
+                stairCheck[node.id_stair] = 1;
+            }
+        }
+    });
+    stairID = numberOfStair-1;
+    console.log(numberOfStair);
     console.log(nodedata);
     this.nodes = nodedata;
 }
 
-function formatFloor(listNode, floorNumber) {
+function formatFloor(listNode, floorNumber, currentStairID) {
     mapNode = {};
     startID = 0;
     listNode.forEach(floorNode => {
@@ -38,6 +57,18 @@ function formatFloor(listNode, floorNumber) {
         })
         floorNode.nearNodes = nearNodes;
     });
+    check = {};
+    listNode.forEach(floorNode => {
+        if(floorNode.id_stair!=null){
+            if(check[floorNode.id_stair]==null){
+                currentStairID+=1;
+                check[floorNode.id_stair]=currentStairID;
+                floorNode.id_stair = check[floorNode.id_stair];
+            }else{
+                floorNode.id_stair = check[floorNode.id_stair];
+            }
+        }
+    });
 }
 
 function convertToLatLng(data) {
@@ -54,10 +85,10 @@ function convertToLatLng(data) {
     nodes = JSON.parse(JSON.stringify(data));
     nodes.forEach((node) => {
         node.id = node.id + 1;
-        if(node.id_stair!=null){
-            node.id_stair = stairID;
-            stairID+=1;
-        }
+        // if(node.id_stair!=null){
+        //     node.id_stair = stairID;
+        //     stairID+=1;
+        // }
         node.longitude = node.longitude / width * lngDistance + topStartlng + 0.00004;
         node.latitude = (height - node.latitude) / height * latDistance + bottomEndLat + 0.000002;
         node.schoolId = 1;

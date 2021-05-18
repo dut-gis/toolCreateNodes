@@ -1,0 +1,125 @@
+{
+  "status": 200,
+  "data": {
+    "content": [
+      {
+        "id": 5,
+        "name": "Building F",
+        "size": 210.0,
+        "description": "Building F is a learning environment which provides various classrooms for students",
+        "images": [
+          "assets/image/1",
+          "assets/image/2",
+          "assets/image/3"
+        ],
+        "nodesEnter": [9, 10, 11, 12, 13],
+        "floors": [
+          {
+            "id": 1,
+            "nodeIds":[ 104, 105, 77, 155, 156, 6, 94, 143, 144, 154, 97, 92, 161, 93, 90, 89, 83, 91],
+            "stairs": [
+              {
+                "id": "12",
+                "nodeIds": [ 102, 12, 33, 34]
+              },
+              {
+                "id": "13",
+                "nodeIds": [ 122, 123, 124, 125]
+              },
+              {
+                "id": "14",
+                "nodeIds": [ 152, 152, 333, 234]
+              }
+            ],
+            "classRooms": [
+              {
+                "name": "F101",
+                "nodeEnterIDs": [ 79, 106],
+                "images": [
+                  "ichhoanude.jpg"
+                ],
+                "description": "ichhoa nude"
+              },
+              {
+                "name": "F102",
+                "nodeEnterIDs": [ 82, 107],
+                "images": null,
+                "description": null
+              },
+              {
+                "name": "F103",
+                "nodeEnterIDs":[ 79, 106],
+                "images": [
+                  "ichhoanude.jpg"
+                ],
+                "description": "ichhoa nude"
+              },
+              {
+                "name": "F104",
+                "nodeEnterIDs": [ 88],
+                "images": [
+                  "ichhoanude.jpg"
+                ],
+                "description": "ichhoa nude"
+              },
+              {
+                "name": "F105",
+                "nodeEnterIDs": [
+                  81,
+                  147
+                ],
+                "images": null,
+                "description": null
+              },
+              {
+                "name": "F106",
+                "nodeEnterIDs": [
+                  150,
+                  148
+                ],
+                "images": null,
+                "description": null
+              },
+              {
+                "name": "F107",
+                "nodeEnterIDs": [
+                  151,
+                  149
+                ],
+                "images": null,
+                "description": null
+              },
+              {
+                "name": "F108",
+                "nodeEnterIDs": [
+                  143,
+                  111
+                ],
+                "images": null,
+                "description": null
+              },
+              {
+                "name": "F109",
+                "nodeEnterIDs": [
+                  144,
+                  146
+                ],
+                "images": null,
+                "description": null
+              },
+              {
+                "name": "F110",
+                "nodeEnterIDs": [
+                  154,
+                  97
+                ],
+                "images": null,
+                "description": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

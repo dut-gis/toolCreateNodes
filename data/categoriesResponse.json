@@ -1,0 +1,79 @@
+{
+  "status": 200,
+  "data": {
+    "content": [
+      {
+        "id": 1,
+        "name": "Khu giảng đường",
+        "createdAt": "2021-05-06T12:24:12.754Z",
+        "updatedAt": "2021-05-06T12:24:12.754Z"
+      },
+      {
+        "id": 2,
+        "name": "Phòng chức năng",
+        "createdAt": "2021-05-06T12:24:12.754Z",
+        "updatedAt": "2021-05-06T12:24:12.754Z"
+      },
+      {
+        "id": 3,
+        "name": "Khoa",
+        "createdAt": "2021-05-06T12:24:12.754Z",
+        "updatedAt": "2021-05-06T12:24:12.754Z"
+      },
+      {
+        "id": 4,
+        "name": "Hội trường",
+        "createdAt": "2021-05-06T12:24:12.754Z",
+        "updatedAt": "2021-05-06T12:24:12.754Z"
+      },
+      {
+        "id": 5,
+        "name": "Nhà xe",
+        "createdAt": "2021-05-06T12:24:12.754Z",
+        "updatedAt": "2021-05-06T12:24:12.754Z"
+      },
+      {
+        "id": 6,
+        "name": "Khu tự học",
+        "createdAt": "2021-05-06T12:24:12.754Z",
+        "updatedAt": "2021-05-06T12:24:12.754Z"
+      },
+      {
+        "id": 7,
+        "name": "Căn tin",
+        "createdAt": "2021-05-06T12:24:12.754Z",
+        "updatedAt": "2021-05-06T12:24:12.754Z"
+      },
+      {
+        "id": 8,
+        "name": "Trung tâm nghiên cứu",
+        "createdAt": "2021-05-06T12:24:12.754Z",
+        "updatedAt": "2021-05-06T12:24:12.754Z"
+      },
+      {
+        "id": 9,
+        "name": "Xưởng, PTN",
+        "createdAt": "2021-05-06T12:24:12.754Z",
+        "updatedAt": "2021-05-06T12:24:12.754Z"
+      },
+      {
+        "id": 10,
+        "name": "Phòng học",
+        "createdAt": "2021-05-06T12:24:12.754Z",
+        "updatedAt": "2021-05-06T12:24:12.754Z"
+      },
+      {
+        "id": 11,
+        "name": "Khác",
+        "createdAt": "2021-05-06T12:24:12.754Z",
+        "updatedAt": "2021-05-06T12:24:12.754Z"
+      }
+    ],
+    "meta": {
+      "currentPage": 1,
+      "currentSize": 20,
+      "totalPage": 1,
+      "totalRecord": "11"
+    }
+  }
+}

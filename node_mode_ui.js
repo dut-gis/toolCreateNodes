@@ -13,7 +13,7 @@ nodePlace =
     + ' </tr><tr><td>nearNodes</td><td>[]</td></tr>'
     + ' </tr><tr><td>category</td><td><select id="category"></select></td></tr>'
     // + '<tr><td>floorId</td><td id="floorId">1</td></tr>'
-    + ' <tr><td>name</td><td><input type="text" id="placeName"></td></tr>'
+    + ' <tr><td>nameTag</td><td><select id="placeName"></select></td></tr>'
     + '    </table>';
 nodeEnterBuilding =
     '        <table >'
@@ -58,8 +58,7 @@ nodeStair =
     + ' <select id="buildingId"></select>'
     + '</td></tr>'
     + '<tr><td>floorNumber</td><td> <select id="floorId"></select></td></tr>'
-    + '<tr><td>stairID</td><td>'
-    + '    <select id="stairID"> <option>1</option><option>2</option><option>3</option><option>4</option></select>'
+    + '<tr><td>stairID</td><td id="stairID">'
     + '          </td>'
     + '<tr><td>stairSequence</td><td><select id="stairSequence"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td></tr>'
     // + '  </tr><tr><td>stairSequence</td><td>'
