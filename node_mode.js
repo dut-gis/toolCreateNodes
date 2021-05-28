@@ -130,26 +130,23 @@ nodeMode.onchange = () => {
             resetValue();
             stair_sequence = document.getElementById("stairSequence");
             stair_sequence.value = 0;
+
             select_stairId = document.getElementById("stairID");
-            stairID+=1;
-            console.log("mother fucker ah yes");
-            select_stairId.innerHTML = stairIDChecking.length+1;
-            stairIDChecking[stairIDChecking.length]=1;
-            // stairID+=1;
-            // console.log("mother fucker ah yes");
+            // select_stairId.innerHTML = stairIDChecking.length+1;
+            // stairIDChecking[stairIDChecking.length]=1;
             // select_stairId.innerHTML = stairID;
-            stair_sequence.onchange = ()=>{
-                if(stair_sequence.value==0){
-                    stairID+=1;
-                    console.log("mother fucker");
-                    select_stairId.innerHTML = stairID;
-                }
-            };
-            // select_stairId.onchange = () => {
-            //     stair_sequence.value = 0;
-            // }
+            // stair_sequence.onchange = ()=>{
+            //     if(stair_sequence.value==0){
+            //         // stairID+=1;
+            //         console.log("mother fucker");
+            //         select_stairId.innerHTML = stairID;
+            //     }
+            // };
             initBuilding();
-            initNodeFloor()
+            initNodeFloor();
+            
+            stairOptions = getListStairOptions(select_buildingId.value);
+            addSelectOption(select_stairId, stairOptions);
             break;
         }
         default: {
@@ -282,6 +279,22 @@ function getListClassOptions(buildingId, floorId) {
         }
     })
     return classOptions;
+}
+
+function getListStairOptions(sectorId){
+    options = [];
+    for(let i=0;i<buildings.length;i++){
+        if(buildings[i].id==sectorId){
+            buildings[i].stairs[0].forEach(stairId => {
+                options.push({
+                    "option": stairs[stairId].name,
+                    "id":stairId
+                });
+            });
+            break;
+        }
+    }
+    return options;
 }
 
 function addSelectOption(select, listOption) {

@@ -96,9 +96,9 @@ function download2(name, type) {
 
 //#region ALGORITHM
 function preload() {
-    img = loadImage('map/floor1.jpg');
+    // img = loadImage('map/floor1.jpg');
     // loadMap(1);
-    // img = loadImage('map.jpg');
+    img = loadImage('map.jpg');
 }
 
 function loadMap(floorNumber) {
@@ -110,8 +110,9 @@ function loadMap(floorNumber) {
 function setup() {
     let cnv = createCanvas(img.width, img.height);
     cnv.parent('myMap');
-    print(img.width)
-    print(img.height)
+    frameRate(10);
+    print(img.width);
+    print(img.height);
     document.addEventListener('keydown', function (event) {
         if (event.ctrlKey && event.key === 'z') {
             if (stackHistory.length > 0) {
@@ -311,7 +312,7 @@ function mouseClicked() {
         "id_place": select_placeNameTag == null ? null : select_placeNameTag.value,
         "id_class": select_classId == null ? null : select_classId.value,
         "className": select_classId == null ? null : select_classId.options[select_classId.selectedIndex].text,
-        "id_stair": stair_sequence == null ? null : stairID,
+        "id_stair": select_stairId == null ? null : select_stairId.value,
         "stair_sequence": stair_sequence == null ? null : stair_sequence.value,
         "floor_number": floorNumber,
         "isMainEntrance": checkbox_isEntrance == null ? null : checkbox_isEntrance.checked,
