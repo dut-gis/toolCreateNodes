@@ -47,6 +47,97 @@ placeOption = [
 
 places = [
   {
+    "id": 1,
+    "nameTag": "Khu A",
+    "categoryId": 1,
+    "size": null,
+    "phone": null
+  },
+  {
+    "id": 2,
+    "nameTag": "Khu B",
+    "categoryId": 1,
+    "size": null,
+    "phone": null
+  },
+  {
+    "id": 3,
+    "nameTag": "Khu C",
+    "categoryId": 1,
+    "size": null,
+    "phone": null
+  },
+  {
+    "id": 4,
+    "nameTag": "Khu D",
+    "categoryId": 1,
+    "size": null,
+    "phone": null
+  },
+  {
+    "id": 5,
+    "nameTag": "Khu E",
+    "categoryId": 1,
+    "size": null,
+    "phone": null
+  },
+  {
+    "id": 6,
+    "categoryId": 1,
+    "nameTag": "Khu F",
+    "size": null,
+    "phone": null
+  },
+  {
+    "id": 7,
+    "nameTag": "Khu G",
+    "categoryId": 1,
+    "size": null,
+    "phone": null
+  },
+  {
+    "id": 8,
+    "nameTag": "Khu H",
+    "categoryId": 1,
+    "size": null,
+    "phone": null
+  },
+  {
+    "id": 9,
+    "nameTag": "Khu I",
+    "size": null,
+    "categoryId": 1,
+    "phone": null
+  },
+  {
+    "id": 10,
+    "nameTag": "Khu K",
+    "categoryId": 1,
+    "size": null,
+    "phone": null
+  },
+  {
+    "id": 11,
+    "nameTag": "Khu M",
+    "categoryId": 1,
+    "size": null,
+    "phone": null
+  },
+  {
+    "id": 12,
+    "nameTag": "Khu S - Smart Building",
+    "categoryId": 1,
+    "size": null,
+    "phone": null
+  },
+  {
+    "id": 13,
+    "nameTag": "PFIEV",
+    "categoryId": 1,
+    "size": null,
+    "phone": null
+  },
+  {
     "id": 7,
     "name": "A106",
     "phone": "02363842740",
