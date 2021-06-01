@@ -24,11 +24,16 @@ var floorNumber = 1;
 var buildingId = 4;
 
 var buildingOption = [];
+var buildingNames = [];
 var nodesFloor = [];
 
 
 initAllData();
 function initAllData() {
+    // setUp building name
+    buildings.forEach((building) => {
+        buildingNames[building.id] = building.name;
+    });
     // init building options
     buildings.forEach((building) => {
         buildingOption.push({
@@ -40,9 +45,9 @@ function initAllData() {
     buildings.forEach((building) => {
         floors = [];
         building.floors.forEach(floor => {
-            if (floor.name != 1) {
+            if (floor.number != 1) {
                 floors.push({
-                    "number": floor.name,
+                    "number": floor.number,
                     "nodes": []
                 })
             }
@@ -132,21 +137,16 @@ nodeMode.onchange = () => {
             stair_sequence.value = 0;
 
             select_stairId = document.getElementById("stairID");
-            // select_stairId.innerHTML = stairIDChecking.length+1;
-            // stairIDChecking[stairIDChecking.length]=1;
-            // select_stairId.innerHTML = stairID;
-            // stair_sequence.onchange = ()=>{
-            //     if(stair_sequence.value==0){
-            //         // stairID+=1;
-            //         console.log("mother fucker");
-            //         select_stairId.innerHTML = stairID;
-            //     }
-            // };
+
             initBuilding();
             initNodeFloor();
             
             stairOptions = getListStairOptions(select_buildingId.value);
             addSelectOption(select_stairId, stairOptions);
+
+            select_stairId.onchange=()=>{
+                stair_sequence.value = 0;
+            }
             break;
         }
         default: {
@@ -180,6 +180,10 @@ function initNodeFloor() {
         }
         if (stair_sequence != null) {
             stair_sequence.value = 0;
+        }
+        if (select_stairId !=null){
+            stairOptions = getListStairOptions(select_buildingId.value);
+            addSelectOption(select_stairId, stairOptions);
         }
         addSelectOption(select_floor, createFloorOption(getMaxFloor(select_buildingId.value)));
         if(floor_options.length<floorNumber){
@@ -265,8 +269,10 @@ function getListClassOptions(buildingId, floorId) {
     classOptions = [];
     buildings.forEach(building => {
         if (building.id == buildingId) {
+            console.log('building oke');
             building.floors.forEach(floor => {
-                if (floor.name == floorId) {
+                if (floor.number == floorId) {
+                    console.log('floor oke');
                     floor.rooms.forEach(room => {
                         classOptions.push({
                             "option": room.name,
@@ -287,7 +293,7 @@ function getListStairOptions(sectorId){
         if(buildings[i].id==sectorId){
             buildings[i].stairs[0].forEach(stairId => {
                 options.push({
-                    "option": stairs[stairId].name,
+                    "option": stairs[stairId-1].name,
                     "id":stairId
                 });
             });

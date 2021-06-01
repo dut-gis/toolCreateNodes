@@ -97,14 +97,14 @@ function download2(name, type) {
 //#region ALGORITHM
 function preload() {
     // img = loadImage('map/floor1.jpg');
-    // loadMap(1);
-    img = loadImage('map.jpg');
+    loadMap(1);
+    // img = loadImage('map.jpg');
 }
 
 function loadMap(floorNumber) {
     // img = loadImage('map.jpg');
     path = "map/floor" + floorNumber + ".jpg";
-    // img = loadImage(path);
+    img = loadImage(path);
 }
 
 function setup() {
@@ -199,24 +199,42 @@ function draw() {
         if (nodeBegin != null && e.id == nodeBegin) {
             fill(nodeAddPathColor.value);
             ellipse(e.longitude, e.latitude, nodeSize, nodeSize);
+            fill(255, 26, 26);
+            if (e.id_stair != null) {
+                // draw all stair_variables
+                text(e.id_building, e.longitude, e.latitude-12);
+                text(stairs[e.id_stair].name, e.longitude, e.latitude);
+                text(e.stair_sequence, e.longitude, e.latitude+12);
+            } else if (e.id_class != null) {
+                // draw all class_variables
+                text(buildingNames[e.id_building], e.longitude, e.latitude-12);
+                text(e.className, e.longitude, e.latitude);
+            }
         } else {
             var nodeColor = getModeColor(e.mode);
             fill(nodeColor);
             ellipse(e.longitude, e.latitude, nodeSize, nodeSize);
             fill(255, 26, 26);
-            text(e.id, e.longitude, e.latitude+12);
+            text(e.id, e.longitude, e.latitude + 12);
+            // if (e.id_stair != null) {
+            //     fill(255, 26, 26);
+            //     text(e.stair_sequence+' '+stairs[e.id_stair].name, e.longitude, e.latitude);
+            // } else if (node.id_class != null) {
+            //     fill(255, 26, 26);
+            //     text(node.className, node.longitude, node.latitude);
+            // }
         }
     });
     ellipse(mouseX, mouseY, nodeSize, nodeSize);
 
-    if (select_floor != null && parseInt(select_floor.value) > 1) {
-        nodes.forEach((node) => {
-            if(node.id_class!=null){
-                fill(255, 26, 26);
-                text(node.className, node.longitude, node.latitude);
-            }
-        });
-    }
+    // if (select_floor != null && parseInt(select_floor.value) > 1) {
+    //     nodes.forEach((node) => {
+    //         if(node.id_class!=null){
+    //             fill(255, 26, 26);
+    //             text(node.className, node.longitude, node.latitude);
+    //         }
+    //     });
+    // }
 
     noFill();
     strokeWeight(4);
