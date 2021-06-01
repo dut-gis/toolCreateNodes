@@ -200,45 +200,50 @@ function draw() {
             fill(nodeAddPathColor.value);
             ellipse(e.longitude, e.latitude, nodeSize, nodeSize);
             fill(255, 26, 26);
-            if (e.id_stair != null) {
-                // draw all stair_variables
-                text(e.id_building, e.longitude, e.latitude-12);
-                text(stairs[e.id_stair].name, e.longitude, e.latitude);
-                text(e.stair_sequence, e.longitude, e.latitude+12);
-            } else if (e.id_class != null) {
-                // draw all class_variables
-                text(buildingNames[e.id_building], e.longitude, e.latitude-12);
-                text(e.className, e.longitude, e.latitude);
-            }
+            drawDetail(e);
         } else {
             var nodeColor = getModeColor(e.mode);
             fill(nodeColor);
             ellipse(e.longitude, e.latitude, nodeSize, nodeSize);
             fill(255, 26, 26);
-            text(e.id, e.longitude, e.latitude + 12);
-            // if (e.id_stair != null) {
-            //     fill(255, 26, 26);
-            //     text(e.stair_sequence+' '+stairs[e.id_stair].name, e.longitude, e.latitude);
-            // } else if (node.id_class != null) {
-            //     fill(255, 26, 26);
-            //     text(node.className, node.longitude, node.latitude);
-            // }
+            if (checkbox_shouldDrawDetails.checked) {
+                drawDetail(e);
+            }else{
+                text(e.id, e.longitude, e.latitude + 12);
+            }
         }
     });
     ellipse(mouseX, mouseY, nodeSize, nodeSize);
 
-    // if (select_floor != null && parseInt(select_floor.value) > 1) {
-    //     nodes.forEach((node) => {
-    //         if(node.id_class!=null){
-    //             fill(255, 26, 26);
-    //             text(node.className, node.longitude, node.latitude);
-    //         }
-    //     });
-    // }
-
     noFill();
     strokeWeight(4);
     rect(2, 2, width - 5, height - 5);
+}
+
+function drawDetail(e){
+    if (e.id_stair != null) {
+        // draw all stair_variables
+        text(buildingNames[e.id_building], e.longitude, e.latitude - 12);
+        text(stairs[e.id_stair-1].name, e.longitude, e.latitude);
+        text(e.stair_sequence, e.longitude, e.latitude + 12);
+    } else if (e.id_class != null) {
+        // draw all class_variables
+        text(buildingNames[e.id_building], e.longitude, e.latitude - 12);
+        text("Main: " + e.isMainEntrance, e.longitude, e.latitude);
+        text(classNames[e.id_class], e.longitude, e.latitude + 12);
+    }else if (e.mode == "building") {
+        // draw all building_variables
+        text(buildingNames[e.id_building], e.longitude, e.latitude - 12);
+        text("Building", e.longitude, e.latitude);
+    }else if (e.mode == "entranceBuilding") {
+        // draw all building_variables
+        text(buildingNames[e.id_building], e.longitude, e.latitude - 12);
+        text("E_B", e.longitude, e.latitude);
+    }else if (e.mode == "place") {
+        // draw all place_variables
+        text(placeOption[e.category-1].option, e.longitude, e.latitude - 12);
+        text(placeNames[e.id_place], e.longitude, e.latitude);
+    }
 }
 
 function getModeColor(mode) {
@@ -329,7 +334,7 @@ function mouseClicked() {
         "category": select_placeCategory == null ? null : select_placeCategory.value,
         "id_place": select_placeNameTag == null ? null : select_placeNameTag.value,
         "id_class": select_classId == null ? null : select_classId.value,
-        "className": select_classId == null ? null : select_classId.options[select_classId.selectedIndex].text,
+        // "className": select_classId == null ? null : select_classId.options[select_classId.selectedIndex].text,
         "id_stair": select_stairId == null ? null : select_stairId.value,
         "stair_sequence": stair_sequence == null ? null : stair_sequence.value,
         "floor_number": floorNumber,
@@ -455,14 +460,30 @@ function generateFloor() {
         // generate class
         classIds = getListClassOptions(select_generate_floor_building.value, i);
         classIndex = 0;
-        for (let i = 0; i < floorGenerate.length; i++) {
-            if (floorGenerate[i].id_class != null && classIds.length > i) {
-                floorGenerate[i].id_class = classIds[classIndex].id;
-                classIndex += 1;
+        classGenIds = {};
+        floorGenerate.forEach(node => {
+            if (node.id_class != null && classIds.length > i) {
+                if (classGenIds[node.id_class] == null) {
+                    classGenIds[node.id_class] = classIds[classIndex].id;
+                    node.id_class = classIds[classIndex].id;
+                    classIndex += 1;
+                } else {
+                    node.id_class = classGenIds[node.id_class];
+                }
             }
-        }
+        })
         // generate stair
-        stairID += numberOfStair;
+        numberOfStair = 
+        floorGenerate.forEach(node => {
+            if (node.id_stair != null) {
+              
+                // node.id_stair += numberOfStair;
+                // get currentbuilding => numberOfStair = leng(building.stairs)
+                node.id_stair = parseInt(node.id_stair)+numberOfStair;
+            
+            }
+        })
+        // stairID += numberOfStair;
         console.log(floorGenerate);
         setListNodeFloor(select_generate_floor_building.value, i, floorGenerate);
     }

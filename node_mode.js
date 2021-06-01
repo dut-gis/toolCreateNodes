@@ -8,6 +8,8 @@ var generate_floor_floorId = document.getElementById("generate_toId");
 
 var select_placeCategory;
 
+var checkbox_shouldDrawDetails = document.getElementById("cb_details");
+
 // mode entranceBuilding
 var select_buildingId;
 var select_classId;
@@ -24,16 +26,27 @@ var floorNumber = 1;
 var buildingId = 4;
 
 var buildingOption = [];
-var buildingNames = [];
+var buildingNames = {};
+var classNames = {};
+var placeNames = {};
 var nodesFloor = [];
 
 
 initAllData();
 function initAllData() {
-    // setUp building name
+    // setUp building name and class name
     buildings.forEach((building) => {
         buildingNames[building.id] = building.name;
+        building.floors.forEach(floor => {
+            floor.rooms.forEach(room => {
+                classNames[room.id] = room.name;
+            })
+        })
     });
+    // init place name
+    places.forEach(place => {
+        placeNames[place.id]=place.nameTag;
+    })
     // init building options
     buildings.forEach((building) => {
         buildingOption.push({
@@ -97,9 +110,9 @@ nodeMode.onchange = () => {
             select_placeCategory = document.getElementById("category");
             addSelectOption(select_placeCategory, placeOption);
             select_placeNameTag = document.getElementById("placeName");
-            addSelectOption(select_placeNameTag, getListOption(select_placeCategory.value));
+            addSelectOption(select_placeNameTag, getListPlaceOptions(select_placeCategory.value));
             select_placeCategory.onchange = ()=>{
-                addSelectOption(select_placeNameTag, getListOption(select_placeCategory.value));
+                addSelectOption(select_placeNameTag, getListPlaceOptions(select_placeCategory.value));
             }
             break;
         }
@@ -263,6 +276,19 @@ function createFloorOption(maxFloor, minFloor) {
         });
     }
     return options;
+}
+
+function getListPlaceOptions(placeCategoryId){
+    let placeOption = [];
+    places.forEach(place => {
+        if(place.categoryId==placeCategoryId){
+            placeOption.push({
+                "option": place.nameTag,
+                "id":place.id
+            })
+        }
+    })
+    return placeOption;
 }
 
 function getListClassOptions(buildingId, floorId) {

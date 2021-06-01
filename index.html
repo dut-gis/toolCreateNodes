@@ -76,6 +76,7 @@
         #navBar {
             position: fixed;
             overflow: scroll;
+            overflow-x: hidden;
             top: 0px;
             left: 0px;
             display: block;
@@ -121,6 +122,7 @@
                     fr.readAsBinaryString(fileList[0]);
                 });
             </script>
+
         </div>
         <div
             style="padding: 12px 0px 12px 0px;border-width: 1px;border-style: solid;padding-left: 12px;padding-right: 12px;">
@@ -137,6 +139,9 @@
                 <label>Building</label><input type="color" id="building" value="#F9E9EC">
                 <label>Classroom</label><input type="color" id="classroom" value="#F88DAD">
                 <label>Stair</label><input type="color" id="stair" value="#72147e">
+            </div>
+            <div>
+                <label for="cb_details">Draw details</label><input type="checkbox" name="cbDetails" id="cb_details">
             </div>
             <div style="width:100%; text-align: center;">
                 <button onclick=logJson2()>LOG JSON</button>

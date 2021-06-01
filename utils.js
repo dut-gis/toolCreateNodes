@@ -58,17 +58,17 @@ function formatFloor(listNode, floorNumber, currentStairID) {
         floorNode.nearNodes = nearNodes;
     });
     check = {};
-    listNode.forEach(floorNode => {
-        if(floorNode.id_stair!=null){
-            if(check[floorNode.id_stair]==null){
-                currentStairID+=1;
-                check[floorNode.id_stair]=currentStairID;
-                floorNode.id_stair = check[floorNode.id_stair];
-            }else{
-                floorNode.id_stair = check[floorNode.id_stair];
-            }
-        }
-    });
+    // listNode.forEach(floorNode => {
+    //     if(floorNode.id_stair!=null){
+    //         if(check[floorNode.id_stair]==null){
+    //             currentStairID+=1;
+    //             check[floorNode.id_stair]=currentStairID;
+    //             floorNode.id_stair = check[floorNode.id_stair];
+    //         }else{
+    //             floorNode.id_stair = check[floorNode.id_stair];
+    //         }
+    //     }
+    // });
 }
 
 function convertToLatLng(data) {
