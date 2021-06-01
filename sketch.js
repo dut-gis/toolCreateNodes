@@ -200,14 +200,14 @@ function draw() {
             fill(nodeAddPathColor.value);
             ellipse(e.longitude, e.latitude, nodeSize, nodeSize);
             fill(255, 26, 26);
-            drawDetail(e);
+            drawDetail(e,true);
         } else {
             var nodeColor = getModeColor(e.mode);
             fill(nodeColor);
             ellipse(e.longitude, e.latitude, nodeSize, nodeSize);
             fill(255, 26, 26);
-            if (checkbox_shouldDrawDetails.checked) {
-                drawDetail(e);
+            if (select_drawDetailMode.value != "none") {
+                drawDetail(e,false);
             }else{
                 text(e.id, e.longitude, e.latitude + 12);
             }
@@ -218,32 +218,6 @@ function draw() {
     noFill();
     strokeWeight(4);
     rect(2, 2, width - 5, height - 5);
-}
-
-function drawDetail(e){
-    if (e.id_stair != null) {
-        // draw all stair_variables
-        text(buildingNames[e.id_building], e.longitude, e.latitude - 12);
-        text(stairs[e.id_stair-1].name, e.longitude, e.latitude);
-        text(e.stair_sequence, e.longitude, e.latitude + 12);
-    } else if (e.id_class != null) {
-        // draw all class_variables
-        text(buildingNames[e.id_building], e.longitude, e.latitude - 12);
-        text("Main: " + e.isMainEntrance, e.longitude, e.latitude);
-        text(classNames[e.id_class], e.longitude, e.latitude + 12);
-    }else if (e.mode == "building") {
-        // draw all building_variables
-        text(buildingNames[e.id_building], e.longitude, e.latitude - 12);
-        text("Building", e.longitude, e.latitude);
-    }else if (e.mode == "entranceBuilding") {
-        // draw all building_variables
-        text(buildingNames[e.id_building], e.longitude, e.latitude - 12);
-        text("E_B", e.longitude, e.latitude);
-    }else if (e.mode == "place") {
-        // draw all place_variables
-        text(placeOption[e.category-1].option, e.longitude, e.latitude - 12);
-        text(placeNames[e.id_place], e.longitude, e.latitude);
-    }
 }
 
 function getModeColor(mode) {

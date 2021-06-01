@@ -128,3 +128,54 @@ function mergeListNodes(dataMapNodes) {
     console.log(mapNodes);
     extracData(mapNodes);
 }
+
+function drawDetail(e, isNodeSelected){
+    if(isNodeSelected){
+        if (e.id_stair != null) {
+            // draw all stair_variables
+            text(buildingNames[e.id_building], e.longitude, e.latitude - 12);
+            text(stairs[e.id_stair-1].name, e.longitude, e.latitude);
+            text(e.stair_sequence, e.longitude, e.latitude + 12);
+        } else if (e.id_class != null) {
+            // draw all class_variables
+            text(buildingNames[e.id_building], e.longitude, e.latitude - 12);
+            text("Main: " + e.isMainEntrance, e.longitude, e.latitude);
+            text(classNames[e.id_class], e.longitude, e.latitude + 12);
+        }else if (e.mode == "building") {
+            // draw all building_variables
+            text(buildingNames[e.id_building], e.longitude, e.latitude - 12);
+            text("Building", e.longitude, e.latitude);
+        }else if (e.mode == "entranceBuilding") {
+            // draw all building_variables
+            text(buildingNames[e.id_building], e.longitude, e.latitude - 12);
+            text("E_B", e.longitude, e.latitude);
+        }else if (e.mode == "place") {
+            // draw all place_variables
+            text(placeOption[e.category-1].option, e.longitude, e.latitude - 12);
+            text(placeNames[e.id_place], e.longitude, e.latitude);
+        }
+    }
+    if ((select_drawDetailMode.value == "all" || select_drawDetailMode.value == "stair") && e.mode == "stair") {
+        // draw all stair_variables
+        text(buildingNames[e.id_building], e.longitude, e.latitude - 12);
+        text(stairs[e.id_stair-1].name, e.longitude, e.latitude);
+        text(e.stair_sequence, e.longitude, e.latitude + 12);
+    } else if ((select_drawDetailMode.value == "all" || select_drawDetailMode.value == "classroom") && e.mode == "classroom") {
+        // draw all class_variables
+        text(buildingNames[e.id_building], e.longitude, e.latitude - 12);
+        text("Main: " + e.isMainEntrance, e.longitude, e.latitude);
+        text(classNames[e.id_class], e.longitude, e.latitude + 12);
+    }else if ((select_drawDetailMode.value == "all" || select_drawDetailMode.value == "building") && e.mode == "building") {
+        // draw all building_variables
+        text(buildingNames[e.id_building], e.longitude, e.latitude - 12);
+        text("Building", e.longitude, e.latitude);
+    }else if ((select_drawDetailMode.value == "all" || select_drawDetailMode.value == "entranceBuilding") && e.mode == "entranceBuilding") {
+        // draw all building_variables
+        text(buildingNames[e.id_building], e.longitude, e.latitude - 12);
+        text("E_B", e.longitude, e.latitude);
+    }else if ((select_drawDetailMode.value == "all" || select_drawDetailMode.value == "place") && e.mode == "place") {
+        // draw all place_variables
+        text(placeOption[e.category-1].option, e.longitude, e.latitude - 12);
+        text(placeNames[e.id_place], e.longitude, e.latitude);
+    }
+}

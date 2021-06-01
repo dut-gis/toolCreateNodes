@@ -7,8 +7,10 @@ var generate_floor_floorId = document.getElementById("generate_toId");
 // mode place
 
 var select_placeCategory;
+var select_drawDetailMode;
 
-var checkbox_shouldDrawDetails = document.getElementById("cb_details");
+// var checkbox_shouldDrawDetails = document.getElementById("cb_details");
+var select_drawDetailMode = document.getElementById("draw_detail_mode");
 
 // mode entranceBuilding
 var select_buildingId;

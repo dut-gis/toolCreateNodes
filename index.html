@@ -140,8 +140,18 @@
                 <label>Classroom</label><input type="color" id="classroom" value="#F88DAD">
                 <label>Stair</label><input type="color" id="stair" value="#72147e">
             </div>
-            <div>
-                <label for="cb_details">Draw details</label><input type="checkbox" name="cbDetails" id="cb_details">
+            <div style="margin-bottom: 16px;">
+                <!-- <label for="cb_details">Draw details</label><input type="checkbox" name="cbDetails" id="cb_details"> -->
+                <label>Draw details</label>
+                <select id="draw_detail_mode">
+                    <option value="none">none</option>
+                    <option value="all">all</option>
+                    <option value="place">place</option>
+                    <option value="entranceBuilding">entranceBuilding</option>
+                    <option value="building">building</option>
+                    <option value="classroom">classroom</option>
+                    <option value="stair">stair</option>
+                </select>
             </div>
             <div style="width:100%; text-align: center;">
                 <button onclick=logJson2()>LOG JSON</button>
