@@ -281,7 +281,7 @@ function createFloorOption(maxFloor, minFloor) {
 function getListPlaceOptions(placeCategoryId){
     let placeOption = [];
     places.forEach(place => {
-        if(place.categoryId==placeCategoryId){
+        if(place.categoryId==placeCategoryId&&place.name==null){
             placeOption.push({
                 "option": place.nameTag,
                 "id":place.id
