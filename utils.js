@@ -1,9 +1,5 @@
-stairIDChecking = [];
-stairIDChecking[0]=1;
-
-function getStairID(){
-    
-}
+// stairIDChecking = [];
+// stairIDChecking[0]=1;
 
 function extracData(listNode) {
     nodedata = [];
@@ -20,18 +16,18 @@ function extracData(listNode) {
         })
     });
     stairCheck = {};
-    numberOfStair = 0;
-    listNode.forEach(node => {
-        if(node.id_stair!=null){
-            if(stairCheck[node.id_stair]==null){
-                numberOfStair += 1;
-                stairIDChecking[id_stair] = 1;
-                stairCheck[node.id_stair] = 1;
-            }
-        }
-    });
-    stairID = numberOfStair-1;
-    console.log(numberOfStair);
+    // numberOfStair = 0;
+    // listNode.forEach(node => {
+    //     if(node.id_stair!=null){
+    //         if(stairCheck[node.id_stair]==null){
+    //             numberOfStair += 1;
+    //             stairIDChecking[id_stair] = 1;
+    //             stairCheck[node.id_stair] = 1;
+    //         }
+    //     }
+    // });
+    // stairID = numberOfStair-1;
+    // console.log(numberOfStair);
     console.log(nodedata);
     this.nodes = nodedata;
 }
@@ -81,7 +77,7 @@ function convertToLatLng(data) {
     var lngDistance = bottomEndLng - topStartlng;
     // mapNodes = [];
     let nodes = [];
-    stairID = 1;
+    // stairID = 1;
     nodes = JSON.parse(JSON.stringify(data));
     nodes.forEach((node) => {
         node.id = node.id + 1;
