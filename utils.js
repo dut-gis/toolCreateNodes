@@ -15,7 +15,7 @@ function extracData(listNode) {
             formatFloor(floor.nodes, floor.number);
         })
     });
-    stairCheck = {};
+    // stairCheck = {};
     // numberOfStair = 0;
     // listNode.forEach(node => {
     //     if(node.id_stair!=null){
