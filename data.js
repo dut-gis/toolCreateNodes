@@ -1632,6 +1632,45 @@ places = [
     "categoryId": 2,
     "createdAt": "2021-05-06T17:56:38.375Z",
     "updatedAt": "2021-05-06T17:56:38.375Z"
+  },
+  {
+    "id": 444,
+    "name": "M105",
+    "phone": null,
+    "nameTag": null,
+    "floorNumber": 1,
+    "sectorId": 11,
+    "sectorName": "Khu M",
+    "categoryId": 10,
+    "categoryName": "Phòng học",
+    "createdAt": "2021-06-30T07:56:19.183Z",
+    "updatedAt": "2021-06-30T07:56:19.183Z"
+  },
+  {
+    "id": 445,
+    "name": "M107",
+    "phone": null,
+    "nameTag": null,
+    "floorNumber": 1,
+    "sectorId": 11,
+    "sectorName": "Khu M",
+    "categoryId": 10,
+    "categoryName": "Phòng học",
+    "createdAt": "2021-06-30T07:56:19.183Z",
+    "updatedAt": "2021-06-30T07:56:19.183Z"
+  },
+  {
+    "id": 446,
+    "name": "M108",
+    "phone": null,
+    "nameTag": null,
+    "floorNumber": 1,
+    "sectorId": 11,
+    "sectorName": "Khu M",
+    "categoryId": 10,
+    "categoryName": "Phòng học",
+    "createdAt": "2021-06-30T07:56:19.183Z",
+    "updatedAt": "2021-06-30T07:56:19.183Z"
   }
 ]
 
