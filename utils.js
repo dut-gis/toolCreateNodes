@@ -15,19 +15,7 @@ function extracData(listNode) {
             formatFloor(floor.nodes, floor.number);
         })
     });
-    // stairCheck = {};
-    // numberOfStair = 0;
-    // listNode.forEach(node => {
-    //     if(node.id_stair!=null){
-    //         if(stairCheck[node.id_stair]==null){
-    //             numberOfStair += 1;
-    //             stairIDChecking[id_stair] = 1;
-    //             stairCheck[node.id_stair] = 1;
-    //         }
-    //     }
-    // });
-    // stairID = numberOfStair-1;
-    // console.log(numberOfStair);
+    formatFloor(nodedata, 1);
     console.log(nodedata);
     this.nodes = nodedata;
 }
@@ -54,17 +42,6 @@ function formatFloor(listNode, floorNumber, currentStairID) {
         floorNode.nearNodes = nearNodes;
     });
     check = {};
-    // listNode.forEach(floorNode => {
-    //     if(floorNode.id_stair!=null){
-    //         if(check[floorNode.id_stair]==null){
-    //             currentStairID+=1;
-    //             check[floorNode.id_stair]=currentStairID;
-    //             floorNode.id_stair = check[floorNode.id_stair];
-    //         }else{
-    //             floorNode.id_stair = check[floorNode.id_stair];
-    //         }
-    //     }
-    // });
 }
 
 function convertToLatLng(data) {
@@ -119,6 +96,11 @@ function mergeListNodes(dataMapNodes) {
             });
             mapNodes.push(mapNode);
         });
+        // mapNodes.forEach((mapNode) => {
+        //     mapNode.nearNodes.forEach((near) => {
+        //         near.id += startID
+        //     });
+        // });
         startID = dataMapNode.length;
     });
     console.log(mapNodes);
