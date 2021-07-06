@@ -141,1536 +141,1905 @@ places = [
     "id": 7,
     "name": "A106",
     "phone": "02363842740",
+    "description": "Phòng làm việc chung của cán bộ giáo viên, tư vấn và hỗ trợ sinh viên theo học ",
     "nameTag": "Khoa Xây dựng dân dụng & CN",
     "floorNumber": 1,
     "sectorId": 1,
+    "sectorName": "Khu A",
     "categoryId": 3,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Khoa",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 9,
     "name": "A108",
     "phone": "02363730123",
+    "description": "Tư vấn và hỗ trợ sinh viên giải quyết các hồ sơ, giấy tờ, thủ tục hành chính",
     "nameTag": "Khu Hành chính phục vụ SV 1 cửa",
     "floorNumber": 1,
     "sectorId": 1,
+    "sectorName": "Khu A",
     "categoryId": 2,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Phòng chức năng",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 12,
     "name": "A111",
     "phone": "02360738268",
+    "description": "Thực hiện quản lý Nhà nước về công tác chính trị, tư tưởng và quản lý sinh viên.",
     "nameTag": "Phòng Công tác Sinh viên",
     "floorNumber": 1,
     "sectorId": 1,
+    "sectorName": "Khu A",
     "categoryId": 2,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Phòng chức năng",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 19,
     "name": "A118A",
     "phone": "02363842743",
+    "description": "Phòng làm việc chung của cán bộ giáo viên, tư vấn và hỗ trợ sinh viên theo học ",
     "nameTag": "Khoa Hóa",
     "floorNumber": 1,
     "sectorId": 1,
+    "sectorName": "Khu A",
     "categoryId": 3,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Khoa",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 20,
     "name": "A118B",
     "phone": "02363842743",
+    "description": "Phòng làm việc chung của cán bộ giáo viên, tư vấn và hỗ trợ sinh viên theo học ",
     "nameTag": "Khoa Hóa",
     "floorNumber": 1,
     "sectorId": 1,
+    "sectorName": "Khu A",
     "categoryId": 3,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Khoa",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 22,
     "name": "A120",
     "phone": "02363841660",
+    "description": "Thực hiện công tác lập kế hoạch, quản lý tài chính,  thanh quyết toán mọi nguồn kinh phí của nhà trường.",
     "nameTag": "Phòng Kế hoạch - Tài chính",
     "floorNumber": 1,
     "sectorId": 1,
+    "sectorName": "Khu A",
     "categoryId": 2,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Phòng chức năng",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 26,
     "name": "A123",
     "phone": "02363733591\n02363842145",
+    "description": "Thực hiện công tác tổ chức và quản lý hoạt động đào tạo của nhà trường ở tất cả các trình độ, hệ và loại hình đào tạo.",
     "nameTag": "Phòng Đào tạo",
     "floorNumber": 1,
     "sectorId": 1,
+    "sectorName": "Khu A",
     "categoryId": 2,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Phòng chức năng",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 37,
     "name": "A132",
     "phone": "02363733591\n02363842145",
+    "description": "Thực hiện công tác tổ chức và quản lý hoạt động đào tạo của nhà trường ở tất cả các trình độ, hệ và loại hình đào tạo.",
     "nameTag": "Phòng Đào tạo",
     "floorNumber": 1,
     "sectorId": 1,
+    "sectorName": "Khu A",
     "categoryId": 2,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Phòng chức năng",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 41,
     "name": "A135",
     "phone": "02363740719",
+    "description": "Quản lý các dự án, các công trình cơ sở hạ tầng. Sửa chữa và phát triển cơ sở vật chất của Trường",
     "nameTag": "Phòng Cơ sở vật chất",
     "floorNumber": 1,
     "sectorId": 1,
+    "sectorName": "Khu A",
     "categoryId": 2,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Phòng chức năng",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 70,
     "name": "A208",
     "phone": "02363842738",
+    "description": "Phòng làm việc chung của cán bộ giáo viên, tư vấn và hỗ trợ sinh viên theo học ",
     "nameTag": "Khoa điện",
     "floorNumber": 2,
     "sectorId": 1,
+    "sectorName": "Khu A",
     "categoryId": 3,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Khoa",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 71,
     "name": "A209",
     "phone": "02363842109",
+    "description": "Tiếp nhận, hướng dẫn, xử lí hồ sơ, kết nạp Đảng cho các bạn sinh viên.",
     "nameTag": "VP Đảng Ủy",
     "floorNumber": 2,
     "sectorId": 1,
+    "sectorName": "Khu A",
     "categoryId": 2,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Phòng chức năng",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 73,
     "name": "A211",
     "phone": "02363841288",
+    "description": "Tiếp nhận, hướng dẫn, xử lí hồ sơ, kết nạp Đoàn cho các bạn sinh viên.",
     "nameTag": "VP Đoàn Thanh niên",
     "floorNumber": 2,
     "sectorId": 1,
+    "sectorName": "Khu A",
     "categoryId": 2,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Phòng chức năng",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 77,
     "name": "A216",
     "phone": "02363842366",
+    "description": "Phòng làm việc chung của cán bộ giáo viên, tư vấn và hỗ trợ sinh viên theo học ",
     "nameTag": "Khoa CN Nhiệt - điện lạnh",
     "floorNumber": 2,
     "sectorId": 1,
+    "sectorName": "Khu A",
     "categoryId": 3,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Khoa",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 84,
     "name": "A223",
     "phone": "02363736445",
+    "description": "Điều phối hoạt động của các đơn vị trong trường để triển khai thực hiện chương trình, kế hoạch công tác.",
     "nameTag": "Phòng hiệu trưởng",
     "floorNumber": 2,
     "sectorId": 1,
+    "sectorName": "Khu A",
     "categoryId": 2,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Phòng chức năng",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 85,
     "name": "A224a",
     "phone": "02363842741",
+    "description": "Phòng làm việc chung của cán bộ giáo viên, tư vấn và hỗ trợ sinh viên theo học ",
     "nameTag": "Khoa cơ khí",
     "floorNumber": 2,
     "sectorId": 1,
+    "sectorName": "Khu A",
     "categoryId": 3,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Khoa",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 86,
     "name": "A224b",
     "phone": "02363842741",
+    "description": "Phòng làm việc chung của cán bộ giáo viên, tư vấn và hỗ trợ sinh viên theo học ",
     "nameTag": "Khoa cơ khí",
     "floorNumber": 2,
     "sectorId": 1,
+    "sectorName": "Khu A",
     "categoryId": 3,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Khoa",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 106,
     "name": "A310",
     "phone": "02363733590",
+    "description": "Phòng làm việc chung của cán bộ giáo viên, tư vấn và hỗ trợ sinh viên theo học ",
     "nameTag": "Khoa môi trường",
     "floorNumber": 3,
     "sectorId": 1,
+    "sectorName": "Khu A",
     "categoryId": 3,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Khoa",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 111,
     "name": "A315",
     "phone": "02363737869",
+    "description": "Phòng làm việc chung của cán bộ giáo viên, tư vấn và hỗ trợ sinh viên theo học ",
     "nameTag": "Khoa Quản lý dự án",
     "floorNumber": 3,
     "sectorId": 1,
+    "sectorName": "Khu A",
     "categoryId": 3,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Khoa",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 112,
     "name": "A316",
     "phone": "02363841297",
+    "description": "Phòng làm việc chung của cán bộ giáo viên, tư vấn và hỗ trợ sinh viên theo học ",
     "nameTag": "Khoa xây dựng cầu đường",
     "floorNumber": 3,
     "sectorId": 1,
+    "sectorName": "Khu A",
     "categoryId": 3,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Khoa",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 115,
     "name": "A319",
     "phone": "02363841296",
+    "description": "Phòng làm việc chung của cán bộ giáo viên, tư vấn và hỗ trợ sinh viên theo học ",
     "nameTag": "Khoa xây dựng công trình thủy",
     "floorNumber": 3,
     "sectorId": 1,
+    "sectorName": "Khu A",
     "categoryId": 3,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Khoa",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 122,
     "name": "AVL1",
     "phone": null,
+    "description": null,
     "nameTag": null,
     "floorNumber": 1,
     "sectorId": 24,
+    "sectorName": "Trung tâm thí nghiệm động cơ và ô tô",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 123,
     "name": "AVL2",
     "phone": null,
+    "description": null,
     "nameTag": null,
     "floorNumber": 1,
     "sectorId": 24,
+    "sectorName": "Trung tâm thí nghiệm động cơ và ô tô",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 130,
     "name": "B107",
     "phone": "02363730799",
+    "description": "Nơi khám bệnh, nộp tiền Bảo hiểm Y tế",
     "nameTag": "Tổ y tế",
     "floorNumber": 1,
     "sectorId": 2,
+    "sectorName": "Khu B",
     "categoryId": 2,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Phòng chức năng",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 147,
     "name": "C101",
     "phone": "02363736945",
+    "description": "Phòng làm việc chung của cán bộ giáo viên, tư vấn và hỗ trợ sinh viên theo học ",
     "nameTag": "Khoa cơ khí giao thông",
     "floorNumber": 1,
     "sectorId": 3,
+    "sectorName": "Khu C",
     "categoryId": 3,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Khoa",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 153,
     "name": "C108",
     "phone": "02363841287",
+    "description": "Phòng làm việc chung của cán bộ giáo viên, tư vấn và hỗ trợ sinh viên theo học ",
     "nameTag": "Khoa điện tử viễn thông",
     "floorNumber": 1,
     "sectorId": 3,
+    "sectorName": "Khu C",
     "categoryId": 3,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Khoa",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 188,
     "name": "C211",
     "phone": "02363735112",
+    "description": "Phòng làm việc chung của cán bộ giáo viên, tư vấn và hỗ trợ sinh viên theo học ",
     "nameTag": "Khoa khoa học CN tiên tiến",
     "floorNumber": 2,
     "sectorId": 3,
+    "sectorName": "Khu C",
     "categoryId": 3,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Khoa",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 206,
     "name": "C228",
     "phone": "02363736949",
+    "description": "Phòng làm việc chung của cán bộ giáo viên, tư vấn và hỗ trợ sinh viên theo học ",
     "nameTag": "Khoa công nghệ thông tin ",
     "floorNumber": 2,
     "sectorId": 3,
+    "sectorName": "Khu C",
     "categoryId": 3,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Khoa",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 215,
     "name": "D101",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Hóa",
     "nameTag": "PTN Hệ thống sấy",
     "floorNumber": 1,
     "sectorId": 4,
+    "sectorName": "Khu D",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 216,
     "name": "D102",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Hóa",
     "nameTag": "PTN Điều hòa không khí",
     "floorNumber": 1,
     "sectorId": 4,
+    "sectorName": "Khu D",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 217,
     "name": "D103",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Hóa",
     "nameTag": "PTN Công nghệ thực phẩm",
     "floorNumber": 1,
     "sectorId": 4,
+    "sectorName": "Khu D",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 218,
     "name": "D104",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Hóa",
     "nameTag": "PTN Đánh giá cảm quan",
     "floorNumber": 1,
     "sectorId": 4,
+    "sectorName": "Khu D",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 219,
     "name": "D105",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Hóa",
     "nameTag": "PTN Hóa sinh",
     "floorNumber": 1,
     "sectorId": 4,
+    "sectorName": "Khu D",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 220,
     "name": "D106",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Hóa",
     "nameTag": "PTN Vi sinh",
     "floorNumber": 1,
     "sectorId": 4,
+    "sectorName": "Khu D",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 221,
     "name": "D108",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Hóa",
     "nameTag": "Xưởng Công nghệ thực phẩm",
     "floorNumber": 1,
     "sectorId": 4,
+    "sectorName": "Khu D",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 222,
     "name": "D109",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Hóa",
     "nameTag": "PTN Hóa hữu cơ \\n -PTN Hóa lý",
     "floorNumber": 1,
     "sectorId": 4,
+    "sectorName": "Khu D",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 223,
     "name": "D110",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Hóa",
     "nameTag": "PTN Cơ lý",
     "floorNumber": 1,
     "sectorId": 4,
+    "sectorName": "Khu D",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 224,
     "name": "D111",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Hóa",
     "nameTag": "PTN Hóa đại cương \\n - PTN Hóa lý và phân tích silicate",
     "floorNumber": 1,
     "sectorId": 4,
+    "sectorName": "Khu D",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 225,
     "name": "D112",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Hóa",
     "nameTag": "PTN Quá trình và thiết bị",
     "floorNumber": 1,
     "sectorId": 4,
+    "sectorName": "Khu D",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 226,
     "name": "D115",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Hóa",
     "nameTag": "PTN Vật liệu - xúc tác",
     "floorNumber": 1,
     "sectorId": 4,
+    "sectorName": "Khu D",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 227,
     "name": "D116",
     "phone": null,
+    "description": null,
     "nameTag": null,
     "floorNumber": 1,
     "sectorId": 4,
+    "sectorName": "Khu D",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 228,
     "name": "D201",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Hóa",
     "nameTag": "PTN Chuyên ngành hóa dược",
     "floorNumber": 2,
     "sectorId": 4,
+    "sectorName": "Khu D",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 229,
     "name": "D202",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Hóa",
     "nameTag": "PTN Hóa hữu cơ",
     "floorNumber": 2,
     "sectorId": 4,
+    "sectorName": "Khu D",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 230,
     "name": "D203",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Hóa",
     "nameTag": "PTN Hóa lý",
     "floorNumber": 2,
     "sectorId": 4,
+    "sectorName": "Khu D",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 231,
     "name": "D204",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Hóa",
     "nameTag": "PTN Hóa vô cơ",
     "floorNumber": 2,
     "sectorId": 4,
+    "sectorName": "Khu D",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 232,
     "name": "D205",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Hóa",
     "nameTag": "PTN Hóa phân tích",
     "floorNumber": 2,
     "sectorId": 4,
+    "sectorName": "Khu D",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 233,
     "name": "D206",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Hóa",
     "nameTag": "PTN Hóa phân tích",
     "floorNumber": 2,
     "sectorId": 4,
+    "sectorName": "Khu D",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 234,
     "name": "D207",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Hóa",
     "nameTag": "PTN Vật liệu polymer",
     "floorNumber": 2,
     "sectorId": 4,
+    "sectorName": "Khu D",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 235,
     "name": "D208",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Hóa",
     "nameTag": "PTN Đánh giá chất lượng sản phẩm dầu mỏ",
     "floorNumber": 2,
     "sectorId": 4,
+    "sectorName": "Khu D",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 236,
     "name": "D209",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Hóa",
     "nameTag": "PTN Hóa lý",
     "floorNumber": 2,
     "sectorId": 4,
+    "sectorName": "Khu D",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 237,
     "name": "D210",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Hóa",
     "nameTag": "PTN Lọc hóa dầu",
     "floorNumber": 2,
     "sectorId": 4,
+    "sectorName": "Khu D",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 238,
     "name": "D211",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Hóa",
     "nameTag": "PTN Vật lí B",
     "floorNumber": 2,
     "sectorId": 4,
+    "sectorName": "Khu D",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 239,
     "name": "D213",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Hóa",
     "nameTag": "PTN Vật lí",
     "floorNumber": 2,
     "sectorId": 4,
+    "sectorName": "Khu D",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 240,
     "name": "D214",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Hóa",
     "nameTag": "PTN Công nghệ hóa dầu",
     "floorNumber": 2,
     "sectorId": 4,
+    "sectorName": "Khu D",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 241,
     "name": "D215",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Hóa",
     "nameTag": "PTN Công nghệ lọc dầu",
     "floorNumber": 2,
     "sectorId": 4,
+    "sectorName": "Khu D",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 316,
     "name": "G101A",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Môi trường",
     "nameTag": "PTN vật liệu xây dựng 1",
     "floorNumber": 1,
     "sectorId": 7,
+    "sectorName": "Khu G",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 317,
     "name": "G101B",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Xây dựng và công trình thủy",
     "nameTag": "PTN vật liệu xây dựng 2",
     "floorNumber": 1,
     "sectorId": 7,
+    "sectorName": "Khu G",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 318,
     "name": "G102",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Xây dựng và công trình thủy",
     "nameTag": "PTN cầu - đường",
     "floorNumber": 1,
     "sectorId": 7,
+    "sectorName": "Khu G",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 320,
     "name": "G104",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Xây dựng và công trình thủy",
     "nameTag": "PTN kết cấu chương trình",
     "floorNumber": 1,
     "sectorId": 7,
+    "sectorName": "Khu G",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 322,
     "name": "G106",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Xây dựng và công trình thủy",
     "nameTag": "PTN thủy lực",
     "floorNumber": 1,
     "sectorId": 7,
+    "sectorName": "Khu G",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 323,
     "name": "G201",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Xây dựng và công trình thủy",
     "nameTag": "PTN cơ - địa",
     "floorNumber": 2,
     "sectorId": 7,
+    "sectorName": "Khu G",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 324,
     "name": "G202",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Xây dựng và công trình thủy",
     "nameTag": "PTN tính năng cao",
     "floorNumber": 2,
     "sectorId": 7,
+    "sectorName": "Khu G",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 325,
     "name": "G203",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Xây dựng và công trình thủy",
     "nameTag": "Tự học",
     "floorNumber": 2,
     "sectorId": 7,
+    "sectorName": "Khu G",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 326,
     "name": "G204",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Xây dựng và công trình thủy",
     "nameTag": "Máy trắc địa",
     "floorNumber": 2,
     "sectorId": 7,
+    "sectorName": "Khu G",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 327,
     "name": "G205",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Xây dựng và công trình thủy",
     "nameTag": "Cơ học",
     "floorNumber": 2,
     "sectorId": 7,
+    "sectorName": "Khu G",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 328,
     "name": "G206",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Môi trường",
     "nameTag": "PTN môi trường",
     "floorNumber": 2,
     "sectorId": 7,
+    "sectorName": "Khu G",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 329,
     "name": "G207",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Môi trường",
     "nameTag": "PTN môi trường",
     "floorNumber": 2,
     "sectorId": 7,
+    "sectorName": "Khu G",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 330,
     "name": "G208",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Môi trường",
     "nameTag": "PTN môi trường",
     "floorNumber": 2,
     "sectorId": 7,
+    "sectorName": "Khu G",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 331,
     "name": "",
     "phone": null,
+    "description": "",
     "nameTag": "Phòng nghiên cứu Tài Nguyên Nước",
     "floorNumber": 1,
     "sectorId": 7,
+    "sectorName": "Khu G",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 332,
     "name": "HL301 - R.3.1",
     "phone": null,
+    "description": "",
     "nameTag": null,
     "floorNumber": 3,
     "sectorId": 15,
+    "sectorName": "Trung tâm học liệu truyền thông",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 333,
     "name": "HL302 - R.3.2",
     "phone": null,
+    "description": "",
     "nameTag": null,
     "floorNumber": 3,
     "sectorId": 15,
+    "sectorName": "Trung tâm học liệu truyền thông",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 334,
     "name": "HL305 - R.3.4",
     "phone": null,
+    "description": "",
     "nameTag": null,
     "floorNumber": 3,
     "sectorId": 15,
+    "sectorName": "Trung tâm học liệu truyền thông",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 364,
     "name": "I101",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Điện",
     "nameTag": "PTN cao áp",
     "floorNumber": 1,
     "sectorId": 9,
+    "sectorName": "Khu I",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 365,
     "name": "I103",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Điện",
     "nameTag": "PTN kĩ thuật đo lường",
     "floorNumber": 1,
     "sectorId": 9,
+    "sectorName": "Khu I",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 366,
     "name": "I104",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Điện",
     "nameTag": "PTN bảo vệ relay",
     "floorNumber": 1,
     "sectorId": 9,
+    "sectorName": "Khu I",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 367,
     "name": "I105",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Điện",
     "nameTag": "PTN mạng điện ",
     "floorNumber": 1,
     "sectorId": 9,
+    "sectorName": "Khu I",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 368,
     "name": "I106",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Điện",
     "nameTag": "PTN kĩ thuật điện ",
     "floorNumber": 1,
     "sectorId": 9,
+    "sectorName": "Khu I",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 369,
     "name": "I201",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Điện",
     "nameTag": "PTN lưới điện thông minh",
     "floorNumber": 2,
     "sectorId": 9,
+    "sectorName": "Khu I",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 370,
     "name": "I202",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Điện",
     "nameTag": "PTN lí thuyết mạng điện 1 & 2",
     "floorNumber": 2,
     "sectorId": 9,
+    "sectorName": "Khu I",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 371,
     "name": "I203",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Điện",
     "nameTag": "PTN lí thuyết mạng điện 1 & 2",
     "floorNumber": 2,
     "sectorId": 9,
+    "sectorName": "Khu I",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 372,
     "name": "I204",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Điện",
     "nameTag": "PTN thiết bị điện",
     "floorNumber": 2,
     "sectorId": 9,
+    "sectorName": "Khu I",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 373,
     "name": "I301",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Điện",
     "nameTag": "PTN  truyền động điện",
     "floorNumber": 3,
     "sectorId": 9,
+    "sectorName": "Khu I",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 374,
     "name": "I302",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Điện",
     "nameTag": "PTN mạch điện tử",
     "floorNumber": 3,
     "sectorId": 9,
+    "sectorName": "Khu I",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 375,
     "name": "I303",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Điện",
     "nameTag": "PTN vi điều khiển",
     "floorNumber": 3,
     "sectorId": 9,
+    "sectorName": "Khu I",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 376,
     "name": "I304",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Điện",
     "nameTag": "PTN điện tử công suất",
     "floorNumber": 3,
     "sectorId": 9,
+    "sectorName": "Khu I",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 377,
     "name": "I305",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa Điện",
     "nameTag": "PTN điều khiển logic",
     "floorNumber": 3,
     "sectorId": 9,
+    "sectorName": "Khu I",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 378,
     "name": "K101",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa cơ khí",
     "nameTag": "PTN chế tạo máy - PTN đo lường và xử lý số liệu",
     "floorNumber": 1,
     "sectorId": 10,
+    "sectorName": "Khu K",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 379,
     "name": "K102",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa cơ khí",
     "nameTag": "PTN sản xuất tự động và điều khiển số",
     "floorNumber": 1,
     "sectorId": 10,
+    "sectorName": "Khu K",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 380,
     "name": "K103",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa cơ khí",
     "nameTag": "PTN truyền động và điều khiển thủy khí 1",
     "floorNumber": 1,
     "sectorId": 10,
+    "sectorName": "Khu K",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 381,
     "name": "K104",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa cơ khí",
     "nameTag": "PTN truyền động và điều khiển thủy khí 2",
     "floorNumber": 1,
     "sectorId": 10,
+    "sectorName": "Khu K",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 382,
     "name": "K105",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa cơ khí",
     "nameTag": "PTN kim loại học",
     "floorNumber": 1,
     "sectorId": 10,
+    "sectorName": "Khu K",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 383,
     "name": "K106",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa cơ khí",
     "nameTag": "PTN hàn",
     "floorNumber": 1,
     "sectorId": 10,
+    "sectorName": "Khu K",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 384,
     "name": "K107",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa cơ khí",
     "nameTag": "PTN máy thủy khí",
     "floorNumber": 1,
     "sectorId": 10,
+    "sectorName": "Khu K",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 385,
     "name": "K108",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc khoa cơ khí",
     "nameTag": "PTN thủy khí",
     "floorNumber": 1,
     "sectorId": 10,
+    "sectorName": "Khu K",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 386,
     "name": "M101",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc Viện công nghệ cơ khí - tự động hóa",
     "nameTag": "Phòng đo lường cấp 3 ",
     "floorNumber": 1,
     "sectorId": 11,
+    "sectorName": "Khu M",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 387,
     "name": "M102",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc Viện công nghệ cơ khí - tự động hóa",
     "nameTag": "PTN sản xuất tự động ",
     "floorNumber": 1,
     "sectorId": 11,
+    "sectorName": "Khu M",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 388,
     "name": "M103",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc Viện công nghệ cơ khí - tự động hóa",
     "nameTag": "Phòng nghiên cứu và sản xuất thực nghiệm ",
     "floorNumber": 1,
     "sectorId": 11,
+    "sectorName": "Khu M",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 389,
     "name": "M104",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc Viện công nghệ cơ khí - tự động hóa",
     "nameTag": "Phòng thực hành CNC nâng cao ",
     "floorNumber": 1,
     "sectorId": 11,
+    "sectorName": "Khu M",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 390,
     "name": "M106",
     "phone": null,
+    "description": "PTN thực nghiệm trực thuộc Viện công nghệ cơ khí - tự động hóa",
     "nameTag": "PTN nghiên cứu máy ",
     "floorNumber": 1,
     "sectorId": 11,
+    "sectorName": "Khu M",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 391,
     "name": "M205",
     "phone": null,
+    "description": null,
     "nameTag": null,
     "floorNumber": 2,
     "sectorId": 11,
+    "sectorName": "Khu M",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 392,
     "name": "M202",
     "phone": null,
+    "description": null,
     "nameTag": null,
     "floorNumber": 2,
     "sectorId": 11,
+    "sectorName": "Khu M",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 393,
     "name": "M204",
     "phone": null,
+    "description": null,
     "nameTag": null,
     "floorNumber": 2,
     "sectorId": 11,
+    "sectorName": "Khu M",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 394,
     "name": "M206",
     "phone": null,
+    "description": null,
     "nameTag": null,
     "floorNumber": 2,
     "sectorId": 11,
+    "sectorName": "Khu M",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
-  },
-  {
-    "id": 395,
-    "name": "NM",
-    "phone": null,
-    "nameTag": null,
-    "floorNumber": 1,
-    "sectorId": 25,
-    "categoryId": null,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 408,
     "name": "S01.01",
     "phone": "02363842308",
+    "description": "Chịu trách nhiệm về công tác hành chính, tổng hợp, tổ chức, nhân sự, an ninh trật tự, thi đua – khen thưởng, y tế, vệ sinh môi trường",
     "nameTag": "Phòng tổ chức - hành chính",
     "floorNumber": 1,
     "sectorId": 12,
+    "sectorName": "Khu S - Smart Building",
     "categoryId": 2,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Phòng chức năng",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 409,
     "name": "S02.03",
     "phone": "02363679868",
+    "description": "Thực hiện công tác tổ chức, xây dựng chiến lược phát triển hoạt động liên quan đến nghiên cứu khoa học - hợp tác với doanh nghiệp và quốc tế",
     "nameTag": "Phòng khoa học công nghệ & Hợp tác quốc tế",
     "floorNumber": 2,
     "sectorId": 12,
+    "sectorName": "Khu S - Smart Building",
     "categoryId": 2,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Phòng chức năng",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 410,
     "name": "S03.08",
     "phone": "02363737931",
+    "description": "Thực hiện công tác khảo thí, đảm bảo chất lượng, kiểm định chất lượng. ",
     "nameTag": "Phòng khảo thí & Đảm bảo chất lượng",
     "floorNumber": 3,
     "sectorId": 12,
+    "sectorName": "Khu S - Smart Building",
     "categoryId": 2,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Phòng chức năng",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 411,
     "name": "S03.05",
     "phone": "02363740718",
+    "description": "Thực hiện công tác thanh tra, kiểm tra; tiếp công dân, giải quyết khiếu nại. Triển khai và quản lý các hoạt động pháp chế",
     "nameTag": "Phòng Thanh Tra - Pháp Chế",
     "floorNumber": 3,
     "sectorId": 12,
+    "sectorName": "Khu S - Smart Building",
     "categoryId": 2,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Phòng chức năng",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 412,
     "name": "S07.04",
     "phone": "0973777848",
+    "description": "Nơi làm việc của ban lãnh đạo, giải quyết các vấn đề trong khoa Công nghệ Thông tin.",
     "nameTag": "Tổ công nghệ thông tin",
     "floorNumber": 7,
     "sectorId": 12,
+    "sectorName": "Khu S - Smart Building",
     "categoryId": 2,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Phòng chức năng",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 413,
     "name": "Phòng công nghệ",
     "phone": "",
+    "description": "",
     "nameTag": null,
     "floorNumber": 1,
     "sectorId": 18,
+    "sectorName": "Trung tâm Nghiên cứu bảo vệ môi trường",
     "categoryId": 8,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Trung tâm nghiên cứu",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 414,
     "name": "Phòng phân tích kim loại nặng",
     "phone": "",
+    "description": "",
     "nameTag": null,
     "floorNumber": 1,
     "sectorId": 18,
+    "sectorName": "Trung tâm Nghiên cứu bảo vệ môi trường",
     "categoryId": 8,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Trung tâm nghiên cứu",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 415,
     "name": "PTN công nghệ sinh học",
     "phone": "",
+    "description": "",
     "nameTag": null,
     "floorNumber": 1,
     "sectorId": 18,
+    "sectorName": "Trung tâm Nghiên cứu bảo vệ môi trường",
     "categoryId": 8,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Trung tâm nghiên cứu",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 416,
     "name": "Phòng sắc ký",
     "phone": "",
+    "description": "",
     "nameTag": null,
     "floorNumber": 1,
     "sectorId": 18,
+    "sectorName": "Trung tâm Nghiên cứu bảo vệ môi trường",
     "categoryId": 8,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Trung tâm nghiên cứu",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 420,
     "name": null,
     "phone": null,
+    "description": "Xưởng Cơ khí gồm các loại máy cắt kim loại truyền thống và máy điều khiển số phục vụ cho việc đào tạo và chuyển giao công nghệ.",
     "nameTag": "Xưởng CK",
     "floorNumber": 1,
     "sectorId": 25,
+    "sectorName": "Khác",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 421,
     "name": null,
     "phone": null,
+    "description": "Phục vụ cho việc đào tạo và chuyển giao công nghệ.",
     "nameTag": "Xưởng ĐL",
     "floorNumber": 1,
     "sectorId": 25,
+    "sectorName": "Khác",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 422,
     "name": null,
     "phone": null,
+    "description": null,
     "nameTag": "Xưởng động học",
     "floorNumber": 1,
     "sectorId": 25,
+    "sectorName": "Khác",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 423,
     "name": null,
     "phone": "02363842309",
+    "description": "Bảo vệ, giữ vững trật tự, ngăn ngừa kẻ gian xâm nhập, giữ gìn tài sản nhà trường",
     "nameTag": "Tổ bảo vệ",
     "floorNumber": 1,
     "sectorId": 25,
+    "sectorName": "Khác",
     "categoryId": 2,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Phòng chức năng",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 424,
     "name": null,
     "phone": null,
+    "description": "Phục vụ cho việc đào tạo và chuyển giao công nghệ.",
     "nameTag": "Xưởng đúc",
     "floorNumber": 1,
     "sectorId": 25,
+    "sectorName": "Khác",
     "categoryId": 9,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Xưởng, PTN",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 425,
     "name": null,
     "phone": null,
-    "nameTag": "Hội trường",
+    "description": null,
+    "nameTag": "Hội trường khu F",
     "floorNumber": 1,
     "sectorId": 6,
+    "sectorName": "Khu F",
     "categoryId": 4,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Hội trường",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 426,
     "name": null,
     "phone": null,
-    "nameTag": "Hội trường",
+    "description": null,
+    "nameTag": "Hội trường khu A",
     "floorNumber": 1,
     "sectorId": 1,
+    "sectorName": "Khu A",
     "categoryId": 4,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Hội trường",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 427,
     "name": null,
     "phone": null,
-    "nameTag": "Hội trường",
+    "description": null,
+    "nameTag": "Hội trường khu S",
     "floorNumber": 1,
     "sectorId": 12,
+    "sectorName": "Khu S - Smart Building",
     "categoryId": 4,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Hội trường",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 428,
     "name": null,
     "phone": null,
-    "nameTag": "Nhà xe",
+    "description": null,
+    "nameTag": "Nhà xe khu F",
     "floorNumber": 1,
     "sectorId": 6,
+    "sectorName": "Khu F",
     "categoryId": 5,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Nhà xe",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 429,
     "name": null,
     "phone": null,
-    "nameTag": "Nhà xe",
+    "description": null,
+    "nameTag": "Nhà xe khu C",
     "floorNumber": 1,
     "sectorId": 3,
+    "sectorName": "Khu C",
     "categoryId": 5,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Nhà xe",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 430,
     "name": null,
     "phone": null,
-    "nameTag": "Nhà xe",
+    "description": null,
+    "nameTag": "Nhà xe khu E",
     "floorNumber": 1,
     "sectorId": 5,
+    "sectorName": "Khu E",
     "categoryId": 5,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Nhà xe",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 431,
     "name": null,
     "phone": null,
-    "nameTag": "Khu tự học",
+    "description": null,
+    "nameTag": "Khu tự học khu A",
     "floorNumber": 1,
     "sectorId": 1,
+    "sectorName": "Khu A",
     "categoryId": 6,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Khu tự học",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 432,
     "name": null,
     "phone": null,
-    "nameTag": "Khu tự học",
+    "description": null,
+    "nameTag": "Khu tự học khu C",
     "floorNumber": 2,
     "sectorId": 3,
+    "sectorName": "Khu C",
     "categoryId": 6,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Khu tự học",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 433,
     "name": null,
     "phone": null,
+    "description": null,
     "nameTag": "Căn tin cà phê Trung Nguyên",
     "floorNumber": 1,
     "sectorId": 5,
+    "sectorName": "Khu E",
     "categoryId": 7,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Căn tin",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 434,
     "name": null,
     "phone": null,
+    "description": "Cạnh Trung tâm Hỗ trợ Sinh viên và Quan hệ doanh nghiệp",
     "nameTag": "Căn tin ĐHBK",
     "floorNumber": 1,
     "sectorId": 25,
+    "sectorName": "Khác",
     "categoryId": 7,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Căn tin",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 435,
     "name": null,
     "phone": null,
+    "description": "Cạnh Trung tâm Khoa học công nghệ và tư vấn đầu tư",
     "nameTag": "Căn tin",
     "floorNumber": 1,
     "sectorId": 25,
+    "sectorName": "Khác",
     "categoryId": 7,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Căn tin",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 436,
     "name": null,
     "phone": null,
+    "description": null,
     "nameTag": "Biểu tượng DUT",
     "floorNumber": 1,
-    "sectorId": 1,
+    "sectorId": 2,
+    "sectorName": "Khu B",
     "categoryId": 11,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Khác",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 437,
     "name": null,
     "phone": null,
-    "nameTag": "Hồ phun nước",
+    "description": null,
+    "nameTag": "Hồ phun nước khu E",
     "floorNumber": 1,
     "sectorId": 5,
+    "sectorName": "Khu E",
     "categoryId": 11,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Khác",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 438,
     "name": null,
     "phone": null,
-    "nameTag": "Hồ cá",
+    "description": null,
+    "nameTag": "Hồ cá khu A",
     "floorNumber": 1,
     "sectorId": 1,
+    "sectorName": "Khu A",
     "categoryId": 11,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Khác",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 439,
     "name": null,
     "phone": null,
+    "description": null,
     "nameTag": "Sân",
     "floorNumber": 1,
     "sectorId": 6,
+    "sectorName": "Khu F",
     "categoryId": 11,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Khác",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 440,
     "name": null,
     "phone": null,
+    "description": null,
     "nameTag": "Sân bóng chuyền",
     "floorNumber": 1,
     "sectorId": 1,
+    "sectorName": "Khu A",
     "categoryId": 11,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Khác",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 441,
     "name": null,
     "phone": null,
+    "description": null,
     "nameTag": "Nhà đa năng",
     "floorNumber": 1,
     "sectorId": 25,
+    "sectorName": "Khác",
     "categoryId": 11,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Khác",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 442,
     "name": null,
     "phone": null,
+    "description": null,
     "nameTag": "Tượng",
     "floorNumber": 1,
     "sectorId": 1,
+    "sectorName": "Khu A",
     "categoryId": 11,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Khác",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
     "id": 443,
     "name": null,
     "phone": "02363842309",
+    "description": "Bảo vệ, giữ vững trật tự, ngăn ngừa kẻ gian xâm nhập, giữ gìn tài sản nhà trường",
     "nameTag": "Tổ bảo vệ",
     "floorNumber": 1,
     "sectorId": 25,
+    "sectorName": "Khác",
     "categoryId": 2,
-    "createdAt": "2021-05-06T17:56:38.375Z",
-    "updatedAt": "2021-05-06T17:56:38.375Z"
+    "categoryName": "Phòng chức năng",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   },
   {
-    "id": 444,
-    "name": "M105",
+    "id": 448,
+    "name": null,
     "phone": null,
-    "nameTag": null,
+    "description": null,
+    "nameTag": "Hồ cá khu F",
     "floorNumber": 1,
-    "sectorId": 11,
-    "sectorName": "Khu M",
-    "categoryId": 10,
-    "categoryName": "Phòng học",
-    "createdAt": "2021-06-30T07:56:19.183Z",
-    "updatedAt": "2021-06-30T07:56:19.183Z"
-  },
-  {
-    "id": 445,
-    "name": "M107",
-    "phone": null,
-    "nameTag": null,
-    "floorNumber": 1,
-    "sectorId": 11,
-    "sectorName": "Khu M",
-    "categoryId": 10,
-    "categoryName": "Phòng học",
-    "createdAt": "2021-06-30T07:56:19.183Z",
-    "updatedAt": "2021-06-30T07:56:19.183Z"
-  },
-  {
-    "id": 446,
-    "name": "M108",
-    "phone": null,
-    "nameTag": null,
-    "floorNumber": 1,
-    "sectorId": 11,
-    "sectorName": "Khu M",
-    "categoryId": 10,
-    "categoryName": "Phòng học",
-    "createdAt": "2021-06-30T07:56:19.183Z",
-    "updatedAt": "2021-06-30T07:56:19.183Z"
+    "sectorId": 6,
+    "sectorName": "Khu F",
+    "categoryId": 11,
+    "categoryName": "Khác",
+    "createdAt": "2021-06-30T19:24:27.143Z",
+    "updatedAt": "2021-06-30T19:24:27.143Z"
   }
 ]
 
@@ -2639,7 +3008,7 @@ buildings = [
           {
             "id": 432,
             "name": null,
-            "nameTag": "Khu tự học"
+            "nameTag": "Khu tự học khu C"
           }
         ]
       },
@@ -2799,7 +3168,7 @@ buildings = [
           {
             "id": 429,
             "name": null,
-            "nameTag": "Nhà xe"
+            "nameTag": "Nhà xe khu C"
           }
         ]
       },
@@ -3159,17 +3528,17 @@ buildings = [
           {
             "id": 426,
             "name": null,
-            "nameTag": "Hội trường"
+            "nameTag": "Hội trường khu A"
           },
           {
             "id": 431,
             "name": null,
-            "nameTag": "Khu tự học"
+            "nameTag": "Khu tự học khu A"
           },
           {
             "id": 438,
             "name": null,
-            "nameTag": "Hồ cá"
+            "nameTag": "Hồ cá khu A"
           },
           {
             "id": 440,
@@ -3754,6 +4123,16 @@ buildings = [
             "id": 227,
             "name": "D116",
             "nameTag": null
+          },
+          {
+            "id": 445,
+            "name": "D113",
+            "nameTag": null
+          },
+          {
+            "id": 446,
+            "name": "D114",
+            "nameTag": null
           }
         ]
       },
@@ -3829,6 +4208,11 @@ buildings = [
             "id": 241,
             "name": "D215",
             "nameTag": "PTN Công nghệ lọc dầu"
+          },
+          {
+            "id": 447,
+            "name": "D212",
+            "nameTag": null
           }
         ]
       }
@@ -3966,7 +4350,7 @@ buildings = [
           {
             "id": 430,
             "name": null,
-            "nameTag": "Nhà xe"
+            "nameTag": "Nhà xe khu E"
           },
           {
             "id": 433,
@@ -3976,7 +4360,7 @@ buildings = [
           {
             "id": 437,
             "name": null,
-            "nameTag": "Hồ phun nước"
+            "nameTag": "Hồ phun nước khu E"
           }
         ]
       },
@@ -4198,17 +4582,22 @@ buildings = [
           {
             "id": 425,
             "name": null,
-            "nameTag": "Hội trường"
+            "nameTag": "Hội trường khu F"
           },
           {
             "id": 428,
             "name": null,
-            "nameTag": "Nhà xe"
+            "nameTag": "Nhà xe khu F"
           },
           {
             "id": 439,
             "name": null,
             "nameTag": "Sân"
+          },
+          {
+            "id": 448,
+            "name": null,
+            "nameTag": "Hồ cá khu F"
           }
         ]
       },
@@ -4832,6 +5221,11 @@ buildings = [
             "id": 368,
             "name": "I106",
             "nameTag": "PTN kĩ thuật điện "
+          },
+          {
+            "id": 444,
+            "name": "I102",
+            "nameTag": null
           }
         ]
       },
@@ -4988,6 +5382,21 @@ buildings = [
             "id": 390,
             "name": "M106",
             "nameTag": "PTN nghiên cứu máy "
+          },
+          {
+            "id": 449,
+            "name": "M105",
+            "nameTag": null
+          },
+          {
+            "id": 450,
+            "name": "M107",
+            "nameTag": null
+          },
+          {
+            "id": 451,
+            "name": "M108",
+            "nameTag": null
           }
         ]
       },
@@ -5036,7 +5445,7 @@ buildings = [
           {
             "id": 427,
             "name": null,
-            "nameTag": "Hội trường"
+            "nameTag": "Hội trường khu S"
           }
         ]
       },
