@@ -991,7 +991,12 @@
               "id": 414,
               "name": "Phòng phân tích kim loại nặng",
               "nameTag": ""
-            },
+            }
+          ]
+        },
+        {
+          "name": 2,
+          "rooms": [
             { "id": 415, "name": "PTN công nghệ sinh học", "nameTag": "" },
             { "id": 416, "name": "Phòng sắc ký", "nameTag": "" }
           ]

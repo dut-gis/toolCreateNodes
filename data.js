@@ -1669,7 +1669,7 @@ places = [
     "phone": "",
     "description": "",
     "nameTag": null,
-    "floorNumber": 1,
+    "floorNumber": 2,
     "sectorId": 18,
     "sectorName": "Trung tâm Nghiên cứu bảo vệ môi trường",
     "categoryId": 8,
@@ -1683,7 +1683,7 @@ places = [
     "phone": "",
     "description": "",
     "nameTag": null,
-    "floorNumber": 1,
+    "floorNumber": 2,
     "sectorId": 18,
     "sectorName": "Trung tâm Nghiên cứu bảo vệ môi trường",
     "categoryId": 8,
@@ -5508,7 +5508,12 @@ buildings = [
             "id": 414,
             "name": "Phòng phân tích kim loại nặng",
             "nameTag": null
-          },
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "rooms": [
           {
             "id": 415,
             "name": "PTN công nghệ sinh học",
