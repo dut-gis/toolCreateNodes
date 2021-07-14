@@ -109,7 +109,7 @@ function mergeListNodes(dataMapNodes) {
 
 function drawDetail(e, isNodeSelected){
     if(isNodeSelected){
-        if (e.id_stair != null) {
+        if (e.id_stair !== null && e.id_stair !== '') {
             // draw all stair_variables
             text(buildingNames[e.id_building], e.longitude, e.latitude - 12);
             text(stairs[e.id_stair-1].name, e.longitude, e.latitude);
