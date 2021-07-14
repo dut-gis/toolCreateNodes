@@ -1857,744 +1857,566 @@ function getListOption(categoryId) {
 
 stairs = [
   {
-    "id": 1,
-    "name": "Phòng A102",
-    "sectorId": 1,
-    "sectorName": "Khu A",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
-  },
-  {
-    "id": 2,
-    "name": "Phòng A118A",
-    "sectorId": 1,
-    "sectorName": "Khu A",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
-  },
-  {
-    "id": 3,
-    "name": "Phòng A119",
-    "sectorId": 1,
-    "sectorName": "Khu A",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
-  },
-  {
-    "id": 4,
-    "name": "Phòng A202",
-    "sectorId": 1,
-    "sectorName": "Khu A",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
-  },
-  {
-    "id": 5,
-    "name": "Phòng A225",
-    "sectorId": 1,
-    "sectorName": "Khu A",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
-  },
-  {
-    "id": 6,
-    "name": "Phòng A227",
-    "sectorId": 1,
-    "sectorName": "Khu A",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
-  },
-  {
-    "id": 7,
-    "name": "Phòng A302",
-    "sectorId": 1,
-    "sectorName": "Khu A",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
-  },
-  {
-    "id": 8,
-    "name": "Phòng A311",
-    "sectorId": 1,
-    "sectorName": "Khu A",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
-  },
-  {
-    "id": 9,
-    "name": "Phòng A322",
-    "sectorId": 1,
-    "sectorName": "Khu A",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
-  },
-  {
-    "id": 10,
-    "name": "Phòng 401A",
-    "sectorId": 1,
-    "sectorName": "Khu A",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
-  },
-  {
-    "id": 11,
-    "name": "Phòng B101",
-    "sectorId": 2,
-    "sectorName": "Khu B",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
-  },
-  {
-    "id": 12,
-    "name": "Phòng B104",
-    "sectorId": 2,
-    "sectorName": "Khu B",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
-  },
-  {
-    "id": 13,
-    "name": "Phòng B106",
-    "sectorId": 2,
-    "sectorName": "Khu B",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 1,
+      "name": "Phòng A102",
+      "sectorId": 1,
+      "sectorName": "Khu A"
   },
   {
-    "id": 14,
-    "name": "Phòng B201",
-    "sectorId": 2,
-    "sectorName": "Khu B",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 2,
+      "name": "Phòng A118A",
+      "sectorId": 1,
+      "sectorName": "Khu A"
   },
   {
-    "id": 15,
-    "name": "Phòng B204",
-    "sectorId": 2,
-    "sectorName": "Khu B",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 3,
+      "name": "Phòng A119",
+      "sectorId": 1,
+      "sectorName": "Khu A"
   },
   {
-    "id": 16,
-    "name": "Phòng B206",
-    "sectorId": 2,
-    "sectorName": "Khu B",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 4,
+      "name": "Phòng A202",
+      "sectorId": 1,
+      "sectorName": "Khu A"
   },
   {
-    "id": 17,
-    "name": "Phòng B301",
-    "sectorId": 2,
-    "sectorName": "Khu B",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 5,
+      "name": "Phòng A225",
+      "sectorId": 1,
+      "sectorName": "Khu A"
   },
   {
-    "id": 18,
-    "name": "Phòng B303",
-    "sectorId": 2,
-    "sectorName": "Khu B",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 6,
+      "name": "Phòng A227",
+      "sectorId": 1,
+      "sectorName": "Khu A"
   },
   {
-    "id": 19,
-    "name": "Phòng B305",
-    "sectorId": 2,
-    "sectorName": "Khu B",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 7,
+      "name": "Phòng A302",
+      "sectorId": 1,
+      "sectorName": "Khu A"
   },
   {
-    "id": 20,
-    "name": "Phòng C104",
-    "sectorId": 3,
-    "sectorName": "Khu C",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 8,
+      "name": "Phòng A311",
+      "sectorId": 1,
+      "sectorName": "Khu A"
   },
   {
-    "id": 21,
-    "name": "Phòng C111",
-    "sectorId": 3,
-    "sectorName": "Khu C",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 9,
+      "name": "Phòng A322",
+      "sectorId": 1,
+      "sectorName": "Khu A"
   },
   {
-    "id": 22,
-    "name": "Phòng C115B",
-    "sectorId": 3,
-    "sectorName": "Khu C",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 10,
+      "name": "Phòng 401A",
+      "sectorId": 1,
+      "sectorName": "Khu A"
   },
   {
-    "id": 23,
-    "name": "Phòng C121",
-    "sectorId": 3,
-    "sectorName": "Khu C",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 11,
+      "name": "Phòng B101",
+      "sectorId": 2,
+      "sectorName": "Khu B"
   },
   {
-    "id": 24,
-    "name": "Phòng C122",
-    "sectorId": 3,
-    "sectorName": "Khu C",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 12,
+      "name": "Phòng B104",
+      "sectorId": 2,
+      "sectorName": "Khu B"
   },
   {
-    "id": 25,
-    "name": "Phòng C127",
-    "sectorId": 3,
-    "sectorName": "Khu C",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 13,
+      "name": "Phòng B106",
+      "sectorId": 2,
+      "sectorName": "Khu B"
   },
   {
-    "id": 26,
-    "name": "Phòng C203",
-    "sectorId": 3,
-    "sectorName": "Khu C",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 14,
+      "name": "Phòng B201",
+      "sectorId": 2,
+      "sectorName": "Khu B"
   },
   {
-    "id": 27,
-    "name": "Phòng C209",
-    "sectorId": 3,
-    "sectorName": "Khu C",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 15,
+      "name": "Phòng B204",
+      "sectorId": 2,
+      "sectorName": "Khu B"
   },
   {
-    "id": 28,
-    "name": "Phòng C214",
-    "sectorId": 3,
-    "sectorName": "Khu C",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 16,
+      "name": "Phòng B206",
+      "sectorId": 2,
+      "sectorName": "Khu B"
   },
   {
-    "id": 29,
-    "name": "Phòng C217",
-    "sectorId": 3,
-    "sectorName": "Khu C",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 17,
+      "name": "Phòng B301",
+      "sectorId": 2,
+      "sectorName": "Khu B"
   },
   {
-    "id": 30,
-    "name": "Phòng C220",
-    "sectorId": 3,
-    "sectorName": "Khu C",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 18,
+      "name": "Phòng B303",
+      "sectorId": 2,
+      "sectorName": "Khu B"
   },
   {
-    "id": 31,
-    "name": "Phòng C224",
-    "sectorId": 3,
-    "sectorName": "Khu C",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 19,
+      "name": "Phòng B305",
+      "sectorId": 2,
+      "sectorName": "Khu B"
   },
   {
-    "id": 32,
-    "name": "Phòng C229",
-    "sectorId": 3,
-    "sectorName": "Khu C",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 20,
+      "name": "Phòng C104",
+      "sectorId": 3,
+      "sectorName": "Khu C"
   },
   {
-    "id": 33,
-    "name": "Phòng C301",
-    "sectorId": 3,
-    "sectorName": "Khu C",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 21,
+      "name": "Phòng C111",
+      "sectorId": 3,
+      "sectorName": "Khu C"
   },
   {
-    "id": 34,
-    "name": "Phòng D106",
-    "sectorId": 4,
-    "sectorName": "Khu D",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 22,
+      "name": "Phòng C115B",
+      "sectorId": 3,
+      "sectorName": "Khu C"
   },
   {
-    "id": 35,
-    "name": "Phòng D113",
-    "sectorId": 4,
-    "sectorName": "Khu D",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 23,
+      "name": "Phòng C121",
+      "sectorId": 3,
+      "sectorName": "Khu C"
   },
   {
-    "id": 36,
-    "name": "Phòng D115",
-    "sectorId": 4,
-    "sectorName": "Khu D",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 24,
+      "name": "Phòng C122",
+      "sectorId": 3,
+      "sectorName": "Khu C"
   },
   {
-    "id": 37,
-    "name": "Phòng D206",
-    "sectorId": 4,
-    "sectorName": "Khu D",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 25,
+      "name": "Phòng C127",
+      "sectorId": 3,
+      "sectorName": "Khu C"
   },
   {
-    "id": 38,
-    "name": "Phòng D213",
-    "sectorId": 4,
-    "sectorName": "Khu D",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 26,
+      "name": "Phòng C203",
+      "sectorId": 3,
+      "sectorName": "Khu C"
   },
   {
-    "id": 39,
-    "name": "Phòng D215",
-    "sectorId": 4,
-    "sectorName": "Khu D",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 27,
+      "name": "Phòng C209",
+      "sectorId": 3,
+      "sectorName": "Khu C"
   },
   {
-    "id": 40,
-    "name": "Phòng E101",
-    "sectorId": 5,
-    "sectorName": "Khu E",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 28,
+      "name": "Phòng C214",
+      "sectorId": 3,
+      "sectorName": "Khu C"
   },
   {
-    "id": 41,
-    "name": "Phòng E104",
-    "sectorId": 5,
-    "sectorName": "Khu E",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 29,
+      "name": "Phòng C217",
+      "sectorId": 3,
+      "sectorName": "Khu C"
   },
   {
-    "id": 42,
-    "name": "Phòng E111",
-    "sectorId": 5,
-    "sectorName": "Khu E",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 30,
+      "name": "Phòng C220",
+      "sectorId": 3,
+      "sectorName": "Khu C"
   },
   {
-    "id": 43,
-    "name": "Phòng E113",
-    "sectorId": 5,
-    "sectorName": "Khu E",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 31,
+      "name": "Phòng C224",
+      "sectorId": 3,
+      "sectorName": "Khu C"
   },
   {
-    "id": 44,
-    "name": "Phòng E201A",
-    "sectorId": 5,
-    "sectorName": "Khu E",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 32,
+      "name": "Phòng C229",
+      "sectorId": 3,
+      "sectorName": "Khu C"
   },
   {
-    "id": 45,
-    "name": "Phòng E204B",
-    "sectorId": 5,
-    "sectorName": "Khu E",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 33,
+      "name": "Phòng C301",
+      "sectorId": 3,
+      "sectorName": "Khu C"
   },
   {
-    "id": 46,
-    "name": "Phòng E207",
-    "sectorId": 5,
-    "sectorName": "Khu E",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 34,
+      "name": "Phòng D106",
+      "sectorId": 4,
+      "sectorName": "Khu D"
   },
   {
-    "id": 47,
-    "name": "Phòng E209",
-    "sectorId": 5,
-    "sectorName": "Khu E",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 35,
+      "name": "Phòng D113",
+      "sectorId": 4,
+      "sectorName": "Khu D"
   },
   {
-    "id": 48,
-    "name": "Phòng E302",
-    "sectorId": 5,
-    "sectorName": "Khu E",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 36,
+      "name": "Phòng D115",
+      "sectorId": 4,
+      "sectorName": "Khu D"
   },
   {
-    "id": 49,
-    "name": "Phòng E304",
-    "sectorId": 5,
-    "sectorName": "Khu E",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 37,
+      "name": "Phòng D206",
+      "sectorId": 4,
+      "sectorName": "Khu D"
   },
   {
-    "id": 50,
-    "name": "Phòng E403",
-    "sectorId": 5,
-    "sectorName": "Khu E",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 38,
+      "name": "Phòng D213",
+      "sectorId": 4,
+      "sectorName": "Khu D"
   },
   {
-    "id": 51,
-    "name": "Phòng E405",
-    "sectorId": 5,
-    "sectorName": "Khu E",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 39,
+      "name": "Phòng D215",
+      "sectorId": 4,
+      "sectorName": "Khu D"
   },
   {
-    "id": 52,
-    "name": "Phòng F101",
-    "sectorId": 6,
-    "sectorName": "Khu F",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 40,
+      "name": "Phòng E101",
+      "sectorId": 5,
+      "sectorName": "Khu E"
   },
   {
-    "id": 53,
-    "name": "Phòng F103",
-    "sectorId": 6,
-    "sectorName": "Khu F",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 41,
+      "name": "Phòng E104",
+      "sectorId": 5,
+      "sectorName": "Khu E"
   },
   {
-    "id": 54,
-    "name": "Phòng F107",
-    "sectorId": 6,
-    "sectorName": "Khu F",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 42,
+      "name": "Phòng E111",
+      "sectorId": 5,
+      "sectorName": "Khu E"
   },
   {
-    "id": 55,
-    "name": "Phòng F201",
-    "sectorId": 6,
-    "sectorName": "Khu F",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 43,
+      "name": "Phòng E113",
+      "sectorId": 5,
+      "sectorName": "Khu E"
   },
   {
-    "id": 56,
-    "name": "Phòng F203",
-    "sectorId": 6,
-    "sectorName": "Khu F",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 44,
+      "name": "Phòng E201A",
+      "sectorId": 5,
+      "sectorName": "Khu E"
   },
   {
-    "id": 57,
-    "name": "Phòng F207",
-    "sectorId": 6,
-    "sectorName": "Khu F",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 45,
+      "name": "Phòng E204B",
+      "sectorId": 5,
+      "sectorName": "Khu E"
   },
   {
-    "id": 58,
-    "name": "Phòng F301",
-    "sectorId": 6,
-    "sectorName": "Khu F",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 46,
+      "name": "Phòng E207",
+      "sectorId": 5,
+      "sectorName": "Khu E"
   },
   {
-    "id": 59,
-    "name": "Phòng F303",
-    "sectorId": 6,
-    "sectorName": "Khu F",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 47,
+      "name": "Phòng E209",
+      "sectorId": 5,
+      "sectorName": "Khu E"
   },
   {
-    "id": 60,
-    "name": "Phòng F307",
-    "sectorId": 6,
-    "sectorName": "Khu F",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 48,
+      "name": "Phòng E302",
+      "sectorId": 5,
+      "sectorName": "Khu E"
   },
   {
-    "id": 61,
-    "name": "Phòng F401",
-    "sectorId": 6,
-    "sectorName": "Khu F",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 49,
+      "name": "Phòng E304",
+      "sectorId": 5,
+      "sectorName": "Khu E"
   },
   {
-    "id": 62,
-    "name": "Phòng F403",
-    "sectorId": 6,
-    "sectorName": "Khu F",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 50,
+      "name": "Phòng E403",
+      "sectorId": 5,
+      "sectorName": "Khu E"
   },
   {
-    "id": 63,
-    "name": "Phòng F407",
-    "sectorId": 6,
-    "sectorName": "Khu F",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 51,
+      "name": "Phòng E405",
+      "sectorId": 5,
+      "sectorName": "Khu E"
   },
   {
-    "id": 64,
-    "name": "Phòng G105",
-    "sectorId": 7,
-    "sectorName": "Khu G",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 52,
+      "name": "Phòng F101",
+      "sectorId": 6,
+      "sectorName": "Khu F"
   },
   {
-    "id": 65,
-    "name": "Phòng G206",
-    "sectorId": 7,
-    "sectorName": "Khu G",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 53,
+      "name": "Phòng F103",
+      "sectorId": 6,
+      "sectorName": "Khu F"
   },
   {
-    "id": 66,
-    "name": "Phòng H104",
-    "sectorId": 8,
-    "sectorName": "Khu H",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 54,
+      "name": "Phòng F107",
+      "sectorId": 6,
+      "sectorName": "Khu F"
   },
   {
-    "id": 67,
-    "name": "Phòng H105",
-    "sectorId": 8,
-    "sectorName": "Khu H",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 55,
+      "name": "Phòng F201",
+      "sectorId": 6,
+      "sectorName": "Khu F"
   },
   {
-    "id": 68,
-    "name": "Phòng H107",
-    "sectorId": 8,
-    "sectorName": "Khu H",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 56,
+      "name": "Phòng F203",
+      "sectorId": 6,
+      "sectorName": "Khu F"
   },
   {
-    "id": 69,
-    "name": "Phòng H204",
-    "sectorId": 8,
-    "sectorName": "Khu H",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 57,
+      "name": "Phòng F207",
+      "sectorId": 6,
+      "sectorName": "Khu F"
   },
   {
-    "id": 70,
-    "name": "Phòng H205",
-    "sectorId": 8,
-    "sectorName": "Khu H",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 58,
+      "name": "Phòng F301",
+      "sectorId": 6,
+      "sectorName": "Khu F"
   },
   {
-    "id": 71,
-    "name": "Phòng H207",
-    "sectorId": 8,
-    "sectorName": "Khu H",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 59,
+      "name": "Phòng F303",
+      "sectorId": 6,
+      "sectorName": "Khu F"
   },
   {
-    "id": 72,
-    "name": "Phòng H304",
-    "sectorId": 8,
-    "sectorName": "Khu H",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 60,
+      "name": "Phòng F307",
+      "sectorId": 6,
+      "sectorName": "Khu F"
   },
   {
-    "id": 73,
-    "name": "Phòng H305",
-    "sectorId": 8,
-    "sectorName": "Khu H",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 61,
+      "name": "Phòng F401",
+      "sectorId": 6,
+      "sectorName": "Khu F"
   },
   {
-    "id": 74,
-    "name": "Phòng H307",
-    "sectorId": 8,
-    "sectorName": "Khu H",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 62,
+      "name": "Phòng F403",
+      "sectorId": 6,
+      "sectorName": "Khu F"
   },
   {
-    "id": 75,
-    "name": "Kho vật tư",
-    "sectorId": 8,
-    "sectorName": "Khu H",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 63,
+      "name": "Phòng F407",
+      "sectorId": 6,
+      "sectorName": "Khu F"
   },
   {
-    "id": 76,
-    "name": "Phòng H401",
-    "sectorId": 8,
-    "sectorName": "Khu H",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 64,
+      "name": "Phòng G105",
+      "sectorId": 7,
+      "sectorName": "Khu G"
   },
   {
-    "id": 77,
-    "name": "Phòng nước giáo viên",
-    "sectorId": 8,
-    "sectorName": "Khu H",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 65,
+      "name": "Phòng G206",
+      "sectorId": 7,
+      "sectorName": "Khu G"
   },
   {
-    "id": 78,
-    "name": "Phòng I101",
-    "sectorId": 9,
-    "sectorName": "Khu I",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 66,
+      "name": "Phòng H104",
+      "sectorId": 8,
+      "sectorName": "Khu H"
   },
   {
-    "id": 79,
-    "name": "Phòng I106",
-    "sectorId": 9,
-    "sectorName": "Khu I",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 67,
+      "name": "Phòng H105",
+      "sectorId": 8,
+      "sectorName": "Khu H"
   },
   {
-    "id": 80,
-    "name": "Phòng I201",
-    "sectorId": 9,
-    "sectorName": "Khu I",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
-  },
-  {
-    "id": 81,
-    "name": "Phòng I204",
-    "sectorId": 9,
-    "sectorName": "Khu I",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
-  },
-  {
-    "id": 82,
-    "name": "Phòng I302",
-    "sectorId": 9,
-    "sectorName": "Khu I",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
-  },
-  {
-    "id": 83,
-    "name": "Phòng I305",
-    "sectorId": 9,
-    "sectorName": "Khu I",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
-  },
-  {
-    "id": 84,
-    "name": "Phòng K105",
-    "sectorId": 10,
-    "sectorName": "Khu K",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
-  },
-  {
-    "id": 85,
-    "name": "Phòng K108",
-    "sectorId": 10,
-    "sectorName": "Khu K",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
-  },
-  {
-    "id": 86,
-    "name": "Phòng M101",
-    "sectorId": 11,
-    "sectorName": "Khu M",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
-  },
-  {
-    "id": 87,
-    "name": "Phòng M104",
-    "sectorId": 11,
-    "sectorName": "Khu M",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
-  },
-  {
-    "id": 88,
-    "name": "Phòng M201",
-    "sectorId": 11,
-    "sectorName": "Khu M",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
-  },
-  {
-    "id": 89,
-    "name": "Phòng M204",
-    "sectorId": 11,
-    "sectorName": "Khu M",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
-  },
-  {
-    "id": 90,
-    "name": "Phòng học 2",
-    "sectorId": 13,
-    "sectorName": "PFIEV",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
-  },
-  {
-    "id": 91,
-    "name": "Phòng công nghệ",
-    "sectorId": 14,
-    "sectorName": "Trung tâm Nghiên cứu bảo vệ môi trường",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
-  },
-  {
-    "id": 92,
-    "name": "PTN công nghệ sinh học",
-    "sectorId": 14,
-    "sectorName": "Trung tâm Nghiên cứu bảo vệ môi trường",
-    "createdAt": "2021-05-24T17:27:44.680Z",
-    "updatedAt": "2021-05-24T17:27:44.680Z"
+      "id": 68,
+      "name": "Phòng H107",
+      "sectorId": 8,
+      "sectorName": "Khu H"
+  },
+  {
+      "id": 69,
+      "name": "Phòng H204",
+      "sectorId": 8,
+      "sectorName": "Khu H"
+  },
+  {
+      "id": 70,
+      "name": "Phòng H205",
+      "sectorId": 8,
+      "sectorName": "Khu H"
+  },
+  {
+      "id": 71,
+      "name": "Phòng H207",
+      "sectorId": 8,
+      "sectorName": "Khu H"
+  },
+  {
+      "id": 72,
+      "name": "Phòng H304",
+      "sectorId": 8,
+      "sectorName": "Khu H"
+  },
+  {
+      "id": 73,
+      "name": "Phòng H305",
+      "sectorId": 8,
+      "sectorName": "Khu H"
+  },
+  {
+      "id": 74,
+      "name": "Phòng H307",
+      "sectorId": 8,
+      "sectorName": "Khu H"
+  },
+  {
+      "id": 75,
+      "name": "Kho vật tư",
+      "sectorId": 8,
+      "sectorName": "Khu H"
+  },
+  {
+      "id": 76,
+      "name": "Phòng H401",
+      "sectorId": 8,
+      "sectorName": "Khu H"
+  },
+  {
+      "id": 77,
+      "name": "Phòng nước giáo viên",
+      "sectorId": 8,
+      "sectorName": "Khu H"
+  },
+  {
+      "id": 78,
+      "name": "Phòng I101",
+      "sectorId": 9,
+      "sectorName": "Khu I"
+  },
+  {
+      "id": 79,
+      "name": "Phòng I106",
+      "sectorId": 9,
+      "sectorName": "Khu I"
+  },
+  {
+      "id": 80,
+      "name": "Phòng I201",
+      "sectorId": 9,
+      "sectorName": "Khu I"
+  },
+  {
+      "id": 81,
+      "name": "Phòng I204",
+      "sectorId": 9,
+      "sectorName": "Khu I"
+  },
+  {
+      "id": 82,
+      "name": "Phòng I302",
+      "sectorId": 9,
+      "sectorName": "Khu I"
+  },
+  {
+      "id": 83,
+      "name": "Phòng I305",
+      "sectorId": 9,
+      "sectorName": "Khu I"
+  },
+  {
+      "id": 84,
+      "name": "Phòng K105",
+      "sectorId": 10,
+      "sectorName": "Khu K"
+  },
+  {
+      "id": 85,
+      "name": "Phòng K108",
+      "sectorId": 10,
+      "sectorName": "Khu K"
+  },
+  {
+      "id": 86,
+      "name": "Phòng M101",
+      "sectorId": 11,
+      "sectorName": "Khu M"
+  },
+  {
+      "id": 87,
+      "name": "Phòng M104",
+      "sectorId": 11,
+      "sectorName": "Khu M"
+  },
+  {
+      "id": 88,
+      "name": "Phòng M201",
+      "sectorId": 11,
+      "sectorName": "Khu M"
+  },
+  {
+      "id": 89,
+      "name": "Phòng M204",
+      "sectorId": 11,
+      "sectorName": "Khu M"
+  },
+  {
+      "id": 90,
+      "name": "Phòng học 2",
+      "sectorId": 13,
+      "sectorName": "PFIEV"
+  },
+  {
+      "id": 91,
+      "name": "Phòng công nghệ",
+      "sectorId": 14,
+      "sectorName": "Trung tâm Nghiên cứu bảo vệ môi trường"
+  },
+  {
+      "id": 92,
+      "name": "PTN công nghệ sinh học",
+      "sectorId": 14,
+      "sectorName": "Trung tâm Nghiên cứu bảo vệ môi trường"
+  },
+  {
+      "id": 93,
+      "name": "Phòng học 5",
+      "sectorId": 13,
+      "sectorName": "PFIEV"
   }
 ]
 
-buildings =  [
+buildings = [
   {
       "id": 3,
       "name": "Khu C",
@@ -3998,7 +3820,8 @@ buildings =  [
       "name": "PFIEV",
       "stairs": [
           [
-              90
+              90,
+              93
           ]
       ],
       "floors": [
