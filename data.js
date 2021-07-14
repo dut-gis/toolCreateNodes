@@ -112,6 +112,16 @@ places = [
       "categoryId": 1
     },
     {
+        "id": 14,
+        "nameTag": "Trung tâm Nghiên cứu bảo vệ môi trường",
+        "phone": null,
+        "description": "Điều tra, nghiên cứu đánh giá ô nhiễm đề ra các giải pháp bảo vệ môi trường. Thông tin, tư vấn chuyển giao công nghệ, đào tạo bồi dưỡng nghiệp vụ.",
+        "categoryId": 8,
+        "categoryName": "Trung tâm",
+        "createdAt": "2021-07-14T16:04:04.287Z",
+        "updatedAt": "2021-07-14T16:04:04.287Z"
+    },
+    {
       "id": 7,
       "name": "A106",
       "phone": "02363842740",
@@ -1830,6 +1840,16 @@ places = [
       "sectorName": "Khác",
       "categoryId": 9,
       "categoryName": "Xưởng, PTN"
+    },
+    {
+        "id": 469,
+        "name": "Trung tâm thí nghiệm động cơ và ô tô",
+        "phone": "02363733795",
+        "description": "Phục vụ công tác đào tạo, sinh viên thực tập được kiểm tra kiến thức chuyên môn và  hướng dẫn thao tác tháo lắp sửa chữa trên các mô hình mới.",
+        "categoryId": 8,
+        "categoryName": "Trung tâm",
+        "createdAt": "2021-07-14T16:04:04.287Z",
+        "updatedAt": "2021-07-14T16:04:04.287Z"
     }
 ]
 
@@ -3440,50 +3460,6 @@ buildings = [
                   {
                       "id": 121,
                       "name": "A401b",
-                      "nameTag": null
-                  }
-              ]
-          }
-      ]
-  },
-  {
-      "id": 15,
-      "name": "Trung tâm thí nghiệm động cơ và ô tô",
-      "stairs": [
-          null
-      ],
-      "floors": [
-          {
-              "number": 1,
-              "rooms": [
-                  {
-                      "id": 122,
-                      "name": "AVL1",
-                      "nameTag": null
-                  },
-                  {
-                      "id": 123,
-                      "name": "AVL2",
-                      "nameTag": null
-                  }
-              ]
-          },
-          {
-              "number": 3,
-              "rooms": [
-                  {
-                      "id": 332,
-                      "name": "HL301 - R.3.1",
-                      "nameTag": null
-                  },
-                  {
-                      "id": 333,
-                      "name": "HL302 - R.3.2",
-                      "nameTag": null
-                  },
-                  {
-                      "id": 334,
-                      "name": "HL305 - R.3.4",
                       "nameTag": null
                   }
               ]
