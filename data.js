@@ -1850,6 +1850,15 @@ places = [
         "categoryName": "Trung tâm",
         "createdAt": "2021-07-14T16:04:04.287Z",
         "updatedAt": "2021-07-14T16:04:04.287Z"
+    },
+    {
+        "id": 470,
+        "nameTag": "Khu tự học",
+        "floorNumber": 1,
+        "sectorId": 1,
+        "sectorName": "Khu A",
+        "categoryId": 6,
+        "categoryName": "Khu tự học"
     }
 ]
 

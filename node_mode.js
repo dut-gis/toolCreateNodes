@@ -286,12 +286,12 @@ function getListPlaceOptions(placeCategoryId){
         if(place.categoryId==placeCategoryId){
             if(place.nameTag==null){
                 placeOption.push({
-                    "option": place.name,
+                    "option": place.name + '-' + place.sectorName + '-' + place.id,
                     "id":place.id
                 })
             }else{
                 placeOption.push({
-                    "option": place.nameTag,
+                    "option": place.nameTag + '-' + place.sectorName + '-' + place.id,
                     "id":place.id
                 })
             }
