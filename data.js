@@ -2594,2914 +2594,2701 @@ stairs = [
   }
 ]
 
-buildings = [
-    {
+buildings =  [
+  {
       "id": 3,
       "name": "Khu C",
       "stairs": [
-        [
-          20,
-          20,
-          20,
-          20,
-          22,
-          22,
-          22,
-          22,
-          24,
-          24,
-          24,
-          24,
-          25,
-          25,
-          23,
-          23,
-          23,
-          23,
-          21,
-          21,
-          21,
-          21,
-          26,
-          26,
-          26,
-          26,
-          27,
-          27,
-          27,
-          27,
-          27,
-          27,
-          27,
-          27,
-          28,
-          28,
-          28,
-          28,
-          29,
-          29,
-          29,
-          29,
-          30,
-          30,
-          30,
-          30,
-          31,
-          31,
-          31,
-          31,
-          32,
-          32,
-          33,
-          33,
-          33,
-          33,
-          33
-        ]
+          [
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33
+          ]
       ],
       "floors": [
-        {
-          "number": 2,
-          "rooms": [
-            {
-              "id": 1,
-              "name": "",
-              "nameTag": "Công ty Unitec"
-            },
-            {
-              "id": 177,
-              "name": "C201",
-              "nameTag": "Phòng máy tính"
-            },
-            {
-              "id": 178,
-              "name": "C202",
-              "nameTag": "Phòng máy tính"
-            },
-            {
-              "id": 179,
-              "name": "C203",
-              "nameTag": "Phòng máy tính"
-            },
-            {
-              "id": 180,
-              "name": "C204",
-              "nameTag": "Phòng máy tính"
-            },
-            {
-              "id": 181,
-              "name": "C205",
-              "nameTag": "Phòng máy tính"
-            },
-            {
-              "id": 182,
-              "name": "C206-207",
-              "nameTag": "Phòng máy tính"
-            },
-            {
-              "id": 183,
-              "name": "C208",
-              "nameTag": "Bộ môn kỹ thuật máy tính"
-            },
-            {
-              "id": 184,
-              "name": "C208a",
-              "nameTag": "Phó khoa"
-            },
-            {
-              "id": 185,
-              "name": "C208b",
-              "nameTag": "Phó khoa"
-            },
-            {
-              "id": 186,
-              "name": "C209",
-              "nameTag": "Phòng máy tính"
-            },
-            {
-              "id": 187,
-              "name": "C210",
-              "nameTag": "Phòng làm việc"
-            },
-            {
-              "id": 188,
-              "name": "C211",
-              "nameTag": "Khoa khoa học CN tiên tiến"
-            },
-            {
-              "id": 189,
-              "name": "C212",
-              "nameTag": "Phòng Giáo vụ"
-            },
-            {
-              "id": 190,
-              "name": "C213",
-              "nameTag": "PTN Vi điện tử & Thiết kế IC"
-            },
-            {
-              "id": 191,
-              "name": "C213B",
-              "nameTag": "10"
-            },
-            {
-              "id": 192,
-              "name": "C214",
-              "nameTag": "Phòng Giáo sư"
-            },
-            {
-              "id": 193,
-              "name": "C215",
-              "nameTag": "Phòng Server"
-            },
-            {
-              "id": 194,
-              "name": "C216",
-              "nameTag": "Phòng DLS"
-            },
-            {
-              "id": 195,
-              "name": "C217",
-              "nameTag": "PTN Robotics & Capstone Project"
-            },
-            {
-              "id": 196,
-              "name": "C218",
-              "nameTag": "Phòng nước giáo viên"
-            },
-            {
-              "id": 197,
-              "name": "C219",
-              "nameTag": "10"
-            },
-            {
-              "id": 198,
-              "name": "C220",
-              "nameTag": "Phòng làm việc"
-            },
-            {
-              "id": 199,
-              "name": "C221",
-              "nameTag": "PTN Đo lường điện tử"
-            },
-            {
-              "id": 200,
-              "name": "C222",
-              "nameTag": "Phòng tự học"
-            },
-            {
-              "id": 201,
-              "name": "C223",
-              "nameTag": "Phòng thư viện"
-            },
-            {
-              "id": 202,
-              "name": "C224",
-              "nameTag": "Bộ môn ô tô và máy công trình"
-            },
-            {
-              "id": 203,
-              "name": "C225",
-              "nameTag": "Bộ môn máy động lực"
-            },
-            {
-              "id": 204,
-              "name": "C226",
-              "nameTag": "Bộ môn thủy khí & máy thủy khí"
-            },
-            {
-              "id": 205,
-              "name": "C227",
-              "nameTag": "Phòng trưởng khoa"
-            },
-            {
-              "id": 206,
-              "name": "C228",
-              "nameTag": "Khoa công nghệ thông tin "
-            },
-            {
-              "id": 207,
-              "name": "C229",
-              "nameTag": "Văn phòng khoa Phòng họp"
-            },
-            {
-              "id": 208,
-              "name": "C229",
-              "nameTag": "Phòng trưởng khoa"
-            },
-            {
-              "id": 209,
-              "name": "C230",
-              "nameTag": "Phòng Giáo vụ"
-            },
-            {
-              "id": 210,
-              "name": "C231",
-              "nameTag": "PTN Datic"
-            }
-          ]
-        },
-        {
-          "number": 1,
-          "rooms": [
-            {
-              "id": 147,
-              "name": "C101",
-              "nameTag": "Khoa cơ khí giao thông"
-            },
-            {
-              "id": 148,
-              "name": "C102-103",
-              "nameTag": "Phòng máy tính"
-            },
-            {
-              "id": 149,
-              "name": "C104",
-              "nameTag": "PTN Hệ thống nhúng"
-            },
-            {
-              "id": 150,
-              "name": "C105",
-              "nameTag": "Phòng máy tính"
-            },
-            {
-              "id": 151,
-              "name": "C106",
-              "nameTag": "VP TT Tin học"
-            },
-            {
-              "id": 152,
-              "name": "C107",
-              "nameTag": "Phòng TN Cisco"
-            },
-            {
-              "id": 153,
-              "name": "C108",
-              "nameTag": "Khoa điện tử viễn thông"
-            },
-            {
-              "id": 154,
-              "name": "C109",
-              "nameTag": "Phòng trưởng khoa"
-            },
-            {
-              "id": 155,
-              "name": "C110",
-              "nameTag": "BM k.thuật điện tử"
-            },
-            {
-              "id": 156,
-              "name": "C111",
-              "nameTag": "BM k.thuật viễn thông"
-            },
-            {
-              "id": 157,
-              "name": "C112",
-              "nameTag": "Phòng thiết bị"
-            },
-            {
-              "id": 158,
-              "name": "C113",
-              "nameTag": "10"
-            },
-            {
-              "id": 159,
-              "name": "C114",
-              "nameTag": "10"
-            },
-            {
-              "id": 160,
-              "name": "C115",
-              "nameTag": "Phòng Điện tử đại cương & Hệ thống nhúng"
-            },
-            {
-              "id": 161,
-              "name": "C115b",
-              "nameTag": "Phòng Thí Nghiệm"
-            },
-            {
-              "id": 162,
-              "name": "C116a",
-              "nameTag": "PTN Viễn thông"
-            },
-            {
-              "id": 163,
-              "name": "C116b",
-              "nameTag": "PTN Viễn thông"
-            },
-            {
-              "id": 164,
-              "name": "C117",
-              "nameTag": "10"
-            },
-            {
-              "id": 165,
-              "name": "C118",
-              "nameTag": "PTN mô phỏng"
-            },
-            {
-              "id": 166,
-              "name": "C119",
-              "nameTag": "Phòng làm việc CLB Pioneer"
-            },
-            {
-              "id": 167,
-              "name": "C120",
-              "nameTag": "PTN Điện tử 1"
-            },
-            {
-              "id": 168,
-              "name": "C121",
-              "nameTag": "Xưởng Điện tử "
-            },
-            {
-              "id": 169,
-              "name": "C121B",
-              "nameTag": "PTN Điện tử 2"
-            },
-            {
-              "id": 170,
-              "name": "C122",
-              "nameTag": "Kho lưu trữ đồ án, tài liệu liên quan"
-            },
-            {
-              "id": 171,
-              "name": "C123",
-              "nameTag": "Phòng họp khoa"
-            },
-            {
-              "id": 172,
-              "name": "C124",
-              "nameTag": "Văn thu Giáo vụ"
-            },
-            {
-              "id": 173,
-              "name": "C125",
-              "nameTag": "Bộ môn Mạng - máy tính"
-            },
-            {
-              "id": 174,
-              "name": "C126",
-              "nameTag": "Bộ môn Công nghệ phần mềm"
-            },
-            {
-              "id": 175,
-              "name": "C127",
-              "nameTag": "Bộ môn hệ thống nhúng"
-            },
-            {
-              "id": 176,
-              "name": "C128",
-              "nameTag": "Phòng máy tính chuyên đề 1"
-            }
-          ]
-        },
-        {
-          "number": 3,
-          "rooms": [
-            {
-              "id": 211,
-              "name": "C301",
-              "nameTag": "10"
-            },
-            {
-              "id": 212,
-              "name": "C302",
-              "nameTag": "10"
-            },
-            {
-              "id": 213,
-              "name": "C303",
-              "nameTag": "10"
-            },
-            {
-              "id": 214,
-              "name": "C304",
-              "nameTag": "Văn phòng Đoàn"
-            }
-          ]
-        }
+          {
+              "number": 2,
+              "rooms": [
+                  {
+                      "id": 1,
+                      "name": "",
+                      "nameTag": "Công ty Unitec"
+                  },
+                  {
+                      "id": 177,
+                      "name": "C201",
+                      "nameTag": "Phòng máy tính"
+                  },
+                  {
+                      "id": 178,
+                      "name": "C202",
+                      "nameTag": "Phòng máy tính"
+                  },
+                  {
+                      "id": 179,
+                      "name": "C203",
+                      "nameTag": "Phòng máy tính"
+                  },
+                  {
+                      "id": 180,
+                      "name": "C204",
+                      "nameTag": "Phòng máy tính"
+                  },
+                  {
+                      "id": 181,
+                      "name": "C205",
+                      "nameTag": "Phòng máy tính"
+                  },
+                  {
+                      "id": 182,
+                      "name": "C206-207",
+                      "nameTag": "Phòng máy tính"
+                  },
+                  {
+                      "id": 183,
+                      "name": "C208",
+                      "nameTag": "Bộ môn kỹ thuật máy tính"
+                  },
+                  {
+                      "id": 184,
+                      "name": "C208a",
+                      "nameTag": "Phó khoa"
+                  },
+                  {
+                      "id": 185,
+                      "name": "C208b",
+                      "nameTag": "Phó khoa"
+                  },
+                  {
+                      "id": 186,
+                      "name": "C209",
+                      "nameTag": "Phòng máy tính"
+                  },
+                  {
+                      "id": 187,
+                      "name": "C210",
+                      "nameTag": "Phòng làm việc"
+                  },
+                  {
+                      "id": 188,
+                      "name": "C211",
+                      "nameTag": "Khoa khoa học CN tiên tiến"
+                  },
+                  {
+                      "id": 189,
+                      "name": "C212",
+                      "nameTag": "Phòng Giáo vụ"
+                  },
+                  {
+                      "id": 190,
+                      "name": "C213",
+                      "nameTag": "PTN Vi điện tử & Thiết kế IC"
+                  },
+                  {
+                      "id": 191,
+                      "name": "C213B",
+                      "nameTag": "10"
+                  },
+                  {
+                      "id": 192,
+                      "name": "C214",
+                      "nameTag": "Phòng Giáo sư"
+                  },
+                  {
+                      "id": 193,
+                      "name": "C215",
+                      "nameTag": "Phòng Server"
+                  },
+                  {
+                      "id": 194,
+                      "name": "C216",
+                      "nameTag": "Phòng DLS"
+                  },
+                  {
+                      "id": 195,
+                      "name": "C217",
+                      "nameTag": "PTN Robotics & Capstone Project"
+                  },
+                  {
+                      "id": 196,
+                      "name": "C218",
+                      "nameTag": "Phòng nước giáo viên"
+                  },
+                  {
+                      "id": 197,
+                      "name": "C219",
+                      "nameTag": "10"
+                  },
+                  {
+                      "id": 198,
+                      "name": "C220",
+                      "nameTag": "Phòng làm việc"
+                  },
+                  {
+                      "id": 199,
+                      "name": "C221",
+                      "nameTag": "PTN Đo lường điện tử"
+                  },
+                  {
+                      "id": 200,
+                      "name": "C222",
+                      "nameTag": "Phòng tự học"
+                  },
+                  {
+                      "id": 201,
+                      "name": "C223",
+                      "nameTag": "Phòng thư viện"
+                  },
+                  {
+                      "id": 202,
+                      "name": "C224",
+                      "nameTag": "Bộ môn ô tô và máy công trình"
+                  },
+                  {
+                      "id": 203,
+                      "name": "C225",
+                      "nameTag": "Bộ môn máy động lực"
+                  },
+                  {
+                      "id": 204,
+                      "name": "C226",
+                      "nameTag": "Bộ môn thủy khí & máy thủy khí"
+                  },
+                  {
+                      "id": 205,
+                      "name": "C227",
+                      "nameTag": "Phòng trưởng khoa"
+                  },
+                  {
+                      "id": 206,
+                      "name": "C228",
+                      "nameTag": "Khoa công nghệ thông tin"
+                  },
+                  {
+                      "id": 207,
+                      "name": "C229",
+                      "nameTag": "Văn phòng khoa Phòng họp"
+                  },
+                  {
+                      "id": 208,
+                      "name": "C229",
+                      "nameTag": "Phòng trưởng khoa"
+                  },
+                  {
+                      "id": 209,
+                      "name": "C230",
+                      "nameTag": "Phòng Giáo vụ"
+                  },
+                  {
+                      "id": 210,
+                      "name": "C231",
+                      "nameTag": "PTN Datic"
+                  }
+              ]
+          },
+          {
+              "number": 1,
+              "rooms": [
+                  {
+                      "id": 147,
+                      "name": "C101",
+                      "nameTag": "Khoa cơ khí giao thông"
+                  },
+                  {
+                      "id": 148,
+                      "name": "C102-103",
+                      "nameTag": "Phòng máy tính"
+                  },
+                  {
+                      "id": 149,
+                      "name": "C104",
+                      "nameTag": "PTN Hệ thống nhúng"
+                  },
+                  {
+                      "id": 150,
+                      "name": "C105",
+                      "nameTag": "Phòng máy tính"
+                  },
+                  {
+                      "id": 151,
+                      "name": "C106",
+                      "nameTag": "VP TT Tin học"
+                  },
+                  {
+                      "id": 152,
+                      "name": "C107",
+                      "nameTag": "Phòng TN Cisco"
+                  },
+                  {
+                      "id": 153,
+                      "name": "C108",
+                      "nameTag": "Khoa điện tử viễn thông"
+                  },
+                  {
+                      "id": 154,
+                      "name": "C109",
+                      "nameTag": "Phòng trưởng khoa"
+                  },
+                  {
+                      "id": 155,
+                      "name": "C110",
+                      "nameTag": "BM k.thuật điện tử"
+                  },
+                  {
+                      "id": 156,
+                      "name": "C111",
+                      "nameTag": "BM k.thuật viễn thông"
+                  },
+                  {
+                      "id": 157,
+                      "name": "C112",
+                      "nameTag": "Phòng thiết bị"
+                  },
+                  {
+                      "id": 158,
+                      "name": "C113",
+                      "nameTag": "10"
+                  },
+                  {
+                      "id": 159,
+                      "name": "C114",
+                      "nameTag": "10"
+                  },
+                  {
+                      "id": 160,
+                      "name": "C115",
+                      "nameTag": "Phòng Điện tử đại cương & Hệ thống nhúng"
+                  },
+                  {
+                      "id": 161,
+                      "name": "C115b",
+                      "nameTag": "Phòng Thí Nghiệm"
+                  },
+                  {
+                      "id": 162,
+                      "name": "C116a",
+                      "nameTag": "PTN Viễn thông"
+                  },
+                  {
+                      "id": 163,
+                      "name": "C116b",
+                      "nameTag": "PTN Viễn thông"
+                  },
+                  {
+                      "id": 164,
+                      "name": "C117",
+                      "nameTag": "10"
+                  },
+                  {
+                      "id": 165,
+                      "name": "C118",
+                      "nameTag": "PTN mô phỏng"
+                  },
+                  {
+                      "id": 166,
+                      "name": "C119",
+                      "nameTag": "Phòng làm việc CLB Pioneer"
+                  },
+                  {
+                      "id": 167,
+                      "name": "C120",
+                      "nameTag": "PTN Điện tử 1"
+                  },
+                  {
+                      "id": 168,
+                      "name": "C121",
+                      "nameTag": "Xưởng Điện tử "
+                  },
+                  {
+                      "id": 169,
+                      "name": "C121B",
+                      "nameTag": "PTN Điện tử 2"
+                  },
+                  {
+                      "id": 170,
+                      "name": "C122",
+                      "nameTag": "Kho lưu trữ đồ án, tài liệu liên quan"
+                  },
+                  {
+                      "id": 171,
+                      "name": "C123",
+                      "nameTag": "Phòng họp khoa"
+                  },
+                  {
+                      "id": 172,
+                      "name": "C124",
+                      "nameTag": "Văn thu Giáo vụ"
+                  },
+                  {
+                      "id": 173,
+                      "name": "C125",
+                      "nameTag": "Bộ môn Mạng - máy tính"
+                  },
+                  {
+                      "id": 174,
+                      "name": "C126",
+                      "nameTag": "Bộ môn Công nghệ phần mềm"
+                  },
+                  {
+                      "id": 175,
+                      "name": "C127",
+                      "nameTag": "Bộ môn hệ thống nhúng"
+                  },
+                  {
+                      "id": 176,
+                      "name": "C128",
+                      "nameTag": "Phòng máy tính chuyên đề 1"
+                  }
+              ]
+          },
+          {
+              "number": 3,
+              "rooms": [
+                  {
+                      "id": 211,
+                      "name": "C301",
+                      "nameTag": "10"
+                  },
+                  {
+                      "id": 212,
+                      "name": "C302",
+                      "nameTag": "10"
+                  },
+                  {
+                      "id": 213,
+                      "name": "C303",
+                      "nameTag": "10"
+                  },
+                  {
+                      "id": 214,
+                      "name": "C304",
+                      "nameTag": "Văn phòng Đoàn"
+                  }
+              ]
+          }
       ]
-    },
-    {
+  },
+  {
       "id": 1,
       "name": "Khu A",
       "stairs": [
-        [
-          1,
-          1,
-          1,
-          1,
-          2,
-          2,
-          2,
-          2,
-          3,
-          3,
-          4,
-          4,
-          4,
-          4,
-          5,
-          5,
-          5,
-          5,
-          6,
-          6,
-          8,
-          8,
-          7,
-          7,
-          7,
-          7,
-          9,
-          9,
-          9,
-          9,
-          10,
-          10
-        ]
+          [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+          ]
       ],
       "floors": [
-        {
-          "number": 1,
-          "rooms": [
-            {
-              "id": 2,
-              "name": "A101",
-              "nameTag": null
-            },
-            {
-              "id": 3,
-              "name": "A102",
-              "nameTag": null
-            },
-            {
-              "id": 4,
-              "name": "A103",
-              "nameTag": null
-            },
-            {
-              "id": 5,
-              "name": "A104",
-              "nameTag": null
-            },
-            {
-              "id": 6,
-              "name": "A105",
-              "nameTag": null
-            },
-            {
-              "id": 7,
-              "name": "A106",
-              "nameTag": "Khoa Xây dựng dân dụng & CN"
-            },
-            {
-              "id": 8,
-              "name": "A107",
-              "nameTag": null
-            },
-            {
-              "id": 9,
-              "name": "A108",
-              "nameTag": "Khu Hành chính phục vụ SV 1 cửa"
-            },
-            {
-              "id": 10,
-              "name": "A109",
-              "nameTag": null
-            },
-            {
-              "id": 11,
-              "name": "A110",
-              "nameTag": null
-            },
-            {
-              "id": 12,
-              "name": "A111",
-              "nameTag": "Phòng Công tác Sinh viên"
-            },
-            {
-              "id": 13,
-              "name": "A112",
-              "nameTag": null
-            },
-            {
-              "id": 14,
-              "name": "A113",
-              "nameTag": null
-            },
-            {
-              "id": 15,
-              "name": "A114",
-              "nameTag": null
-            },
-            {
-              "id": 16,
-              "name": "A115",
-              "nameTag": null
-            },
-            {
-              "id": 17,
-              "name": "A116",
-              "nameTag": null
-            },
-            {
-              "id": 18,
-              "name": "A117",
-              "nameTag": null
-            },
-            {
-              "id": 19,
-              "name": "A118A",
-              "nameTag": "Khoa Hóa"
-            },
-            {
-              "id": 20,
-              "name": "A118B",
-              "nameTag": "Khoa Hóa"
-            },
-            {
-              "id": 21,
-              "name": "A119",
-              "nameTag": null
-            },
-            {
-              "id": 22,
-              "name": "A120",
-              "nameTag": "Phòng Kế hoạch - Tài chính"
-            },
-            {
-              "id": 23,
-              "name": "A121",
-              "nameTag": null
-            },
-            {
-              "id": 24,
-              "name": "A122",
-              "nameTag": null
-            },
-            {
-              "id": 25,
-              "name": "A122B",
-              "nameTag": null
-            },
-            {
-              "id": 26,
-              "name": "A123",
-              "nameTag": "Phòng Đào tạo"
-            },
-            {
-              "id": 27,
-              "name": "A124",
-              "nameTag": null
-            },
-            {
-              "id": 28,
-              "name": "A125",
-              "nameTag": null
-            },
-            {
-              "id": 29,
-              "name": "A125B",
-              "nameTag": null
-            },
-            {
-              "id": 30,
-              "name": "A126A",
-              "nameTag": null
-            },
-            {
-              "id": 31,
-              "name": "A126B",
-              "nameTag": null
-            },
-            {
-              "id": 32,
-              "name": "A127",
-              "nameTag": null
-            },
-            {
-              "id": 33,
-              "name": "A128",
-              "nameTag": null
-            },
-            {
-              "id": 34,
-              "name": "A129",
-              "nameTag": null
-            },
-            {
-              "id": 35,
-              "name": "A130",
-              "nameTag": null
-            },
-            {
-              "id": 36,
-              "name": "A131",
-              "nameTag": null
-            },
-            {
-              "id": 37,
-              "name": "A132",
-              "nameTag": "Phòng Đào tạo"
-            },
-            {
-              "id": 38,
-              "name": "A133A",
-              "nameTag": null
-            },
-            {
-              "id": 39,
-              "name": "A133B",
-              "nameTag": null
-            },
-            {
-              "id": 40,
-              "name": "A134",
-              "nameTag": null
-            },
-            {
-              "id": 41,
-              "name": "A135",
-              "nameTag": "Phòng Cơ sở vật chất"
-            },
-            {
-              "id": 42,
-              "name": "A136",
-              "nameTag": null
-            },
-            {
-              "id": 43,
-              "name": "A137",
-              "nameTag": null
-            },
-            {
-              "id": 44,
-              "name": "A138",
-              "nameTag": null
-            },
-            {
-              "id": 45,
-              "name": "A139",
-              "nameTag": null
-            },
-            {
-              "id": 46,
-              "name": "A140",
-              "nameTag": null
-            },
-            {
-              "id": 47,
-              "name": "A141",
-              "nameTag": null
-            },
-            {
-              "id": 48,
-              "name": "A142",
-              "nameTag": null
-            },
-            {
-              "id": 49,
-              "name": "A143",
-              "nameTag": null
-            },
-            {
-              "id": 50,
-              "name": "A144",
-              "nameTag": null
-            },
-            {
-              "id": 51,
-              "name": "A145A",
-              "nameTag": null
-            },
-            {
-              "id": 52,
-              "name": "A145B",
-              "nameTag": null
-            },
-            {
-              "id": 53,
-              "name": "A146",
-              "nameTag": null
-            },
-            {
-              "id": 54,
-              "name": "A147",
-              "nameTag": null
-            },
-            {
-              "id": 55,
-              "name": "A148",
-              "nameTag": null
-            },
-            {
-              "id": 56,
-              "name": "A149",
-              "nameTag": null
-            },
-            {
-              "id": 57,
-              "name": "A150",
-              "nameTag": null
-            },
-            {
-              "id": 58,
-              "name": "A151",
-              "nameTag": null
-            },
-            {
-              "id": 59,
-              "name": "A152",
-              "nameTag": null
-            },
-            {
-              "id": 60,
-              "name": "A153",
-              "nameTag": null
-            },
-            {
-              "id": 61,
-              "name": "A154",
-              "nameTag": null
-            },
-            {
-              "id": 62,
-              "name": "A155",
-              "nameTag": null
-            },
-            {
-              "id": 426,
-              "name": null,
-              "nameTag": "Hội trường"
-            }
-          ]
-        },
-        {
-          "number": 2,
-          "rooms": [
-            {
-              "id": 63,
-              "name": "A201",
-              "nameTag": null
-            },
-            {
-              "id": 64,
-              "name": "A202",
-              "nameTag": null
-            },
-            {
-              "id": 65,
-              "name": "A203",
-              "nameTag": null
-            },
-            {
-              "id": 66,
-              "name": "A204",
-              "nameTag": null
-            },
-            {
-              "id": 67,
-              "name": "A205",
-              "nameTag": null
-            },
-            {
-              "id": 68,
-              "name": "A206",
-              "nameTag": null
-            },
-            {
-              "id": 69,
-              "name": "A207",
-              "nameTag": null
-            },
-            {
-              "id": 70,
-              "name": "A208",
-              "nameTag": "Khoa điện"
-            },
-            {
-              "id": 71,
-              "name": "A209",
-              "nameTag": "VP Đảng Ủy"
-            },
-            {
-              "id": 72,
-              "name": "A210",
-              "nameTag": null
-            },
-            {
-              "id": 73,
-              "name": "A211",
-              "nameTag": "VP Đoàn Thanh niên"
-            },
-            {
-              "id": 74,
-              "name": "A212",
-              "nameTag": null
-            },
-            {
-              "id": 75,
-              "name": "A213-214",
-              "nameTag": null
-            },
-            {
-              "id": 76,
-              "name": "A215",
-              "nameTag": null
-            },
-            {
-              "id": 77,
-              "name": "A216",
-              "nameTag": "Khoa CN Nhiệt - điện lạnh"
-            },
-            {
-              "id": 78,
-              "name": "A217",
-              "nameTag": null
-            },
-            {
-              "id": 79,
-              "name": "A218",
-              "nameTag": null
-            },
-            {
-              "id": 80,
-              "name": "A219",
-              "nameTag": null
-            },
-            {
-              "id": 81,
-              "name": "A220",
-              "nameTag": null
-            },
-            {
-              "id": 82,
-              "name": "A221",
-              "nameTag": null
-            },
-            {
-              "id": 83,
-              "name": "A222",
-              "nameTag": null
-            },
-            {
-              "id": 84,
-              "name": "A223",
-              "nameTag": "Phòng hiệu trưởng"
-            },
-            {
-              "id": 85,
-              "name": "A224a",
-              "nameTag": "Khoa cơ khí"
-            },
-            {
-              "id": 86,
-              "name": "A224b",
-              "nameTag": "Khoa cơ khí"
-            },
-            {
-              "id": 87,
-              "name": "A225",
-              "nameTag": null
-            },
-            {
-              "id": 88,
-              "name": "A226",
-              "nameTag": null
-            },
-            {
-              "id": 89,
-              "name": "A227",
-              "nameTag": null
-            },
-            {
-              "id": 90,
-              "name": "A228",
-              "nameTag": null
-            },
-            {
-              "id": 91,
-              "name": "A229",
-              "nameTag": null
-            },
-            {
-              "id": 92,
-              "name": "A230",
-              "nameTag": null
-            },
-            {
-              "id": 93,
-              "name": "A231",
-              "nameTag": null
-            }
-          ]
-        },
-        {
-          "number": 3,
-          "rooms": [
-            {
-              "id": 94,
-              "name": "A301a",
-              "nameTag": null
-            },
-            {
-              "id": 95,
-              "name": "A301b",
-              "nameTag": null
-            },
-            {
-              "id": 96,
-              "name": "A302",
-              "nameTag": null
-            },
-            {
-              "id": 97,
-              "name": "A303a",
-              "nameTag": null
-            },
-            {
-              "id": 98,
-              "name": "A303b",
-              "nameTag": null
-            },
-            {
-              "id": 99,
-              "name": "A304",
-              "nameTag": null
-            },
-            {
-              "id": 100,
-              "name": "A304b",
-              "nameTag": null
-            },
-            {
-              "id": 101,
-              "name": "A305",
-              "nameTag": null
-            },
-            {
-              "id": 102,
-              "name": "A306",
-              "nameTag": null
-            },
-            {
-              "id": 103,
-              "name": "A307",
-              "nameTag": null
-            },
-            {
-              "id": 104,
-              "name": "A308",
-              "nameTag": null
-            },
-            {
-              "id": 105,
-              "name": "A309",
-              "nameTag": null
-            },
-            {
-              "id": 106,
-              "name": "A310",
-              "nameTag": "Khoa môi trường"
-            },
-            {
-              "id": 107,
-              "name": "A311",
-              "nameTag": null
-            },
-            {
-              "id": 108,
-              "name": "A312",
-              "nameTag": null
-            },
-            {
-              "id": 109,
-              "name": "A313",
-              "nameTag": null
-            },
-            {
-              "id": 110,
-              "name": "A314",
-              "nameTag": null
-            },
-            {
-              "id": 111,
-              "name": "A315",
-              "nameTag": "Khoa Quản lý dự án"
-            },
-            {
-              "id": 112,
-              "name": "A316",
-              "nameTag": "Khoa xây dựng cầu đường"
-            },
-            {
-              "id": 113,
-              "name": "A317",
-              "nameTag": null
-            },
-            {
-              "id": 114,
-              "name": "A318",
-              "nameTag": null
-            },
-            {
-              "id": 115,
-              "name": "A319",
-              "nameTag": "Khoa xây dựng công trình thủy"
-            },
-            {
-              "id": 116,
-              "name": "A320",
-              "nameTag": null
-            },
-            {
-              "id": 117,
-              "name": "A321",
-              "nameTag": null
-            },
-            {
-              "id": 118,
-              "name": "A322",
-              "nameTag": null
-            },
-            {
-              "id": 119,
-              "name": "A323",
-              "nameTag": null
-            }
-          ]
-        },
-        {
-          "number": 4,
-          "rooms": [
-            {
-              "id": 120,
-              "name": "A401a",
-              "nameTag": null
-            },
-            {
-              "id": 121,
-              "name": "A401b",
-              "nameTag": null
-            }
-          ]
-        }
+          {
+              "number": 1,
+              "rooms": [
+                  {
+                      "id": 2,
+                      "name": "A101",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 3,
+                      "name": "A102",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 4,
+                      "name": "A103",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 5,
+                      "name": "A104",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 6,
+                      "name": "A105",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 7,
+                      "name": "A106",
+                      "nameTag": "Khoa Xây dựng dân dụng & CN"
+                  },
+                  {
+                      "id": 8,
+                      "name": "A107",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 9,
+                      "name": "A108",
+                      "nameTag": "Khu Hành chính phục vụ SV 1 cửa"
+                  },
+                  {
+                      "id": 10,
+                      "name": "A109",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 11,
+                      "name": "A110",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 12,
+                      "name": "A111",
+                      "nameTag": "Phòng Công tác Sinh viên"
+                  },
+                  {
+                      "id": 13,
+                      "name": "A112",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 14,
+                      "name": "A113",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 15,
+                      "name": "A114",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 16,
+                      "name": "A115",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 17,
+                      "name": "A116",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 18,
+                      "name": "A117",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 19,
+                      "name": "A118A",
+                      "nameTag": "Khoa Hóa"
+                  },
+                  {
+                      "id": 20,
+                      "name": "A118B",
+                      "nameTag": "Khoa Hóa"
+                  },
+                  {
+                      "id": 21,
+                      "name": "A119",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 22,
+                      "name": "A120",
+                      "nameTag": "Phòng Kế hoạch - Tài chính"
+                  },
+                  {
+                      "id": 23,
+                      "name": "A121",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 24,
+                      "name": "A122",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 25,
+                      "name": "A122B",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 26,
+                      "name": "A123",
+                      "nameTag": "Phòng Đào tạo"
+                  },
+                  {
+                      "id": 27,
+                      "name": "A124",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 28,
+                      "name": "A125",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 29,
+                      "name": "A125B",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 30,
+                      "name": "A126A",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 31,
+                      "name": "A126B",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 32,
+                      "name": "A127",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 33,
+                      "name": "A128",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 34,
+                      "name": "A129",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 35,
+                      "name": "A130",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 36,
+                      "name": "A131",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 37,
+                      "name": "A132",
+                      "nameTag": "Phòng Đào tạo"
+                  },
+                  {
+                      "id": 38,
+                      "name": "A133A",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 39,
+                      "name": "A133B",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 40,
+                      "name": "A134",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 41,
+                      "name": "A135",
+                      "nameTag": "Phòng Cơ sở vật chất"
+                  },
+                  {
+                      "id": 42,
+                      "name": "A136",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 43,
+                      "name": "A137",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 44,
+                      "name": "A138",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 45,
+                      "name": "A139",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 46,
+                      "name": "A140",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 47,
+                      "name": "A141",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 48,
+                      "name": "A142",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 49,
+                      "name": "A143",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 50,
+                      "name": "A144",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 51,
+                      "name": "A145A",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 52,
+                      "name": "A145B",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 53,
+                      "name": "A146",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 54,
+                      "name": "A147",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 55,
+                      "name": "A148",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 56,
+                      "name": "A149",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 57,
+                      "name": "A150",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 58,
+                      "name": "A151",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 59,
+                      "name": "A152",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 60,
+                      "name": "A153",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 61,
+                      "name": "A154",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 62,
+                      "name": "A155",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 426,
+                      "name": null,
+                      "nameTag": "Hội trường"
+                  }
+              ]
+          },
+          {
+              "number": 2,
+              "rooms": [
+                  {
+                      "id": 63,
+                      "name": "A201",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 64,
+                      "name": "A202",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 65,
+                      "name": "A203",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 66,
+                      "name": "A204",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 67,
+                      "name": "A205",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 68,
+                      "name": "A206",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 69,
+                      "name": "A207",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 70,
+                      "name": "A208",
+                      "nameTag": "Khoa điện"
+                  },
+                  {
+                      "id": 71,
+                      "name": "A209",
+                      "nameTag": "VP Đảng Ủy"
+                  },
+                  {
+                      "id": 72,
+                      "name": "A210",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 73,
+                      "name": "A211",
+                      "nameTag": "VP Đoàn Thanh niên"
+                  },
+                  {
+                      "id": 74,
+                      "name": "A212",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 75,
+                      "name": "A213-214",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 76,
+                      "name": "A215",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 77,
+                      "name": "A216",
+                      "nameTag": "Khoa CN Nhiệt - điện lạnh"
+                  },
+                  {
+                      "id": 78,
+                      "name": "A217",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 79,
+                      "name": "A218",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 80,
+                      "name": "A219",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 81,
+                      "name": "A220",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 82,
+                      "name": "A221",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 83,
+                      "name": "A222",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 84,
+                      "name": "A223",
+                      "nameTag": "Phòng hiệu trưởng"
+                  },
+                  {
+                      "id": 85,
+                      "name": "A224a",
+                      "nameTag": "Khoa cơ khí"
+                  },
+                  {
+                      "id": 86,
+                      "name": "A224b",
+                      "nameTag": "Khoa cơ khí"
+                  },
+                  {
+                      "id": 87,
+                      "name": "A225",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 88,
+                      "name": "A226",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 89,
+                      "name": "A227",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 90,
+                      "name": "A228",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 91,
+                      "name": "A229",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 92,
+                      "name": "A230",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 93,
+                      "name": "A231",
+                      "nameTag": null
+                  }
+              ]
+          },
+          {
+              "number": 3,
+              "rooms": [
+                  {
+                      "id": 94,
+                      "name": "A301a",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 95,
+                      "name": "A301b",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 96,
+                      "name": "A302",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 97,
+                      "name": "A303a",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 98,
+                      "name": "A303b",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 99,
+                      "name": "A304",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 100,
+                      "name": "A304b",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 101,
+                      "name": "A305",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 102,
+                      "name": "A306",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 103,
+                      "name": "A307",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 104,
+                      "name": "A308",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 105,
+                      "name": "A309",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 106,
+                      "name": "A310",
+                      "nameTag": "Khoa môi trường"
+                  },
+                  {
+                      "id": 107,
+                      "name": "A311",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 108,
+                      "name": "A312",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 109,
+                      "name": "A313",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 110,
+                      "name": "A314",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 111,
+                      "name": "A315",
+                      "nameTag": "Khoa Quản lý dự án"
+                  },
+                  {
+                      "id": 112,
+                      "name": "A316",
+                      "nameTag": "Khoa xây dựng cầu đường"
+                  },
+                  {
+                      "id": 113,
+                      "name": "A317",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 114,
+                      "name": "A318",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 115,
+                      "name": "A319",
+                      "nameTag": "Khoa xây dựng công trình thủy"
+                  },
+                  {
+                      "id": 116,
+                      "name": "A320",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 117,
+                      "name": "A321",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 118,
+                      "name": "A322",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 119,
+                      "name": "A323",
+                      "nameTag": null
+                  }
+              ]
+          },
+          {
+              "number": 4,
+              "rooms": [
+                  {
+                      "id": 120,
+                      "name": "A401a",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 121,
+                      "name": "A401b",
+                      "nameTag": null
+                  }
+              ]
+          }
       ]
-    },
-    {
+  },
+  {
       "id": 15,
       "name": "Trung tâm thí nghiệm động cơ và ô tô",
       "stairs": [
-        null
+          null
       ],
       "floors": [
-        {
-          "number": 1,
-          "rooms": [
-            {
-              "id": 122,
-              "name": "AVL1",
-              "nameTag": null
-            },
-            {
-              "id": 123,
-              "name": "AVL2",
-              "nameTag": null
-            }
-          ]
-        },
-        {
-          "number": 3,
-          "rooms": [
-            {
-              "id": 332,
-              "name": "HL301 - R.3.1",
-              "nameTag": null
-            },
-            {
-              "id": 333,
-              "name": "HL302 - R.3.2",
-              "nameTag": null
-            },
-            {
-              "id": 334,
-              "name": "HL305 - R.3.4",
-              "nameTag": null
-            }
-          ]
-        }
+          {
+              "number": 1,
+              "rooms": [
+                  {
+                      "id": 122,
+                      "name": "AVL1",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 123,
+                      "name": "AVL2",
+                      "nameTag": null
+                  }
+              ]
+          },
+          {
+              "number": 3,
+              "rooms": [
+                  {
+                      "id": 332,
+                      "name": "HL301 - R.3.1",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 333,
+                      "name": "HL302 - R.3.2",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 334,
+                      "name": "HL305 - R.3.4",
+                      "nameTag": null
+                  }
+              ]
+          }
       ]
-    },
-    {
+  },
+  {
       "id": 2,
       "name": "Khu B",
       "stairs": [
-        [
-          11,
-          11,
-          11,
-          11,
-          12,
-          12,
-          12,
-          12,
-          13,
-          13,
-          13,
-          13,
-          14,
-          14,
-          14,
-          14,
-          15,
-          15,
-          15,
-          15,
-          16,
-          16,
-          16,
-          16,
-          18,
-          18,
-          18,
-          18,
-          19,
-          19,
-          19,
-          19,
-          17,
-          17,
-          17,
-          17
-        ]
+          [
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19
+          ]
       ],
       "floors": [
-        {
-          "number": 1,
-          "rooms": [
-            {
-              "id": 124,
-              "name": "B101",
-              "nameTag": null
-            },
-            {
-              "id": 125,
-              "name": "B102",
-              "nameTag": null
-            },
-            {
-              "id": 126,
-              "name": "B103",
-              "nameTag": null
-            },
-            {
-              "id": 127,
-              "name": "B104",
-              "nameTag": null
-            },
-            {
-              "id": 128,
-              "name": "B105",
-              "nameTag": null
-            },
-            {
-              "id": 129,
-              "name": "B106",
-              "nameTag": null
-            },
-            {
-              "id": 130,
-              "name": "B107",
-              "nameTag": "Tổ y tế"
-            },
-            {
-              "id": 131,
-              "name": "B108",
-              "nameTag": null
-            },
-            {
-              "id": 132,
-              "name": "B109",
-              "nameTag": null
-            }
-          ]
-        },
-        {
-          "number": 2,
-          "rooms": [
-            {
-              "id": 133,
-              "name": "B201",
-              "nameTag": null
-            },
-            {
-              "id": 134,
-              "name": "B202",
-              "nameTag": null
-            },
-            {
-              "id": 135,
-              "name": "B203",
-              "nameTag": null
-            },
-            {
-              "id": 136,
-              "name": "B204",
-              "nameTag": null
-            },
-            {
-              "id": 137,
-              "name": "B205",
-              "nameTag": null
-            },
-            {
-              "id": 138,
-              "name": "B206",
-              "nameTag": null
-            },
-            {
-              "id": 139,
-              "name": "B207",
-              "nameTag": null
-            },
-            {
-              "id": 140,
-              "name": "B208",
-              "nameTag": null
-            },
-            {
-              "id": 141,
-              "name": "B209",
-              "nameTag": null
-            }
-          ]
-        },
-        {
-          "number": 3,
-          "rooms": [
-            {
-              "id": 142,
-              "name": "B301",
-              "nameTag": null
-            },
-            {
-              "id": 143,
-              "name": "B302",
-              "nameTag": null
-            },
-            {
-              "id": 144,
-              "name": "B303",
-              "nameTag": null
-            },
-            {
-              "id": 145,
-              "name": "B304",
-              "nameTag": null
-            },
-            {
-              "id": 146,
-              "name": "B305",
-              "nameTag": null
-            }
-          ]
-        }
+          {
+              "number": 1,
+              "rooms": [
+                  {
+                      "id": 124,
+                      "name": "B101",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 125,
+                      "name": "B102",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 126,
+                      "name": "B103",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 127,
+                      "name": "B104",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 128,
+                      "name": "B105",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 129,
+                      "name": "B106",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 130,
+                      "name": "B107",
+                      "nameTag": "Tổ y tế"
+                  },
+                  {
+                      "id": 131,
+                      "name": "B108",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 132,
+                      "name": "B109",
+                      "nameTag": null
+                  }
+              ]
+          },
+          {
+              "number": 2,
+              "rooms": [
+                  {
+                      "id": 133,
+                      "name": "B201",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 134,
+                      "name": "B202",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 135,
+                      "name": "B203",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 136,
+                      "name": "B204",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 137,
+                      "name": "B205",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 138,
+                      "name": "B206",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 139,
+                      "name": "B207",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 140,
+                      "name": "B208",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 141,
+                      "name": "B209",
+                      "nameTag": null
+                  }
+              ]
+          },
+          {
+              "number": 3,
+              "rooms": [
+                  {
+                      "id": 142,
+                      "name": "B301",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 143,
+                      "name": "B302",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 144,
+                      "name": "B303",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 145,
+                      "name": "B304",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 146,
+                      "name": "B305",
+                      "nameTag": null
+                  }
+              ]
+          }
       ]
-    },
-    {
+  },
+  {
       "id": 4,
       "name": "Khu D",
       "stairs": [
-        [
-          34,
-          34,
-          34,
-          34,
-          35,
-          35,
-          35,
-          35,
-          36,
-          36,
-          36,
-          36,
-          37,
-          37,
-          37,
-          37,
-          38,
-          38,
-          38,
-          38,
-          39,
-          39,
-          39,
-          39
-        ]
+          [
+              34,
+              35,
+              36,
+              37,
+              38,
+              39
+          ]
       ],
       "floors": [
-        {
-          "number": 1,
-          "rooms": [
-            {
-              "id": 215,
-              "name": "D101",
-              "nameTag": "PTN Hệ thống sấy"
-            },
-            {
-              "id": 216,
-              "name": "D102",
-              "nameTag": "PTN Điều hòa không khí"
-            },
-            {
-              "id": 217,
-              "name": "D103",
-              "nameTag": "PTN Công nghệ thực phẩm"
-            },
-            {
-              "id": 218,
-              "name": "D104",
-              "nameTag": "PTN Đánh giá cảm quan"
-            },
-            {
-              "id": 219,
-              "name": "D105",
-              "nameTag": "PTN Hóa sinh"
-            },
-            {
-              "id": 220,
-              "name": "D106",
-              "nameTag": "PTN Vi sinh"
-            },
-            {
-              "id": 221,
-              "name": "D108",
-              "nameTag": "Xưởng Công nghệ thực phẩm"
-            },
-            {
-              "id": 222,
-              "name": "D109",
-              "nameTag": "PTN Hóa hữu cơ \\n -PTN Hóa lý"
-            },
-            {
-              "id": 223,
-              "name": "D110",
-              "nameTag": "PTN Cơ lý"
-            },
-            {
-              "id": 224,
-              "name": "D111",
-              "nameTag": "PTN Hóa đại cương \\n - PTN Hóa lý và phân tích silicate"
-            },
-            {
-              "id": 225,
-              "name": "D112",
-              "nameTag": "PTN Quá trình và thiết bị"
-            },
-            {
-              "id": 226,
-              "name": "D115",
-              "nameTag": "PTN Vật liệu - xúc tác"
-            },
-            {
-              "id": 227,
-              "name": "D116",
-              "nameTag": null
-            },
-            {
-              "id": 445,
-              "name": "D113",
-              "nameTag": null
-            },
-            {
-              "id": 446,
-              "name": "D114",
-              "nameTag": null
-            }
-          ]
-        },
-        {
-          "number": 2,
-          "rooms": [
-            {
-              "id": 228,
-              "name": "D201",
-              "nameTag": "PTN Chuyên ngành hóa dược"
-            },
-            {
-              "id": 229,
-              "name": "D202",
-              "nameTag": "PTN Hóa hữu cơ"
-            },
-            {
-              "id": 230,
-              "name": "D203",
-              "nameTag": "PTN Hóa lý"
-            },
-            {
-              "id": 231,
-              "name": "D204",
-              "nameTag": "PTN Hóa vô cơ"
-            },
-            {
-              "id": 232,
-              "name": "D205",
-              "nameTag": "PTN Hóa phân tích"
-            },
-            {
-              "id": 233,
-              "name": "D206",
-              "nameTag": "PTN Hóa phân tích"
-            },
-            {
-              "id": 234,
-              "name": "D207",
-              "nameTag": "PTN Vật liệu polymer"
-            },
-            {
-              "id": 235,
-              "name": "D208",
-              "nameTag": "PTN Đánh giá chất lượng sản phẩm dầu mỏ"
-            },
-            {
-              "id": 236,
-              "name": "D209",
-              "nameTag": "PTN Hóa lý"
-            },
-            {
-              "id": 237,
-              "name": "D210",
-              "nameTag": "PTN Lọc hóa dầu"
-            },
-            {
-              "id": 238,
-              "name": "D211",
-              "nameTag": "PTN Vật lí B"
-            },
-            {
-              "id": 239,
-              "name": "D213",
-              "nameTag": "PTN Vật lí"
-            },
-            {
-              "id": 240,
-              "name": "D214",
-              "nameTag": "PTN Công nghệ hóa dầu"
-            },
-            {
-              "id": 241,
-              "name": "D215",
-              "nameTag": "PTN Công nghệ lọc dầu"
-            },
-            {
-              "id": 447,
-              "name": "D212",
-              "nameTag": null
-            }
-          ]
-        }
+          {
+              "number": 1,
+              "rooms": [
+                  {
+                      "id": 215,
+                      "name": "D101",
+                      "nameTag": "PTN Hệ thống sấy"
+                  },
+                  {
+                      "id": 216,
+                      "name": "D102",
+                      "nameTag": "PTN Điều hòa không khí"
+                  },
+                  {
+                      "id": 217,
+                      "name": "D103",
+                      "nameTag": "PTN Công nghệ thực phẩm"
+                  },
+                  {
+                      "id": 218,
+                      "name": "D104",
+                      "nameTag": "PTN Đánh giá cảm quan"
+                  },
+                  {
+                      "id": 219,
+                      "name": "D105",
+                      "nameTag": "PTN Hóa sinh"
+                  },
+                  {
+                      "id": 220,
+                      "name": "D106",
+                      "nameTag": "PTN Vi sinh"
+                  },
+                  {
+                      "id": 221,
+                      "name": "D108",
+                      "nameTag": "Xưởng Công nghệ thực phẩm"
+                  },
+                  {
+                      "id": 222,
+                      "name": "D109",
+                      "nameTag": "PTN Hóa hữu cơ \\n -PTN Hóa lý"
+                  },
+                  {
+                      "id": 223,
+                      "name": "D110",
+                      "nameTag": "PTN Cơ lý"
+                  },
+                  {
+                      "id": 224,
+                      "name": "D111",
+                      "nameTag": "PTN Hóa đại cương \\n - PTN Hóa lý và phân tích silicate"
+                  },
+                  {
+                      "id": 225,
+                      "name": "D112",
+                      "nameTag": "PTN Quá trình và thiết bị"
+                  },
+                  {
+                      "id": 226,
+                      "name": "D115",
+                      "nameTag": "PTN Vật liệu - xúc tác"
+                  },
+                  {
+                      "id": 227,
+                      "name": "D116",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 445,
+                      "name": "D113",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 446,
+                      "name": "D114",
+                      "nameTag": null
+                  }
+              ]
+          },
+          {
+              "number": 2,
+              "rooms": [
+                  {
+                      "id": 228,
+                      "name": "D201",
+                      "nameTag": "PTN Chuyên ngành hóa dược"
+                  },
+                  {
+                      "id": 229,
+                      "name": "D202",
+                      "nameTag": "PTN Hóa hữu cơ"
+                  },
+                  {
+                      "id": 230,
+                      "name": "D203",
+                      "nameTag": "PTN Hóa lý"
+                  },
+                  {
+                      "id": 231,
+                      "name": "D204",
+                      "nameTag": "PTN Hóa vô cơ"
+                  },
+                  {
+                      "id": 232,
+                      "name": "D205",
+                      "nameTag": "PTN Hóa phân tích"
+                  },
+                  {
+                      "id": 233,
+                      "name": "D206",
+                      "nameTag": "PTN Hóa phân tích"
+                  },
+                  {
+                      "id": 234,
+                      "name": "D207",
+                      "nameTag": "PTN Vật liệu polymer"
+                  },
+                  {
+                      "id": 235,
+                      "name": "D208",
+                      "nameTag": "PTN Đánh giá chất lượng sản phẩm dầu mỏ"
+                  },
+                  {
+                      "id": 236,
+                      "name": "D209",
+                      "nameTag": "PTN Hóa lý"
+                  },
+                  {
+                      "id": 237,
+                      "name": "D210",
+                      "nameTag": "PTN Lọc hóa dầu"
+                  },
+                  {
+                      "id": 238,
+                      "name": "D211",
+                      "nameTag": "PTN Vật lí B"
+                  },
+                  {
+                      "id": 239,
+                      "name": "D213",
+                      "nameTag": "PTN Vật lí"
+                  },
+                  {
+                      "id": 240,
+                      "name": "D214",
+                      "nameTag": "PTN Công nghệ hóa dầu"
+                  },
+                  {
+                      "id": 241,
+                      "name": "D215",
+                      "nameTag": "PTN Công nghệ lọc dầu"
+                  },
+                  {
+                      "id": 447,
+                      "name": "D212",
+                      "nameTag": null
+                  }
+              ]
+          }
       ]
-    },
-    {
+  },
+  {
       "id": 13,
       "name": "PFIEV",
       "stairs": [
-        null
+          [
+              90
+          ]
       ],
       "floors": [
-        {
-          "number": 1,
-          "rooms": [
-            {
-              "id": 396,
-              "name": "Phòng 1",
-              "nameTag": null
-            },
-            {
-              "id": 397,
-              "name": "Phòng 2",
-              "nameTag": null
-            },
-            {
-              "id": 398,
-              "name": "Phòng 3",
-              "nameTag": null
-            },
-            {
-              "id": 399,
-              "name": "Phòng 4",
-              "nameTag": null
-            },
-            {
-              "id": 400,
-              "name": "Phòng 5",
-              "nameTag": null
-            },
-            {
-              "id": 401,
-              "name": "Phòng 6",
-              "nameTag": null
-            },
-            {
-              "id": 402,
-              "name": "Phòng 7",
-              "nameTag": null
-            },
-            {
-              "id": 407,
-              "name": "PV",
-              "nameTag": null
-            },
-            {
-              "id": 460,
-              "name": "Phòng máy tính",
-              "nameTag": null
-            },
-            {
-              "id": 461,
-              "name": "Phòng thí nghiệm quang học",
-              "nameTag": null
-            },
-            {
-              "id": 462,
-              "name": "Phòng TNSX tự động",
-              "nameTag": null
-            },
-            {
-              "id": 463,
-              "name": "Văn phòng",
-              "nameTag": null
-            },
-            {
-              "id": 464,
-              "name": "Phòng trợ lí đồ án",
-              "nameTag": null
-            },
-            {
-              "id": 465,
-              "name": "Phòng thí nghiệm tin học công nghệ",
-              "nameTag": null
-            },
-            {
-              "id": 466,
-              "name": "Xưởng thực hành",
-              "nameTag": null
-            }
-          ]
-        },
-        {
-          "number": 2,
-          "rooms": [
-            {
-              "id": 467,
-              "name": "Phòng TN hóa học",
-              "nameTag": null
-            },
-            {
-              "id": 468,
-              "name": "Phòng TN vật lí",
-              "nameTag": null
-            }
-          ]
-        }
+          {
+              "number": 1,
+              "rooms": [
+                  {
+                      "id": 396,
+                      "name": "Phòng 1",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 397,
+                      "name": "Phòng 2",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 398,
+                      "name": "Phòng 3",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 399,
+                      "name": "Phòng 4",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 400,
+                      "name": "Phòng 5",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 401,
+                      "name": "Phòng 6",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 402,
+                      "name": "Phòng 7",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 407,
+                      "name": "PV",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 460,
+                      "name": "Phòng máy tính",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 461,
+                      "name": "Phòng thí nghiệm quang học",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 462,
+                      "name": "Phòng TNSX tự động",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 463,
+                      "name": "Văn phòng",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 464,
+                      "name": "Phòng trợ lí đồ án",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 465,
+                      "name": "Phòng thí nghiệm tin học công nghệ",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 466,
+                      "name": "Xưởng thực hành",
+                      "nameTag": null
+                  }
+              ]
+          },
+          {
+              "number": 2,
+              "rooms": [
+                  {
+                      "id": 467,
+                      "name": "Phòng TN hóa học",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 468,
+                      "name": "Phòng TN vật lí",
+                      "nameTag": null
+                  }
+              ]
+          }
       ]
-    },
-    {
+  },
+  {
       "id": 5,
       "name": "Khu E",
       "stairs": [
-        [
-          40,
-          40,
-          40,
-          40,
-          41,
-          41,
-          41,
-          41,
-          41,
-          42,
-          42,
-          42,
-          42,
-          43,
-          43,
-          43,
-          43,
-          44,
-          44,
-          44,
-          44,
-          45,
-          45,
-          45,
-          45,
-          45,
-          46,
-          46,
-          46,
-          46,
-          47,
-          47,
-          47,
-          47,
-          48,
-          48,
-          48,
-          48,
-          49,
-          49,
-          49,
-          49,
-          50,
-          50,
-          50,
-          50,
-          51,
-          51,
-          51,
-          51
-        ]
+          [
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49,
+              50,
+              51
+          ]
       ],
       "floors": [
-        {
-          "number": 1,
-          "rooms": [
-            {
-              "id": 242,
-              "name": "E101",
-              "nameTag": null
-            },
-            {
-              "id": 243,
-              "name": "E102",
-              "nameTag": null
-            },
-            {
-              "id": 244,
-              "name": "E103",
-              "nameTag": null
-            },
-            {
-              "id": 245,
-              "name": "E104",
-              "nameTag": null
-            },
-            {
-              "id": 246,
-              "name": "E110A",
-              "nameTag": null
-            },
-            {
-              "id": 247,
-              "name": "E110B",
-              "nameTag": null
-            },
-            {
-              "id": 248,
-              "name": "E111.",
-              "nameTag": null
-            },
-            {
-              "id": 249,
-              "name": "E112",
-              "nameTag": null
-            },
-            {
-              "id": 250,
-              "name": "E113",
-              "nameTag": null
-            },
-            {
-              "id": 251,
-              "name": "E114",
-              "nameTag": null
-            }
-          ]
-        },
-        {
-          "number": 2,
-          "rooms": [
-            {
-              "id": 252,
-              "name": "E201A",
-              "nameTag": null
-            },
-            {
-              "id": 253,
-              "name": "E201B",
-              "nameTag": null
-            },
-            {
-              "id": 254,
-              "name": "E202A",
-              "nameTag": null
-            },
-            {
-              "id": 255,
-              "name": "E202B",
-              "nameTag": null
-            },
-            {
-              "id": 256,
-              "name": "E203",
-              "nameTag": null
-            },
-            {
-              "id": 257,
-              "name": "E204A",
-              "nameTag": null
-            },
-            {
-              "id": 258,
-              "name": "E204B",
-              "nameTag": null
-            },
-            {
-              "id": 259,
-              "name": "E205",
-              "nameTag": null
-            },
-            {
-              "id": 260,
-              "name": "E206",
-              "nameTag": null
-            },
-            {
-              "id": 261,
-              "name": "E207",
-              "nameTag": null
-            },
-            {
-              "id": 262,
-              "name": "E208",
-              "nameTag": null
-            },
-            {
-              "id": 263,
-              "name": "E209",
-              "nameTag": null
-            },
-            {
-              "id": 264,
-              "name": "E210",
-              "nameTag": null
-            }
-          ]
-        },
-        {
-          "number": 3,
-          "rooms": [
-            {
-              "id": 265,
-              "name": "E301A",
-              "nameTag": null
-            },
-            {
-              "id": 266,
-              "name": "E301B",
-              "nameTag": null
-            },
-            {
-              "id": 267,
-              "name": "E302",
-              "nameTag": null
-            },
-            {
-              "id": 268,
-              "name": "E303",
-              "nameTag": null
-            },
-            {
-              "id": 269,
-              "name": "E304",
-              "nameTag": null
-            },
-            {
-              "id": 270,
-              "name": "E305",
-              "nameTag": null
-            }
-          ]
-        },
-        {
-          "number": 4,
-          "rooms": [
-            {
-              "id": 271,
-              "name": "E401",
-              "nameTag": null
-            },
-            {
-              "id": 272,
-              "name": "E402",
-              "nameTag": null
-            },
-            {
-              "id": 273,
-              "name": "E403",
-              "nameTag": null
-            },
-            {
-              "id": 274,
-              "name": "E404",
-              "nameTag": null
-            },
-            {
-              "id": 275,
-              "name": "E405",
-              "nameTag": null
-            },
-            {
-              "id": 276,
-              "name": "E406",
-              "nameTag": null
-            }
-          ]
-        }
+          {
+              "number": 1,
+              "rooms": [
+                  {
+                      "id": 242,
+                      "name": "E101",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 243,
+                      "name": "E102",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 244,
+                      "name": "E103",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 245,
+                      "name": "E104",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 246,
+                      "name": "E110A",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 247,
+                      "name": "E110B",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 248,
+                      "name": "E111.",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 249,
+                      "name": "E112",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 250,
+                      "name": "E113",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 251,
+                      "name": "E114",
+                      "nameTag": null
+                  }
+              ]
+          },
+          {
+              "number": 2,
+              "rooms": [
+                  {
+                      "id": 252,
+                      "name": "E201A",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 253,
+                      "name": "E201B",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 254,
+                      "name": "E202A",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 255,
+                      "name": "E202B",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 256,
+                      "name": "E203",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 257,
+                      "name": "E204A",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 258,
+                      "name": "E204B",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 259,
+                      "name": "E205",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 260,
+                      "name": "E206",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 261,
+                      "name": "E207",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 262,
+                      "name": "E208",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 263,
+                      "name": "E209",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 264,
+                      "name": "E210",
+                      "nameTag": null
+                  }
+              ]
+          },
+          {
+              "number": 3,
+              "rooms": [
+                  {
+                      "id": 265,
+                      "name": "E301A",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 266,
+                      "name": "E301B",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 267,
+                      "name": "E302",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 268,
+                      "name": "E303",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 269,
+                      "name": "E304",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 270,
+                      "name": "E305",
+                      "nameTag": null
+                  }
+              ]
+          },
+          {
+              "number": 4,
+              "rooms": [
+                  {
+                      "id": 271,
+                      "name": "E401",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 272,
+                      "name": "E402",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 273,
+                      "name": "E403",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 274,
+                      "name": "E404",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 275,
+                      "name": "E405",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 276,
+                      "name": "E406",
+                      "nameTag": null
+                  }
+              ]
+          }
       ]
-    },
-    {
+  },
+  {
       "id": 6,
       "name": "Khu F",
       "stairs": [
-        [
-          52,
-          53,
-          53,
-          53,
-          53,
-          53,
-          53,
-          53,
-          53,
-          54,
-          54,
-          54,
-          54,
-          52,
-          52,
-          52,
-          53,
-          53,
-          53,
-          53,
-          55,
-          55,
-          55,
-          55,
-          57,
-          57,
-          57,
-          57,
-          56,
-          56,
-          56,
-          56,
-          59,
-          59,
-          59,
-          59,
-          61,
-          61,
-          61,
-          61,
-          63,
-          63,
-          63,
-          63,
-          62,
-          62,
-          62,
-          62
-        ]
+          [
+              52,
+              53,
+              54,
+              55,
+              56,
+              57,
+              58,
+              59,
+              60,
+              61,
+              62,
+              63
+          ]
       ],
       "floors": [
-        {
-          "number": 1,
-          "rooms": [
-            {
-              "id": 277,
-              "name": "F101",
-              "nameTag": null
-            },
-            {
-              "id": 278,
-              "name": "F102",
-              "nameTag": null
-            },
-            {
-              "id": 279,
-              "name": "F103",
-              "nameTag": null
-            },
-            {
-              "id": 280,
-              "name": "F104",
-              "nameTag": null
-            },
-            {
-              "id": 281,
-              "name": "F105",
-              "nameTag": null
-            },
-            {
-              "id": 282,
-              "name": "F106",
-              "nameTag": null
-            },
-            {
-              "id": 283,
-              "name": "F107",
-              "nameTag": null
-            },
-            {
-              "id": 284,
-              "name": "F108",
-              "nameTag": null
-            },
-            {
-              "id": 285,
-              "name": "F109",
-              "nameTag": null
-            },
-            {
-              "id": 286,
-              "name": "F110",
-              "nameTag": null
-            },
-            {
-              "id": 425,
-              "name": null,
-              "nameTag": "Hội trường"
-            }
-          ]
-        },
-        {
-          "number": 2,
-          "rooms": [
-            {
-              "id": 287,
-              "name": "F201",
-              "nameTag": null
-            },
-            {
-              "id": 288,
-              "name": "F202",
-              "nameTag": null
-            },
-            {
-              "id": 289,
-              "name": "F203",
-              "nameTag": null
-            },
-            {
-              "id": 290,
-              "name": "F204",
-              "nameTag": null
-            },
-            {
-              "id": 291,
-              "name": "F205",
-              "nameTag": null
-            },
-            {
-              "id": 292,
-              "name": "F206",
-              "nameTag": null
-            },
-            {
-              "id": 293,
-              "name": "F207",
-              "nameTag": null
-            },
-            {
-              "id": 294,
-              "name": "F208",
-              "nameTag": null
-            },
-            {
-              "id": 295,
-              "name": "F209",
-              "nameTag": null
-            },
-            {
-              "id": 296,
-              "name": "F210",
-              "nameTag": null
-            }
-          ]
-        },
-        {
-          "number": 3,
-          "rooms": [
-            {
-              "id": 297,
-              "name": "F301",
-              "nameTag": null
-            },
-            {
-              "id": 298,
-              "name": "F302",
-              "nameTag": null
-            },
-            {
-              "id": 299,
-              "name": "F303",
-              "nameTag": null
-            },
-            {
-              "id": 300,
-              "name": "F304",
-              "nameTag": null
-            },
-            {
-              "id": 301,
-              "name": "F305",
-              "nameTag": null
-            },
-            {
-              "id": 302,
-              "name": "F306",
-              "nameTag": null
-            },
-            {
-              "id": 303,
-              "name": "F307",
-              "nameTag": null
-            },
-            {
-              "id": 304,
-              "name": "F308",
-              "nameTag": null
-            },
-            {
-              "id": 305,
-              "name": "F309",
-              "nameTag": null
-            },
-            {
-              "id": 306,
-              "name": "F310",
-              "nameTag": null
-            }
-          ]
-        },
-        {
-          "number": 4,
-          "rooms": [
-            {
-              "id": 307,
-              "name": "F401",
-              "nameTag": null
-            },
-            {
-              "id": 308,
-              "name": "F402",
-              "nameTag": null
-            },
-            {
-              "id": 309,
-              "name": "F403",
-              "nameTag": null
-            },
-            {
-              "id": 310,
-              "name": "F404",
-              "nameTag": null
-            },
-            {
-              "id": 311,
-              "name": "F405",
-              "nameTag": null
-            },
-            {
-              "id": 312,
-              "name": "F406",
-              "nameTag": null
-            },
-            {
-              "id": 313,
-              "name": "F407",
-              "nameTag": null
-            },
-            {
-              "id": 314,
-              "name": "F408",
-              "nameTag": null
-            },
-            {
-              "id": 315,
-              "name": "F409",
-              "nameTag": null
-            }
-          ]
-        }
+          {
+              "number": 1,
+              "rooms": [
+                  {
+                      "id": 277,
+                      "name": "F101",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 278,
+                      "name": "F102",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 279,
+                      "name": "F103",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 280,
+                      "name": "F104",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 281,
+                      "name": "F105",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 282,
+                      "name": "F106",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 283,
+                      "name": "F107",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 284,
+                      "name": "F108",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 285,
+                      "name": "F109",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 286,
+                      "name": "F110",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 425,
+                      "name": null,
+                      "nameTag": "Hội trường"
+                  }
+              ]
+          },
+          {
+              "number": 2,
+              "rooms": [
+                  {
+                      "id": 287,
+                      "name": "F201",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 288,
+                      "name": "F202",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 289,
+                      "name": "F203",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 290,
+                      "name": "F204",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 291,
+                      "name": "F205",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 292,
+                      "name": "F206",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 293,
+                      "name": "F207",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 294,
+                      "name": "F208",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 295,
+                      "name": "F209",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 296,
+                      "name": "F210",
+                      "nameTag": null
+                  }
+              ]
+          },
+          {
+              "number": 3,
+              "rooms": [
+                  {
+                      "id": 297,
+                      "name": "F301",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 298,
+                      "name": "F302",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 299,
+                      "name": "F303",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 300,
+                      "name": "F304",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 301,
+                      "name": "F305",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 302,
+                      "name": "F306",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 303,
+                      "name": "F307",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 304,
+                      "name": "F308",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 305,
+                      "name": "F309",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 306,
+                      "name": "F310",
+                      "nameTag": null
+                  }
+              ]
+          },
+          {
+              "number": 4,
+              "rooms": [
+                  {
+                      "id": 307,
+                      "name": "F401",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 308,
+                      "name": "F402",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 309,
+                      "name": "F403",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 310,
+                      "name": "F404",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 311,
+                      "name": "F405",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 312,
+                      "name": "F406",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 313,
+                      "name": "F407",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 314,
+                      "name": "F408",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 315,
+                      "name": "F409",
+                      "nameTag": null
+                  }
+              ]
+          }
       ]
-    },
-    {
+  },
+  {
       "id": 7,
       "name": "Khu G",
       "stairs": [
-        [
-          64,
-          64,
-          64,
-          64,
-          65,
-          65,
-          65,
-          65
-        ]
+          [
+              64,
+              65
+          ]
       ],
       "floors": [
-        {
-          "number": 1,
-          "rooms": [
-            {
-              "id": 316,
-              "name": "G101A",
-              "nameTag": "PTN vật liệu xây dựng 1"
-            },
-            {
-              "id": 317,
-              "name": "G101B",
-              "nameTag": "PTN vật liệu xây dựng 2"
-            },
-            {
-              "id": 318,
-              "name": "G102",
-              "nameTag": "PTN cầu - đường"
-            },
-            {
-              "id": 319,
-              "name": "G103",
-              "nameTag": "Thiết bị thanh lý"
-            },
-            {
-              "id": 320,
-              "name": "G104",
-              "nameTag": "PTN kết cấu chương trình"
-            },
-            {
-              "id": 321,
-              "name": "G105",
-              "nameTag": "Project name"
-            },
-            {
-              "id": 322,
-              "name": "G106",
-              "nameTag": "PTN thủy lực"
-            },
-            {
-              "id": 331,
-              "name": "",
-              "nameTag": "Phòng nghiên cứu Tài Nguyên Nước"
-            }
-          ]
-        },
-        {
-          "number": 2,
-          "rooms": [
-            {
-              "id": 323,
-              "name": "G201",
-              "nameTag": "PTN cơ - địa"
-            },
-            {
-              "id": 324,
-              "name": "G202",
-              "nameTag": "PTN tính năng cao"
-            },
-            {
-              "id": 325,
-              "name": "G203",
-              "nameTag": "Tự học"
-            },
-            {
-              "id": 326,
-              "name": "G204",
-              "nameTag": "Máy trắc địa"
-            },
-            {
-              "id": 327,
-              "name": "G205",
-              "nameTag": "Cơ học"
-            },
-            {
-              "id": 328,
-              "name": "G206",
-              "nameTag": "PTN môi trường"
-            },
-            {
-              "id": 329,
-              "name": "G207",
-              "nameTag": "PTN môi trường"
-            },
-            {
-              "id": 330,
-              "name": "G208",
-              "nameTag": "PTN môi trường"
-            }
-          ]
-        }
+          {
+              "number": 1,
+              "rooms": [
+                  {
+                      "id": 316,
+                      "name": "G101A",
+                      "nameTag": "PTN vật liệu xây dựng 1"
+                  },
+                  {
+                      "id": 317,
+                      "name": "G101B",
+                      "nameTag": "PTN vật liệu xây dựng 2"
+                  },
+                  {
+                      "id": 318,
+                      "name": "G102",
+                      "nameTag": "PTN cầu - đường"
+                  },
+                  {
+                      "id": 319,
+                      "name": "G103",
+                      "nameTag": "Thiết bị thanh lý"
+                  },
+                  {
+                      "id": 320,
+                      "name": "G104",
+                      "nameTag": "PTN kết cấu chương trình"
+                  },
+                  {
+                      "id": 321,
+                      "name": "G105",
+                      "nameTag": "Project name"
+                  },
+                  {
+                      "id": 322,
+                      "name": "G106",
+                      "nameTag": "PTN thủy lực"
+                  },
+                  {
+                      "id": 331,
+                      "name": "",
+                      "nameTag": "Phòng nghiên cứu Tài Nguyên Nước"
+                  }
+              ]
+          },
+          {
+              "number": 2,
+              "rooms": [
+                  {
+                      "id": 323,
+                      "name": "G201",
+                      "nameTag": "PTN cơ - địa"
+                  },
+                  {
+                      "id": 324,
+                      "name": "G202",
+                      "nameTag": "PTN tính năng cao"
+                  },
+                  {
+                      "id": 325,
+                      "name": "G203",
+                      "nameTag": "Tự học"
+                  },
+                  {
+                      "id": 326,
+                      "name": "G204",
+                      "nameTag": "Máy trắc địa"
+                  },
+                  {
+                      "id": 327,
+                      "name": "G205",
+                      "nameTag": "Cơ học"
+                  },
+                  {
+                      "id": 328,
+                      "name": "G206",
+                      "nameTag": "PTN môi trường"
+                  },
+                  {
+                      "id": 329,
+                      "name": "G207",
+                      "nameTag": "PTN môi trường"
+                  },
+                  {
+                      "id": 330,
+                      "name": "G208",
+                      "nameTag": "PTN môi trường"
+                  }
+              ]
+          }
       ]
-    },
-    {
+  },
+  {
       "id": 8,
       "name": "Khu H",
       "stairs": [
-        [
-          66,
-          66,
-          66,
-          66,
-          67,
-          67,
-          67,
-          67,
-          68,
-          68,
-          68,
-          68,
-          69,
-          69,
-          69,
-          69,
-          70,
-          70,
-          70,
-          70,
-          71,
-          71,
-          71,
-          71
-        ]
+          [
+              66,
+              67,
+              68,
+              69,
+              70,
+              71,
+              72,
+              73,
+              74,
+              75,
+              76,
+              77
+          ]
       ],
       "floors": [
-        {
-          "number": 1,
-          "rooms": [
-            {
-              "id": 335,
-              "name": "H101",
-              "nameTag": null
-            },
-            {
-              "id": 336,
-              "name": "H102",
-              "nameTag": null
-            },
-            {
-              "id": 337,
-              "name": "H103",
-              "nameTag": null
-            },
-            {
-              "id": 338,
-              "name": "H104",
-              "nameTag": null
-            },
-            {
-              "id": 339,
-              "name": "H105",
-              "nameTag": null
-            },
-            {
-              "id": 340,
-              "name": "H106",
-              "nameTag": null
-            },
-            {
-              "id": 341,
-              "name": "H107",
-              "nameTag": null
-            },
-            {
-              "id": 342,
-              "name": "H108",
-              "nameTag": null
-            }
-          ]
-        },
-        {
-          "number": 2,
-          "rooms": [
-            {
-              "id": 343,
-              "name": "H201",
-              "nameTag": null
-            },
-            {
-              "id": 344,
-              "name": "H202",
-              "nameTag": null
-            },
-            {
-              "id": 345,
-              "name": "H203",
-              "nameTag": null
-            },
-            {
-              "id": 346,
-              "name": "H204",
-              "nameTag": null
-            },
-            {
-              "id": 347,
-              "name": "H205",
-              "nameTag": null
-            },
-            {
-              "id": 348,
-              "name": "H206",
-              "nameTag": null
-            },
-            {
-              "id": 349,
-              "name": "H207",
-              "nameTag": null
-            },
-            {
-              "id": 350,
-              "name": "H208",
-              "nameTag": null
-            }
-          ]
-        },
-        {
-          "number": 3,
-          "rooms": [
-            {
-              "id": 351,
-              "name": "H301",
-              "nameTag": null
-            },
-            {
-              "id": 352,
-              "name": "H302",
-              "nameTag": null
-            },
-            {
-              "id": 353,
-              "name": "H303",
-              "nameTag": null
-            },
-            {
-              "id": 354,
-              "name": "H304",
-              "nameTag": null
-            },
-            {
-              "id": 355,
-              "name": "H305",
-              "nameTag": null
-            },
-            {
-              "id": 356,
-              "name": "H306",
-              "nameTag": null
-            },
-            {
-              "id": 357,
-              "name": "H307",
-              "nameTag": null
-            },
-            {
-              "id": 358,
-              "name": "H308",
-              "nameTag": null
-            }
-          ]
-        },
-        {
-          "number": 4,
-          "rooms": [
-            {
-              "id": 359,
-              "name": "H401",
-              "nameTag": null
-            },
-            {
-              "id": 360,
-              "name": "H402",
-              "nameTag": null
-            }
-          ]
-        }
+          {
+              "number": 1,
+              "rooms": [
+                  {
+                      "id": 335,
+                      "name": "H101",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 336,
+                      "name": "H102",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 337,
+                      "name": "H103",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 338,
+                      "name": "H104",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 339,
+                      "name": "H105",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 340,
+                      "name": "H106",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 341,
+                      "name": "H107",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 342,
+                      "name": "H108",
+                      "nameTag": null
+                  }
+              ]
+          },
+          {
+              "number": 2,
+              "rooms": [
+                  {
+                      "id": 343,
+                      "name": "H201",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 344,
+                      "name": "H202",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 345,
+                      "name": "H203",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 346,
+                      "name": "H204",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 347,
+                      "name": "H205",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 348,
+                      "name": "H206",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 349,
+                      "name": "H207",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 350,
+                      "name": "H208",
+                      "nameTag": null
+                  }
+              ]
+          },
+          {
+              "number": 3,
+              "rooms": [
+                  {
+                      "id": 351,
+                      "name": "H301",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 352,
+                      "name": "H302",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 353,
+                      "name": "H303",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 354,
+                      "name": "H304",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 355,
+                      "name": "H305",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 356,
+                      "name": "H306",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 357,
+                      "name": "H307",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 358,
+                      "name": "H308",
+                      "nameTag": null
+                  }
+              ]
+          },
+          {
+              "number": 4,
+              "rooms": [
+                  {
+                      "id": 359,
+                      "name": "H401",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 360,
+                      "name": "H402",
+                      "nameTag": null
+                  }
+              ]
+          }
       ]
-    },
-    {
+  },
+  {
       "id": 16,
       "name": "Khác",
       "stairs": [
-        null
+          null
       ],
       "floors": [
-        {
-          "number": 3,
-          "rooms": [
-            {
-              "id": 361,
-              "name": "HL301",
-              "nameTag": null
-            },
-            {
-              "id": 362,
-              "name": "HL302",
-              "nameTag": null
-            },
-            {
-              "id": 363,
-              "name": "HL305",
-              "nameTag": null
-            }
-          ]
-        },
-        {
-          "number": 1,
-          "rooms": [
-            {
-              "id": 403,
-              "name": "PTN",
-              "nameTag": null
-            },
-            {
-              "id": 404,
-              "name": "PTN 2",
-              "nameTag": null
-            },
-            {
-              "id": 405,
-              "name": "PTNA",
-              "nameTag": null
-            },
-            {
-              "id": 406,
-              "name": "PTNB",
-              "nameTag": null
-            },
-            {
-              "id": 417,
-              "name": "SVĐ",
-              "nameTag": "Sân vận động"
-            },
-            {
-              "id": 418,
-              "name": "X",
-              "nameTag": null
-            },
-            {
-              "id": 419,
-              "name": "XP",
-              "nameTag": null
-            },
-            {
-              "id": 420,
-              "name": null,
-              "nameTag": "Xưởng CK"
-            },
-            {
-              "id": 421,
-              "name": null,
-              "nameTag": "Xưởng ĐL"
-            },
-            {
-              "id": 422,
-              "name": null,
-              "nameTag": "Xưởng động học"
-            },
-            {
-              "id": 423,
-              "name": null,
-              "nameTag": "Tổ bảo vệ"
-            },
-            {
-              "id": 424,
-              "name": null,
-              "nameTag": "Xưởng đúc"
-            },
-            {
-              "id": 443,
-              "name": null,
-              "nameTag": "Tổ bảo vệ"
-            },
-            {
-              "id": 458,
-              "name": "Xưởng Nhiệt",
-              "nameTag": null
-            },
-            {
-              "id": 459,
-              "name": "Xưởng Điện",
-              "nameTag": null
-            }
-          ]
-        }
+          {
+              "number": 3,
+              "rooms": [
+                  {
+                      "id": 361,
+                      "name": "HL301",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 362,
+                      "name": "HL302",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 363,
+                      "name": "HL305",
+                      "nameTag": null
+                  }
+              ]
+          },
+          {
+              "number": 1,
+              "rooms": [
+                  {
+                      "id": 403,
+                      "name": "PTN",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 404,
+                      "name": "PTN 2",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 405,
+                      "name": "PTNA",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 406,
+                      "name": "PTNB",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 417,
+                      "name": "SVĐ",
+                      "nameTag": "Sân vận động"
+                  },
+                  {
+                      "id": 418,
+                      "name": "X",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 419,
+                      "name": "XP",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 420,
+                      "name": null,
+                      "nameTag": "Xưởng Cơ khí"
+                  },
+                  {
+                      "id": 421,
+                      "name": null,
+                      "nameTag": "Xưởng ĐL"
+                  },
+                  {
+                      "id": 422,
+                      "name": null,
+                      "nameTag": "Xưởng động học"
+                  },
+                  {
+                      "id": 423,
+                      "name": null,
+                      "nameTag": "Tổ bảo vệ"
+                  },
+                  {
+                      "id": 424,
+                      "name": null,
+                      "nameTag": "Xưởng đúc"
+                  },
+                  {
+                      "id": 443,
+                      "name": null,
+                      "nameTag": "Tổ bảo vệ"
+                  },
+                  {
+                      "id": 458,
+                      "name": "Xưởng Nhiệt",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 459,
+                      "name": "Xưởng Điện",
+                      "nameTag": null
+                  }
+              ]
+          }
       ]
-    },
-    {
+  },
+  {
       "id": 9,
       "name": "Khu I",
       "stairs": [
-        [
-          78,
-          78,
-          78,
-          78,
-          79,
-          79,
-          79,
-          79,
-          80,
-          80,
-          80,
-          80,
-          81,
-          81,
-          81,
-          81
-        ]
+          [
+              78,
+              79,
+              80,
+              81,
+              82,
+              83
+          ]
       ],
       "floors": [
-        {
-          "number": 1,
-          "rooms": [
-            {
-              "id": 364,
-              "name": "I101",
-              "nameTag": "PTN cao áp"
-            },
-            {
-              "id": 365,
-              "name": "I103",
-              "nameTag": "PTN kĩ thuật đo lường"
-            },
-            {
-              "id": 366,
-              "name": "I104",
-              "nameTag": "PTN bảo vệ relay"
-            },
-            {
-              "id": 367,
-              "name": "I105",
-              "nameTag": "PTN mạng điện "
-            },
-            {
-              "id": 368,
-              "name": "I106",
-              "nameTag": "PTN kĩ thuật điện "
-            },
-            {
-              "id": 444,
-              "name": "I102",
-              "nameTag": null
-            }
-          ]
-        },
-        {
-          "number": 2,
-          "rooms": [
-            {
-              "id": 369,
-              "name": "I201",
-              "nameTag": "PTN lưới điện thông minh"
-            },
-            {
-              "id": 370,
-              "name": "I202",
-              "nameTag": "PTN lí thuyết mạng điện 1 & 2"
-            },
-            {
-              "id": 371,
-              "name": "I203",
-              "nameTag": "PTN lí thuyết mạng điện 1 & 2"
-            },
-            {
-              "id": 372,
-              "name": "I204",
-              "nameTag": "PTN thiết bị điện"
-            }
-          ]
-        },
-        {
-          "number": 3,
-          "rooms": [
-            {
-              "id": 373,
-              "name": "I301",
-              "nameTag": "PTN  truyền động điện"
-            },
-            {
-              "id": 374,
-              "name": "I302",
-              "nameTag": "PTN mạch điện tử"
-            },
-            {
-              "id": 375,
-              "name": "I303",
-              "nameTag": "PTN vi điều khiển"
-            },
-            {
-              "id": 376,
-              "name": "I304",
-              "nameTag": "PTN điện tử công suất"
-            },
-            {
-              "id": 377,
-              "name": "I305",
-              "nameTag": "PTN điều khiển logic"
-            }
-          ]
-        }
+          {
+              "number": 1,
+              "rooms": [
+                  {
+                      "id": 364,
+                      "name": "I101",
+                      "nameTag": "PTN cao áp"
+                  },
+                  {
+                      "id": 365,
+                      "name": "I103",
+                      "nameTag": "PTN kĩ thuật đo lường"
+                  },
+                  {
+                      "id": 366,
+                      "name": "I104",
+                      "nameTag": "PTN bảo vệ relay"
+                  },
+                  {
+                      "id": 367,
+                      "name": "I105",
+                      "nameTag": "PTN mạng điện "
+                  },
+                  {
+                      "id": 368,
+                      "name": "I106",
+                      "nameTag": "PTN kĩ thuật điện "
+                  },
+                  {
+                      "id": 444,
+                      "name": "I102",
+                      "nameTag": null
+                  }
+              ]
+          },
+          {
+              "number": 2,
+              "rooms": [
+                  {
+                      "id": 369,
+                      "name": "I201",
+                      "nameTag": "PTN lưới điện thông minh"
+                  },
+                  {
+                      "id": 370,
+                      "name": "I202",
+                      "nameTag": "PTN lí thuyết mạng điện 1 & 2"
+                  },
+                  {
+                      "id": 371,
+                      "name": "I203",
+                      "nameTag": "PTN lí thuyết mạng điện 1 & 2"
+                  },
+                  {
+                      "id": 372,
+                      "name": "I204",
+                      "nameTag": "PTN thiết bị điện"
+                  }
+              ]
+          },
+          {
+              "number": 3,
+              "rooms": [
+                  {
+                      "id": 373,
+                      "name": "I301",
+                      "nameTag": "PTN  truyền động điện"
+                  },
+                  {
+                      "id": 374,
+                      "name": "I302",
+                      "nameTag": "PTN mạch điện tử"
+                  },
+                  {
+                      "id": 375,
+                      "name": "I303",
+                      "nameTag": "PTN vi điều khiển"
+                  },
+                  {
+                      "id": 376,
+                      "name": "I304",
+                      "nameTag": "PTN điện tử công suất"
+                  },
+                  {
+                      "id": 377,
+                      "name": "I305",
+                      "nameTag": "PTN điều khiển logic"
+                  }
+              ]
+          }
       ]
-    },
-    {
+  },
+  {
       "id": 10,
       "name": "Khu K",
       "stairs": [
-        null
+          [
+              84,
+              85
+          ]
       ],
       "floors": [
-        {
-          "number": 1,
-          "rooms": [
-            {
-              "id": 378,
-              "name": "K101",
-              "nameTag": "PTN chế tạo máy - PTN đo lường và xử lý số liệu"
-            },
-            {
-              "id": 379,
-              "name": "K102",
-              "nameTag": "PTN sản xuất tự động và điều khiển số"
-            },
-            {
-              "id": 380,
-              "name": "K103",
-              "nameTag": "PTN truyền động và điều khiển thủy khí 1"
-            },
-            {
-              "id": 381,
-              "name": "K104",
-              "nameTag": "PTN truyền động và điều khiển thủy khí 2"
-            },
-            {
-              "id": 382,
-              "name": "K105",
-              "nameTag": "PTN kim loại học"
-            },
-            {
-              "id": 383,
-              "name": "K106",
-              "nameTag": "PTN hàn"
-            },
-            {
-              "id": 384,
-              "name": "K107",
-              "nameTag": "PTN máy thủy khí"
-            },
-            {
-              "id": 385,
-              "name": "K108",
-              "nameTag": "PTN thủy khí"
-            }
-          ]
-        }
+          {
+              "number": 1,
+              "rooms": [
+                  {
+                      "id": 378,
+                      "name": "K101",
+                      "nameTag": "PTN chế tạo máy - PTN đo lường và xử lý số liệu"
+                  },
+                  {
+                      "id": 379,
+                      "name": "K102",
+                      "nameTag": "PTN sản xuất tự động và điều khiển số"
+                  },
+                  {
+                      "id": 380,
+                      "name": "K103",
+                      "nameTag": "PTN truyền động và điều khiển thủy khí 1"
+                  },
+                  {
+                      "id": 381,
+                      "name": "K104",
+                      "nameTag": "PTN truyền động và điều khiển thủy khí 2"
+                  },
+                  {
+                      "id": 382,
+                      "name": "K105",
+                      "nameTag": "PTN kim loại học"
+                  },
+                  {
+                      "id": 383,
+                      "name": "K106",
+                      "nameTag": "PTN hàn"
+                  },
+                  {
+                      "id": 384,
+                      "name": "K107",
+                      "nameTag": "PTN máy thủy khí"
+                  },
+                  {
+                      "id": 385,
+                      "name": "K108",
+                      "nameTag": "PTN thủy khí"
+                  }
+              ]
+          }
       ]
-    },
-    {
+  },
+  {
       "id": 11,
       "name": "Khu M",
       "stairs": [
-        [
-          86,
-          86,
-          86,
-          86,
-          87,
-          87,
-          87,
-          87
-        ]
+          [
+              86,
+              87,
+              88,
+              89
+          ]
       ],
       "floors": [
-        {
-          "number": 1,
-          "rooms": [
-            {
-              "id": 386,
-              "name": "M101",
-              "nameTag": "Phòng đo lường cấp 3 "
-            },
-            {
-              "id": 387,
-              "name": "M102",
-              "nameTag": "PTN sản xuất tự động "
-            },
-            {
-              "id": 388,
-              "name": "M103",
-              "nameTag": "Phòng nghiên cứu và sản xuất thực nghiệm "
-            },
-            {
-              "id": 389,
-              "name": "M104",
-              "nameTag": "Phòng thực hành CNC nâng cao "
-            },
-            {
-              "id": 390,
-              "name": "M106",
-              "nameTag": "PTN nghiên cứu máy "
-            },
-            {
-              "id": 449,
-              "name": "M105",
-              "nameTag": null
-            },
-            {
-              "id": 450,
-              "name": "M107",
-              "nameTag": null
-            },
-            {
-              "id": 451,
-              "name": "M108",
-              "nameTag": null
-            }
-          ]
-        },
-        {
-          "number": 2,
-          "rooms": [
-            {
-              "id": 391,
-              "name": "M205",
-              "nameTag": null
-            },
-            {
-              "id": 392,
-              "name": "M202",
-              "nameTag": null
-            },
-            {
-              "id": 393,
-              "name": "M204",
-              "nameTag": null
-            },
-            {
-              "id": 394,
-              "name": "M206",
-              "nameTag": null
-            }
-          ]
-        }
+          {
+              "number": 1,
+              "rooms": [
+                  {
+                      "id": 386,
+                      "name": "M101",
+                      "nameTag": "Phòng đo lường cấp 3 "
+                  },
+                  {
+                      "id": 387,
+                      "name": "M102",
+                      "nameTag": "PTN sản xuất tự động "
+                  },
+                  {
+                      "id": 388,
+                      "name": "M103",
+                      "nameTag": "Phòng nghiên cứu và sản xuất thực nghiệm "
+                  },
+                  {
+                      "id": 389,
+                      "name": "M104",
+                      "nameTag": "Phòng thực hành CNC nâng cao "
+                  },
+                  {
+                      "id": 390,
+                      "name": "M106",
+                      "nameTag": "PTN nghiên cứu máy "
+                  },
+                  {
+                      "id": 449,
+                      "name": "M105",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 450,
+                      "name": "M107",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 451,
+                      "name": "M108",
+                      "nameTag": null
+                  }
+              ]
+          },
+          {
+              "number": 2,
+              "rooms": [
+                  {
+                      "id": 391,
+                      "name": "M205",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 392,
+                      "name": "M202",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 393,
+                      "name": "M204",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 394,
+                      "name": "M206",
+                      "nameTag": null
+                  }
+              ]
+          }
       ]
-    },
-    {
+  },
+  {
       "id": 12,
       "name": "Khu S - Smart Building",
       "stairs": [
-        null
+          null
       ],
       "floors": [
-        {
-          "number": 1,
-          "rooms": [
-            {
-              "id": 408,
-              "name": "S01.01",
-              "nameTag": "Phòng tổ chức - hành chính"
-            },
-            {
-              "id": 427,
-              "name": null,
-              "nameTag": "Hội trường"
-            }
-          ]
-        },
-        {
-          "number": 2,
-          "rooms": [
-            {
-              "id": 409,
-              "name": "S02.03",
-              "nameTag": "Phòng khoa học công nghệ & Hợp tác quốc tế"
-            }
-          ]
-        },
-        {
-          "number": 3,
-          "rooms": [
-            {
-              "id": 410,
-              "name": "S03.08",
-              "nameTag": "Phòng khảo thí & Đảm bảo chất lượng"
-            },
-            {
-              "id": 411,
-              "name": "S03.05",
-              "nameTag": "Phòng Thanh Tra - Pháp Chế"
-            }
-          ]
-        },
-        {
-          "number": 7,
-          "rooms": [
-            {
-              "id": 412,
-              "name": "S07.04",
-              "nameTag": "Tổ công nghệ thông tin"
-            }
-          ]
-        }
+          {
+              "number": 1,
+              "rooms": [
+                  {
+                      "id": 408,
+                      "name": "S01.01",
+                      "nameTag": "Phòng tổ chức - hành chính"
+                  },
+                  {
+                      "id": 427,
+                      "name": null,
+                      "nameTag": "Hội trường"
+                  }
+              ]
+          },
+          {
+              "number": 2,
+              "rooms": [
+                  {
+                      "id": 409,
+                      "name": "S02.03",
+                      "nameTag": "Phòng khoa học công nghệ & Hợp tác quốc tế"
+                  }
+              ]
+          },
+          {
+              "number": 3,
+              "rooms": [
+                  {
+                      "id": 410,
+                      "name": "S03.08",
+                      "nameTag": "Phòng khảo thí & Đảm bảo chất lượng"
+                  },
+                  {
+                      "id": 411,
+                      "name": "S03.05",
+                      "nameTag": "Phòng Thanh Tra - Pháp Chế"
+                  }
+              ]
+          },
+          {
+              "number": 7,
+              "rooms": [
+                  {
+                      "id": 412,
+                      "name": "S07.04",
+                      "nameTag": "Tổ công nghệ thông tin"
+                  }
+              ]
+          }
       ]
-    },
-    {
+  },
+  {
       "id": 14,
       "name": "Trung tâm Nghiên cứu bảo vệ môi trường",
       "stairs": [
-        [
-          91,
-          91,
-          91,
-          91
-        ]
+          [
+              91,
+              92
+          ]
       ],
       "floors": [
-        {
-          "number": 1,
-          "rooms": [
-            {
-              "id": 413,
-              "name": "Phòng công nghệ",
-              "nameTag": null
-            },
-            {
-              "id": 414,
-              "name": "Phòng phân tích kim loại nặng",
-              "nameTag": null
-            }
-          ]
-        },
-        {
-          "number": 2,
-          "rooms": [
-            {
-              "id": 415,
-              "name": "PTN công nghệ sinh học",
-              "nameTag": null
-            },
-            {
-              "id": 416,
-              "name": "Phòng sắc ký",
-              "nameTag": null
-            }
-          ]
-        }
+          {
+              "number": 1,
+              "rooms": [
+                  {
+                      "id": 413,
+                      "name": "Phòng công nghệ",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 414,
+                      "name": "Phòng phân tích kim loại nặng",
+                      "nameTag": null
+                  }
+              ]
+          },
+          {
+              "number": 2,
+              "rooms": [
+                  {
+                      "id": 415,
+                      "name": "PTN công nghệ sinh học",
+                      "nameTag": null
+                  },
+                  {
+                      "id": 416,
+                      "name": "Phòng sắc ký",
+                      "nameTag": null
+                  }
+              ]
+          }
       ]
-    }
+  }
 ]
 
 // buildings = [
