@@ -195,7 +195,7 @@ function draw() {
 
     //draw nodes
     stroke(color(0));
-    nodes.forEach((e, index) => {
+    nodes.forEach(e => {
         if (nodeBegin != null && e.id == nodeBegin) {
             fill(nodeAddPathColor.value);
             ellipse(e.longitude, e.latitude, nodeSize, nodeSize);
