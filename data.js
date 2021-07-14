@@ -3844,26 +3844,6 @@ buildings = [
                       "nameTag": null
                   },
                   {
-                      "id": 399,
-                      "name": "Phòng 4",
-                      "nameTag": null
-                  },
-                  {
-                      "id": 400,
-                      "name": "Phòng 5",
-                      "nameTag": null
-                  },
-                  {
-                      "id": 401,
-                      "name": "Phòng 6",
-                      "nameTag": null
-                  },
-                  {
-                      "id": 402,
-                      "name": "Phòng 7",
-                      "nameTag": null
-                  },
-                  {
                       "id": 407,
                       "name": "PV",
                       "nameTag": null
@@ -3908,16 +3888,36 @@ buildings = [
           {
               "number": 2,
               "rooms": [
-                  {
-                      "id": 467,
-                      "name": "Phòng TN hóa học",
-                      "nameTag": null
-                  },
-                  {
-                      "id": 468,
-                      "name": "Phòng TN vật lí",
-                      "nameTag": null
-                  }
+                {
+                    "id": 399,
+                    "name": "Phòng 4",
+                    "nameTag": null
+                },
+                {
+                    "id": 400,
+                    "name": "Phòng 5",
+                    "nameTag": null
+                },
+                {
+                    "id": 401,
+                    "name": "Phòng 6",
+                    "nameTag": null
+                },
+                {
+                    "id": 402,
+                    "name": "Phòng 7",
+                    "nameTag": null
+                },
+                {
+                    "id": 467,
+                    "name": "Phòng TN hóa học",
+                    "nameTag": null
+                },
+                {
+                    "id": 468,
+                    "name": "Phòng TN vật lí",
+                    "nameTag": null
+                }
               ]
           }
       ]
