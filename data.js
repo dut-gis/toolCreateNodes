@@ -1843,7 +1843,7 @@ places = [
     },
     {
         "id": 469,
-        "name": "Trung tâm thí nghiệm động cơ và ô tô",
+        "nameTag": "Trung tâm thí nghiệm động cơ và ô tô",
         "phone": "02363733795",
         "description": "Phục vụ công tác đào tạo, sinh viên thực tập được kiểm tra kiến thức chuyên môn và  hướng dẫn thao tác tháo lắp sửa chữa trên các mô hình mới.",
         "categoryId": 8,

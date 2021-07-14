@@ -129,6 +129,7 @@ function drawDetail(e, isNodeSelected){
             text("E_B", e.longitude, e.latitude);
         }else if (e.mode == "place") {
             // draw all place_variables
+            console.log(placeNames);
             text(placeOption[e.category-1].option, e.longitude, e.latitude - 12);
             text(placeNames[e.id_place], e.longitude, e.latitude);
         }
