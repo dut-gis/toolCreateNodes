@@ -441,7 +441,7 @@ function generateFloor() {
         classIndex = 0;
         classGenIds = {};
         floorGenerate.forEach(node => {
-            if (node.id_class != null && classIds.length > i) {
+            if (node.id_class != null && classIds.length > classIndex) {
                 if (classGenIds[node.id_class] == null) {
                     classGenIds[node.id_class] = classIds[classIndex].id;
                     node.id_class = classIds[classIndex].id;
