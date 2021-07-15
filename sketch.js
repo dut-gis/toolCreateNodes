@@ -10,6 +10,7 @@ var enterColor = document.getElementById("enter");
 var buildingColor = document.getElementById("building");
 var classroomColor = document.getElementById("classroom");
 var stairColor = document.getElementById("stair");
+var shouldDrag = false;
 
 var a_old = document.getElementById("a_old");
 var a_latlng = document.getElementById("a_latlng");
@@ -169,6 +170,9 @@ function setup() {
                 checkbox_isEntrance.checked = !checkbox_isEntrance.checked;
             }
         }
+        if (event.key === 'e') {
+            shouldDrag = !shouldDrag;
+        }
     });
 }
 
@@ -200,15 +204,15 @@ function draw() {
             fill(nodeAddPathColor.value);
             ellipse(e.longitude, e.latitude, nodeSize, nodeSize);
             fill(255, 26, 26);
-            drawDetail(e,true);
+            drawDetail(e, true);
         } else {
             var nodeColor = getModeColor(e.mode);
             fill(nodeColor);
             ellipse(e.longitude, e.latitude, nodeSize, nodeSize);
             fill(255, 26, 26);
             if (select_drawDetailMode.value != "none") {
-                drawDetail(e,false);
-            }else{
+                drawDetail(e, false);
+            } else {
                 text(e.id, e.longitude, e.latitude + 12);
             }
         }
@@ -250,6 +254,7 @@ nodeDrag = null;
 isCanDrag = null;
 
 function mouseDragged() {
+    if (!shouldDrag) return;
     if (!isModeNode) return;
 
     if (nodeDrag == null && nodeDrag == null) {
@@ -447,16 +452,16 @@ function generateFloor() {
             }
         })
         // generate stair
-        numberOfStair = 
-        floorGenerate.forEach(node => {
-            if (node.id_stair != null) {
-              
-                // node.id_stair += numberOfStair;
-                // get currentbuilding => numberOfStair = leng(building.stairs)
-                node.id_stair = parseInt(node.id_stair)+numberOfStair;
-            
-            }
-        })
+        numberOfStair =
+            floorGenerate.forEach(node => {
+                if (node.id_stair != null) {
+
+                    // node.id_stair += numberOfStair;
+                    // get currentbuilding => numberOfStair = leng(building.stairs)
+                    node.id_stair = parseInt(node.id_stair) + numberOfStair;
+
+                }
+            })
         // stairID += numberOfStair;
         console.log(floorGenerate);
         setListNodeFloor(select_generate_floor_building.value, i, floorGenerate);
