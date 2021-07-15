@@ -438,15 +438,19 @@ function generateFloor() {
         formatFloor(floorGenerate, i, stairID);
         // generate class
         classIds = getListClassOptions(select_generate_floor_building.value, i);
+        console.log(classIds);
         classIndex = 0;
         classGenIds = {};
         floorGenerate.forEach(node => {
-            if (node.id_class != null && classIds.length > classIndex) {
+            if (node.id_class != null && classIds.length >= classIndex) {
                 if (classGenIds[node.id_class] == null) {
-                    classGenIds[node.id_class] = classIds[classIndex].id;
-                    node.id_class = classIds[classIndex].id;
-                    classIndex += 1;
+                    if (classIds[classIndex] != null) {
+                        classGenIds[node.id_class] = classIds[classIndex].id;
+                        node.id_class = classIds[classIndex].id;
+                        classIndex += 1;
+                    }
                 } else {
+                    print("genngeg");
                     node.id_class = classGenIds[node.id_class];
                 }
             }
